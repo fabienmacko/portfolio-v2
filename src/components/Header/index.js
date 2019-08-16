@@ -20,7 +20,7 @@ class Header extends React.Component {
 
   render(){
     return (
-      <div className="header">
+      <div id="header">
         <div className="background">
           <Particles width="100%" height="30%" params={Config}/>
         </div>
