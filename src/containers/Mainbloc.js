@@ -1,12 +1,11 @@
 import { connect } from 'react-redux';
 
-import Blocone from '../components/Blocone';
+import Mainbloc from '../components/Mainbloc';
 
-import { closeMenu, openMenu, activeTypedText } from '../store/reducer';
+import { closeMenu, openMenu } from '../store/reducer';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isMenuOpen: state.isMenuOpen,
-  isTypedTextActive: state.isTypedTextActive,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -16,13 +15,9 @@ const mapDispatchToProps = dispatch => ({
   closeMenu: () => {
     dispatch(closeMenu());
   },
-  activeTypedText: () => {
-    dispatch(activeTypedText());
-  },
-
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Blocone);
+)(Mainbloc);

@@ -18,7 +18,7 @@ class Header extends React.Component {
     }, 1000);
   }
 
-  openBlocOne = () => {
+  openMainbloc = () => {
     console.log("clicked");
     var {openMenu} = this.props;
     openMenu();
@@ -36,7 +36,7 @@ class Header extends React.Component {
             <hr />
             <h2 data-aos="fade-in" data-aos-duration="400" data-aos-easing="ease-out" data-aos-delay="1700">Web Developer</h2>
             <h2 data-aos="fade-in" data-aos-duration="400" data-aos-easing="ease-out" data-aos-delay="1900">Geneva</h2>
-            <div className="mousey" onClick={this.openBlocOne}>
+            <div className="mousey" onClick={this.openMainbloc}>
               <div className="scroller"></div>
             </div>
           </div>

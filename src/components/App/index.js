@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../../containers/Header';
-import Blocone from '../../containers/Blocone';
-import {Switch, Route} from 'react-router-dom';
-import $ from 'jquery';
+import Mainbloc from '../../containers/Mainbloc';
+import { Switch, Route } from 'react-router-dom';
 import AOS from 'aos';
 import './App.scss';
 
@@ -14,15 +13,26 @@ class App extends React.Component {
     AOS.init();
   }
 
-  render(){
+  render() {
+    const {openMenu} = this.props;
     return (
-      <>
-        <Header />
-        <Blocone />
-        <Switch>
-          <Route path="/portfolio" />
-        </Switch>
-      </>
+      <Switch>
+        <Route exact path="/" render={() => (
+          <>
+            <Header />
+            <Mainbloc />
+          </>)}
+        />
+        <Route path="/menu" render={() => {
+          openMenu();
+          return (
+            <>
+              <Header />
+              <Mainbloc />
+            </>)
+        }}
+        />
+      </Switch>
     );
   }
 }
