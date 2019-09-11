@@ -29,7 +29,7 @@ class Menu extends React.Component {
           }
         </div>
         <section className="menu-items">
-          <i className="fas fa-cog"></i>
+          
         </section>
         <section className="menu-items">
 

@@ -14,25 +14,28 @@ class App extends React.Component {
   }
 
   render() {
-    const {openMenu} = this.props;
+    const { openMenu } = this.props;
     return (
-      <Switch>
-        <Route exact path="/" render={() => (
-          <>
-            <Header />
-            <Mainbloc />
-          </>)}
-        />
-        <Route path="/menu" render={() => {
-          openMenu();
-          return (
+      <div className="app">
+        <Switch>
+          <Route exact path="/" render={() => (
             <>
               <Header />
               <Mainbloc />
-            </>)
-        }}
-        />
-      </Switch>
+            </>)}
+          />
+          <Route path="/menu" render={() => {
+            openMenu();
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+        </Switch>
+      </div>
     );
   }
 }
