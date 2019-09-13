@@ -1,5 +1,5 @@
 #navbar {
-  background-color: #dadada;
+  background-color: #ffffff;
   height: 100vh;
   width: 20%;
   position: absolute;
@@ -9,4 +9,71 @@
   &.open {
     left: 0;
   }
+
+  // Menu style 
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.menu-container {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0;
+}
+.menu-container * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-container li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+.menu-container a {
+  padding: 0.3em 0;
+  color: rgb(70, 70, 70);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+.menu-container a:before,
+.menu-container a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #0f1627;
+  width: 0;
+}
+.menu-container a:before {
+  top: 0;
+  left: 0;
+}
+.menu-container a:after {
+  bottom: 0;
+  right: 0;
+}
+.menu-container a:hover,
+.menu-container .current a {
+  color: #a8a8a8;
+}
+.menu-container a:hover:before,
+.menu-container .current a:before,
+.menu-container a:hover:after,
+.menu-container .current a:after {
+  width: 100%;
+}
+
 }
