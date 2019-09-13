@@ -1,38 +1,42 @@
 import React from 'react';
 import Typed from 'react-typed';
-import Parallax from 'parallax-js';
+import Particles from 'react-particles-js';
+import Config from '../../particlesjs-config2.json';
 import './menu.scss';
 
 class Menu extends React.Component {
 
   componentDidMount() {
-    this.parallax = new Parallax(this.scene)
+
   }
 
   render() {
     var { isMenuOpen } = this.props;
     return (
       <div id="menu">
+        <Particles height="100%" style={{
+          position: "absolute",
+        }} params={Config}/>
         <div id="animation-container">
-          <div id="animation-relative" ref={el => this.scene = el}>
-            <p className="speechbubble layer" datadepth="1.00" style={{
-                fontSize: "23px",
-                width: "fit-content",
-                textAlign: "center",
-              }}>
-                {
-                  isMenuOpen &&
-                  <Typed
-                    strings={[
-                      'Hi, dear visitor, welcome to my website.',
-                      'Here you are in the principal menu!',
-                      'Please click on what you want to know about me.']}
-                    typeSpeed={50}
-                    backSpeed={10} >
-                  </Typed>
-                }
+          <div id="animation-relative">
+            <p className="speechbubble" data-depth="1.1" style={{
+              fontSize: "26px",
+              width: "fit-content",
+              textAlign: "center",
+            }}>
+              {
+                isMenuOpen &&
+                <Typed
+                  strings={[
+                    'Hi, dear visitor, welcome to my website.',
+                    'Here you are in the principal menu!',
+                    'Please click on what you want to know about me.']}
+                  typeSpeed={50}
+                  backSpeed={10} >
+                </Typed>
+              }
             </p>
-            <svg className="astronaut layout" datadepth="0.50" viewBox="0 0 1167 807" xmlns="http://www.w3.org/2000/svg">
+            <svg className="astronaut" data-depth="0.8" viewBox="0 0 1167 807" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient x1="99.997%" y1="50%" x2=".002%" y2="50%" id="a">
                   <stop stopColor="#DC818F" stopOpacity="0" offset="22.69%" />
@@ -44,9 +48,6 @@ class Menu extends React.Component {
                   <stop stopColor="#FFF" stopOpacity=".1" offset="97.9%" />
                 </linearGradient>
               </defs>
-
-              <g className="stars" fillRule="evenodd"><circle cx="75" cy="212" r="2" /><circle cx="117.5" cy="300.5" r="1.5" /><circle cx="148" cy="251" r="2" /><circle cx="197" cy="140" r="1" /><circle cx="205" cy="192" r="2" /><circle cx="247.5" cy="280.5" r="1.5" /><circle cx="278" cy="231" r="2" /><circle cx="208" cy="161" r="2" /><circle cx="238" cy="59" r="2" /><circle cx="168" cy="359" r="2" /><circle cx="147" cy="319" r="2" /><circle cx="67.5" cy="120.5" r="1.5" /><circle cx="98" cy="71" r="2" /><circle cx="327" cy="120" r="1" /><circle cx="448" cy="212" r="2" /><circle cx="490.5" cy="300.5" r="1.5" /><circle cx="521" cy="251" r="2" /><circle cx="570" cy="140" r="1" /><circle cx="578" cy="192" r="2" /><circle cx="620.5" cy="280.5" r="1.5" /><circle cx="651" cy="231" r="2" /><circle cx="581" cy="161" r="2" /><circle cx="611" cy="59" r="2" /><circle cx="541" cy="359" r="2" /><circle cx="520" cy="319" r="2" /><circle cx="440.5" cy="120.5" r="1.5" /><circle cx="471" cy="71" r="2" /><circle cx="700" cy="120" r="1" /><circle cx="125" cy="572" r="2" /><circle cx="167.5" cy="660.5" r="1.5" /><circle cx="198" cy="611" r="2" /><circle cx="247" cy="500" r="1" /><circle cx="255" cy="552" r="2" /><circle cx="297.5" cy="640.5" r="1.5" /><circle cx="328" cy="591" r="2" /><circle cx="258" cy="521" r="2" /><circle cx="288" cy="419" r="2" /><circle cx="117.5" cy="480.5" r="1.5" /><circle cx="148" cy="431" r="2" /><circle cx="377" cy="480" r="1" /><circle cx="498" cy="572" r="2" /><circle cx="540.5" cy="660.5" r="1.5" /><circle cx="571" cy="611" r="2" /><circle cx="620" cy="500" r="1" /><circle cx="628" cy="552" r="2" /><circle cx="670.5" cy="640.5" r="1.5" /><circle cx="701" cy="591" r="2" /><circle cx="631" cy="521" r="2" /><circle cx="661" cy="419" r="2" /><circle cx="490.5" cy="480.5" r="1.5" /><circle cx="521" cy="431" r="2" /><circle cx="750" cy="480" r="1" /><circle cx="481" cy="709" r="2" /><circle cx="460" cy="669" r="2" /><circle cx="118" cy="709" r="2" /><circle cx="97" cy="669" r="2" /></g>
-
               <g fill="none" fillRule="evenodd">
                 <g className="leg-right">
                   <path d="M858.4 321.1L767 371.5l-86.5 47.7c-8.4 4.6-17.5 6.8-26.4 6.8-19.3 0-38.1-10.2-48.1-28.4-14.6-26.5-5-59.9 21.5-74.5L657 307l52.3-28.8 61.2-33.8L748 128.2c-5.8-29.7 13.6-58.5 43.4-64.3 13.3-2.6 26.5-.1 37.5 6.1 13.5 7.6 23.6 20.9 26.8 37.3l30.2 155.4c4.4 23.3-6.6 46.9-27.5 58.4z" fill="#DADAE5" />

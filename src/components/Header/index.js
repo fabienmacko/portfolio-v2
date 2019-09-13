@@ -29,7 +29,7 @@ class Header extends React.Component {
       <div id="header">
         <div className="wrapper">
           <div className="background">
-            <Particles height="30%" params={Config}/>
+            <Particles height="30%" params={Config} />
           </div>
           <div className="title">
             <h1 data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-out">FABIEN MACKOWIAK</h1>

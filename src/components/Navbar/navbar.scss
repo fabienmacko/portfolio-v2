@@ -6,6 +6,7 @@
   left: -20%;
   top: 0;
   transition: left 0.7s ease-in-out;
+
   &.open {
     left: 0;
   }
@@ -36,7 +37,7 @@
   list-style: outside none none;
   margin: 0.5em 1.5em;
   padding: 0;
-  width: fit-content;
+  width: 90%;
   margin: 0 auto;
 }
 .menu-container a {
@@ -46,6 +47,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 2rem;
+  width: 100%;
 }
 .menu-container a:before,
 .menu-container a:after {
@@ -64,6 +66,9 @@
 .menu-container a:after {
   bottom: 0;
   right: 0;
+}
+#nav-logo:hover {
+  cursor: pointer;
 }
 .menu-container a:hover,
 .menu-container .current a {

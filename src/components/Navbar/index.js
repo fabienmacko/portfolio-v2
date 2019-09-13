@@ -10,7 +10,14 @@ class Navbar extends React.Component {
   }
 
   changeActiveButton = e => {
+    var elements = document.querySelectorAll(".menu-item");
+    for (let i = 0; i < elements.length; i++) {
+      const element = elements[i];
+      element.classList.remove("current");
+    }
+    console.log(e.target.closest(".menu-item"));
     
+    e.target.closest(".menu-item").classList.add("current");
   }
 
   render() {
@@ -18,12 +25,11 @@ class Navbar extends React.Component {
     return (
       <div id="navbar" className={isMenuOpen ? 'open' : ''}>
         <ul className="menu-container">
-          <li onClick={closeMenu}><img src={Logo} alt="Fabien Mackowiak logo"/></li>
-          <li onClick={this.changeActiveButton}><NavLink to="/menu">About Us</NavLink></li>
-          <li onClick={this.changeActiveButton}><NavLink to="/menu">About Us</NavLink></li>
-          <li onClick={this.changeActiveButton}><NavLink to="/menu">About Us</NavLink></li>
-          <li onClick={this.changeActiveButton}><NavLink to="/menu">About Us</NavLink></li>
-          <li onClick={this.changeActiveButton}><NavLink to="/menu">About Us</NavLink></li>
+          <li className="menu-item" onClick={closeMenu}><img id="nav-logo" src={Logo} alt="Fabien Mackowiak logo"/></li>
+          <li className="menu-item" onClick={this.changeActiveButton}><NavLink to="/menu">What can you do?</NavLink></li>
+          <li className="menu-item" onClick={this.changeActiveButton}><NavLink to="/menu">Technologies</NavLink></li>
+          <li className="menu-item" onClick={this.changeActiveButton}><NavLink to="/menu">Portfolio</NavLink></li>
+          <li className="menu-item" onClick={this.changeActiveButton}><NavLink to="/menu">Contact</NavLink></li>
         </ul>
       </div>
     );
