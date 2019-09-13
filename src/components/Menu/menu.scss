@@ -2,89 +2,210 @@
   position: absolute;
   width: 80%;
   right: 0;
-
+  #animation-container {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    #animation-relative {
+      position: relative;
+    }
+  }
   // Astronaut SVG
 
-.arm-left{
-  animation: armSwipe 5s 1s infinite ease-in-out;
-  transform-origin: left top;
+  .arm-left {
+    animation: armSwipe 5s 1s infinite ease-in-out;
+    transform-origin: left top;
   }
-  @keyframes armSwipe{
-    0%{transform: rotate(-10deg);}
-    50%{transform: rotate(0deg);}
-      100%{transform: rotate(-10deg);}
+  @keyframes armSwipe {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
   }
-  .arm-right{
+  .arm-right {
     animation: armRightSwipe 5s 1s infinite ease-in-out;
     transform-origin: right top;
   }
   @keyframes armRightSwipe {
-    0%{transform: rotate(-1deg);}
-    50%{transform: rotate(-5deg);}
-      100%{transform: rotate(-1deg);}
+    0% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(-1deg);
+    }
   }
-  .astronaut{
+  .astronaut {
     height: 500px;
-    width: 70%;
+    width: 100%;
     position: absolute;
     right: 0;
     overflow: visible;
     animation: Levitation 5s 1s infinite ease-in-out;
   }
-  @keyframes Levitation{
-    0%{transform: translateY(100px);}
-    50%{transform: translateY(80px); }
-    100%{transform: translateY(100px);}
+  @keyframes Levitation {
+    0% {
+      transform: translateY(100px);
+    }
+    50% {
+      transform: translateY(80px);
+    }
+    100% {
+      transform: translateY(100px);
+    }
   }
-  .leg-right{
+  .leg-right {
     animation: LegSwipe 5s 1s infinite ease-out;
     transform-origin: left bottom;
   }
   @keyframes LegSwipe {
-    0%{transform: rotate(8deg);}
-    50%{transform: rotate(5deg);}
-    100%{transform: rotate(8deg);}
+    0% {
+      transform: rotate(8deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(8deg);
+    }
   }
 
   @keyframes LegLeftSwipe {
-    0%{transform: rotate(2deg);}
-    50%{transform: rotate(0deg);}
-    100%{transform: rotate(2deg);}
+    0% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(2deg);
+    }
   }
-  .reflect{
+  .reflect {
     animation: faceOpacity 5s 1s infinite;
   }
   @keyframes faceOpacity {
-    0%{opacity: 0.7;}
-    70%{opacity: 1;}
-    100%{opacity: 0.7;}
+    0% {
+      opacity: 0.7;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.7;
+    }
   }
-  .eye-right{
+  .eye-right {
     animation: eyeBlink 5s infinite step-start 0s;
   }
-  .eye-left{
+  .eye-left {
     animation: eyeLeftBlink 5s infinite step-start 0s;
-  
   }
   @keyframes eyeBlink {
-    90%{transform: none; animation-timing-function: ease-in;}
-    93%{transform: translateY(135px) scaleY(0);}
-    100%{animation-timing-function: ease-in;}
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(135px) scaleY(0);
+    }
+    100% {
+      animation-timing-function: ease-in;
+    }
   }
   @keyframes eyeLeftBlink {
-    90%{transform: none; animation-timing-function: ease-in;}
-    93%{transform: translateY(155px) scaleY(0);}
-    100%{animation-timing-function: ease-in;}
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(155px) scaleY(0);
+    }
+    100% {
+      animation-timing-function: ease-in;
+    }
   }
-  .stars{
+  .stars {
     width: 800px;
-    fill:#fff;
+    fill: #fff;
     overflow: visible;
     animation: starsRotate 155s 1s linear;
     transform-origin: center;
   }
   @keyframes starsRotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  // Dialog
+
+  $color1: #161719;
+  $color2: #26272b;
+  $text: #d4d6d8;
+
+  .text-center {
+    text-align: center;
+  }
+
+  .cf {
+    *zoom: 1;
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .speechbubble {
+    background-color: #26272b;
+    color: #d4d6d8;
+    font-size: 0.8em;
+    line-height: 1.75;
+    padding: 15px 25px;
+    margin-bottom: 75px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: fit-content;
+    cursor: default;
+    border-left: 5px solid;
+    z-index: 1;
+    animation: Levitation 5s 1s infinite ease-in-out;
+
+    //  Border and arrow left
+    border-left: 5px solid;
+    &:after {
+      content: "";
+      margin-top: -30px;
+      padding-top: 0px;
+      position: relative;
+      bottom: -45px;
+      left: 20px;
+      border-width: 30px 0 0 30px;
+      border-style: solid;
+      border-color: $color2 transparent;
+      display: block;
+      width: 0;
+    }
   }
 }
