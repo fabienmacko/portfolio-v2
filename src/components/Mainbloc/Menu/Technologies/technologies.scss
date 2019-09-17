@@ -1,3 +1,31 @@
 #technologies {
-
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 45%;
+    .technology {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 150px;
+      p {
+        font-size: 17px
+      }
+    }
+    .main-technologies, .other-technologies {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .other-technologies {
+      .other-tech-img {
+        filter: brightness(0) invert(1);
+        max-width: 100px;
+      }
+    }
+  }
 }
