@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import Mainbloc from '../components/Mainbloc';
 
-import { closeMenu, openMenu } from '../store/reducer';
+import { closeMenu, openMenu, changeView } from '../store/reducer';
 
 const mapStateToProps = (state) => ({
   isMenuOpen: state.isMenuOpen,
@@ -15,6 +15,9 @@ const mapDispatchToProps = dispatch => ({
   closeMenu: () => {
     dispatch(closeMenu());
   },
+  changeView: (view) => {
+    dispatch(changeView(view))
+  }
 });
 
 export default connect(

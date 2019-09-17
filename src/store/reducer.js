@@ -3,7 +3,7 @@
  */
 const initialState = {
   isMenuOpen: false,
-  isTypedTextActive: false,
+  view: "Welcome",
 };
 
 /**
@@ -11,7 +11,7 @@ const initialState = {
  */
 export const OPEN_MENU = 'OPEN_MENU';
 export const CLOSE_MENU = 'CLOSE_MENU';
-export const ACTIVE_TYPED_TEXT = "ACTIVE_TYPED_TEXT";
+export const CHANGE_VIEW = 'CHANGE_VIEW';
 
 /**
  * Traitements
@@ -32,10 +32,10 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         isMenuOpen: false,
       };
-    case ACTIVE_TYPED_TEXT:
+    case CHANGE_VIEW:
       return {
         ...state,
-        isTypedTextActive: true,
+        view: action.view,
       }
     default:
       return state;
@@ -51,9 +51,11 @@ export const openMenu = () => ({
 export const closeMenu = () => ({
   type: CLOSE_MENU,
 });
-export const activeTypedText = () => ({
-  type: ACTIVE_TYPED_TEXT,
+export const changeView = (view) => ({
+  type: CHANGE_VIEW,
+  view
 });
+
 
 
 

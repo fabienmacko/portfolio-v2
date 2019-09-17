@@ -1,0 +1,72 @@
+#welcome {
+  #animation-container {
+    position: absolute;
+    width: 70%;
+    right: 100px; 
+    height: 100%;
+    padding-top: 50px;
+    #animation-relative {
+      position: relative;
+      height: 100%;
+    }
+  }
+  // Dialog
+
+  $color1: #161719;
+  $color2: #26272b;
+  $text: #d4d6d8;
+
+  .text-center {
+    text-align: center;
+  }
+
+  .cf {
+    *zoom: 1;
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .speechbubble {
+    background-color: #26272b;
+    color: #d4d6d8;
+    font-size: 0.8em;
+    line-height: 1.75;
+    padding: 15px 25px;
+    margin-bottom: 75px;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    width: fit-content;
+    cursor: default;
+    border-left: 5px solid;
+    z-index: 1;
+
+    //  Border and arrow left
+    border-left: 5px solid;
+    &:after {
+      content: "";
+      margin-top: -30px;
+      padding-top: 0px;
+      position: relative;
+      bottom: -45px;
+      left: 20px;
+      border-width: 30px 0 0 30px;
+      border-style: solid;
+      border-color: $color2 transparent;
+      display: block;
+      width: 0;
+    }
+  }
+}

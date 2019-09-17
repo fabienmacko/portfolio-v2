@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 
-import Menu from '../components/Mainbloc/Menu';
+import Welcome from '../components/Mainbloc/Menu/Welcome';
 
 
 const mapStateToProps = state => ({
-  view: state.view,
+  isMenuOpen: state.isMenuOpen,
 });
 
 const mapDispatchToProps = {};
@@ -12,4 +12,4 @@ const mapDispatchToProps = {};
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Menu);
+)(Welcome);

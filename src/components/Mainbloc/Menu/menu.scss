@@ -1,0 +1,29 @@
+@import'../../../style/vars.scss';
+
+#menu {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  height: 100%;
+  .switch-wrapper {
+    position: relative;
+  }
+  .section-title {
+    font-size: 30px;
+    width: fit-content;
+    margin-left: 60px;
+    height: 50px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .underline {
+    height: 2px;
+    background-color: $orange;
+    width: 60px;
+  }
+  .switch-wrapper > div {
+    position: absolute;
+  }
+}

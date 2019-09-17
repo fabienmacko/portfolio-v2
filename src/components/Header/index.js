@@ -1,6 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import Config from '../../particlesjs-config.json';
+import Mountain from '../../style/images/snowy-mountain.jpg';
 import './header.scss';
 
 
@@ -19,7 +20,6 @@ class Header extends React.Component {
   }
 
   openMainbloc = () => {
-    console.log("clicked");
     var {openMenu} = this.props;
     openMenu();
   }
@@ -28,7 +28,9 @@ class Header extends React.Component {
     return (
       <div id="header">
         <div className="wrapper">
-          <div className="background">
+          <div className="background" style={{
+            backgroundImage: `url('${Mountain}')`,
+          }}>
             <Particles height="30%" params={Config} />
           </div>
           <div className="title">

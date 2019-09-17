@@ -1,3 +1,5 @@
+@import'../../../style/vars.scss';
+
 #navbar {
   background-color: #ffffff;
   height: 100vh;
@@ -42,7 +44,7 @@
 }
 .menu-container a {
   padding: 0.3em 0;
-  color: rgb(70, 70, 70);
+  color: #a8a8a8;
   position: relative;
   text-decoration: none;
   display: inline-block;
@@ -56,7 +58,7 @@
   content: '';
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #0f1627;
+  background-color: $orange;
   width: 0;
 }
 .menu-container a:before {
@@ -72,7 +74,7 @@
 }
 .menu-container a:hover,
 .menu-container .current a {
-  color: #a8a8a8;
+  color: rgb(70, 70, 70);
 }
 .menu-container a:hover:before,
 .menu-container .current a:before,
