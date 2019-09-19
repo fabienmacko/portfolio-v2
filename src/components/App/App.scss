@@ -1,11 +1,33 @@
-@import 'src/style/vars';
+@import "src/style/vars";
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  .swal2-styled {
+    background-color: $orange !important;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $orange;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 175, 175);
+  }
 }
 
 .app {
- position: absolute;
- width: 100%;
+  position: absolute;
+  width: 100%;
 }

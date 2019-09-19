@@ -4,15 +4,16 @@ import Express from '../../../../style/images/express.png';
 import Axios from '../../../../style/images/axios.png';
 import ReactRouter from '../../../../style/images/react-router.svg';
 import Jquery from '../../../../style/images/jquery.png';
+import Postman from '../../../../style/images/postman.png';
 import './technologies.scss';
 
 const Technologies = () => {
 
   const mainTechnologies = [
+    { name: "HTML5, JSX", icon: "fab fa-html5" },
+    { name: "CSS3, Sass", icon: "fab fa-sass" },
+    { name: "JavaScript", icon: "fab fa-js" },
     { name: "React, Redux", icon: "fab fa-react" },
-    { name: "HTML5", icon: "fab fa-html5" },
-    { name: "JavaScript, jQuery", icon: "fab fa-js" },
-    { name: "Css3, Sass", icon: "fab fa-sass" },
     { name: "Node.js", icon: "fab fa-node" },
   ];
 
@@ -32,10 +33,8 @@ const Technologies = () => {
     { name: "Yarn", icon: "fab fa-yarn" },
     { name: "Npm", icon: "fab fa-npm" },
     { name: "VSCode", icon: "fas fa-code" },
-  ];
-
-  const otherTools = [
-
+    { name: "Font Awesome", icon: "fab fa-font-awesome" },
+    { name: "Discord", icon: "fab fa-discord" },
   ];
 
   return (
@@ -47,40 +46,46 @@ const Technologies = () => {
 
       {/* Content */}
 
-      <section className="technologies">
-        <h2>Main Technologies</h2>
-        <div className="main-technologies">
-          {
-            mainTechnologies.map((tech, index) => (
-              <div className="technology" key={"main-tech" + index}>
-                <i className={tech.icon + " fa-5x"}></i>
-                <p>{tech.name}</p>
-              </div>
-            ))
-          }
-        </div>
-        <h2>Other Technologies</h2>
-        <div className="other-technologies">
-          {
-            otherTechnologies.map((tech, index) => (
-              <div className="technology" key={"other-tech" + index}>
-                <img className="other-tech-img" src={tech.icon} alt="Icon" />
-                <p>{tech.name}</p>
-              </div>
-            ))
-          }
-        </div>
-      </section>
-      <section className="tools">
-        {
-          mainTools.map((tool, index) => (
-            <div className="technology" key={"other-tech" + index}>
-              <img className="main-tool-img" src={tool.icon} alt="Icon" />
-              <p>{tool.name}</p>
+      <div className="content">
+        <section className="technologies">
+          <h2>Technologies</h2>
+          <div className="technologies">
+            {
+              mainTechnologies.map((tech, index) => (
+                <div className="technology" key={"main-tech" + index}>
+                  <i className={tech.icon + " fa-4x"}></i>
+                  <p>{tech.name}</p>
+                </div>
+              ))
+            }
+            {
+              otherTechnologies.map((tech, index) => (
+                <div className="technology" key={"other-tech" + index}>
+                  <img className="other-tech-img" src={tech.icon} alt="Icon" />
+                  <p>{tech.name}</p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+        <section className="tools">
+          <h2>Tools</h2>
+          <div className="main-tools">
+            {
+              mainTools.map((tool, index) => (
+                <div className="tool" key={"main-tools" + index}>
+                  <i className={tool.icon + " fa-4x"} alt="Icon"></i>
+                  <p>{tool.name}</p>
+                </div>
+              ))
+            }
+            <div className="tool">
+              <img src={Postman} alt="Icon"/>
+              <p>Postman</p>
             </div>
-          ))
-        }
-      </section>
+          </div>
+        </section>
+      </div>
     </div>
   )
 };

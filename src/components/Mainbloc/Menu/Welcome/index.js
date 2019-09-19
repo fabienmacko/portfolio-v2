@@ -2,14 +2,14 @@ import React from 'react';
 import Typed from 'react-typed';
 import Particles from 'react-particles-js';
 import Config from '../../../../particlesjs-config2.json';
-import Astronaut from'../../../Astronaut';
+import Astronaut from '../../../Astronaut';
 import Parallax from 'parallax-js';
 import './welcome.scss';
 
 class Welcome extends React.Component {
   componentDidMount() {
-      var scene = document.querySelector('#animation-relative');
-    
+    var scene = document.querySelector('#animation-relative');
+
     new Parallax(scene);
   }
 
@@ -19,7 +19,7 @@ class Welcome extends React.Component {
       <div id="welcome">
         <Particles height="100%" style={{
           position: "absolute",
-        }} params={Config}/>
+        }} params={Config} />
         <div id="animation-container">
           <div id="animation-relative">
             <p className="speechbubble" data-depth="1.1" style={{

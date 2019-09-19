@@ -1,31 +1,37 @@
 #technologies {
-  .technologies {
+  .technologies, .tools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 45%;
-    .technology {
+    padding-top: 40px;
+    .technology, .tool {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       width: 150px;
       p {
         font-size: 17px
       }
     }
-    .main-technologies, .other-technologies {
+    .technologies, .main-tools {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
     }
-    .other-technologies {
-      .other-tech-img {
-        filter: brightness(0) invert(1);
-        max-width: 100px;
-      }
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+
+    img {
+      filter: brightness(0) invert(1);
+      max-width: 80px;
     }
   }
 }
