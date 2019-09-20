@@ -25,14 +25,11 @@ export const INCREASE_CLICK_COUNTER = 'INCREASE_CLICK_COUNTER';
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case OPEN_MENU:
-      console.log("OpenMenu");
-      
       return {
         ...state,
         isMenuOpen: true,
       };
     case CLOSE_MENU:
-        console.log("CloseMenu");
       return {
         ...state,
         isMenuOpen: false,

@@ -10,13 +10,16 @@ class Mainbloc extends React.Component {
     var { openMenu, closeMenu, changeView } = this.props;
 
     document.addEventListener('wheel', function (event) {
-
-      if (event.deltaY > 0) {
-        changeView("Welcome");
-        openMenu();
-      } else {
-        closeMenu();
+      if (!document.querySelector("#mainbloc").classList.contains("open")) {
+        if (event.deltaY > 0) {
+          changeView("Welcome");
+          openMenu();
+        }
       }
+
+      if (event.deltaY < 0) {
+        closeMenu();
+      } 
     }, false);
   }
 
