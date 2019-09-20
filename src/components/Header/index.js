@@ -8,7 +8,9 @@ import './header.scss';
 
 class Header extends React.Component {
 
-  componentDidMount(){
+
+
+  componentDidMount() {
     var backgroundElt = document.querySelector(".background");
     var divElt = backgroundElt.querySelector("div");
     divElt.style.height = "100%";
@@ -20,11 +22,11 @@ class Header extends React.Component {
   }
 
   openMainbloc = () => {
-    var {openMenu} = this.props;
+    const { openMenu } = this.props;
     openMenu();
   }
 
-  render(){
+  render() {
     return (
       <div id="header">
         <div className="wrapper">

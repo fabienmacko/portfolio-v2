@@ -2,9 +2,11 @@ import { connect } from 'react-redux';
 
 import App from '../components/App';
 
-import { openMenu, changeView } from '../store/reducer';
+import { openMenu, changeView, increaseClickCounter } from '../store/reducer';
 
-const mapStateToProps = null;
+const mapStateToProps = state => ({
+  clickCounter: state.clickCounter,
+});
 
 const mapDispatchToProps = dispatch => ({
   openMenu: () => {
@@ -12,7 +14,10 @@ const mapDispatchToProps = dispatch => ({
   },
   changeView: (view) => {
     dispatch(changeView(view));
-  }
+  },
+  increaseClickCounter: () => {
+    dispatch(increaseClickCounter());
+  },
 });
 
 export default connect(

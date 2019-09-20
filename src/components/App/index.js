@@ -14,72 +14,80 @@ class App extends React.Component {
     console.log("Hello! \nI can see that code is important for you. \nYes, as you can see, this website was fully developed in React.js/Redux like a one-page application. \nIf you loved it and want to get in touch, be sure to send me a message on LinkedIn or whatever! ☕")
   }
 
+  increaseClickCounter = () => {
+    const { increaseClickCounter, clickCounter } = this.props;
+    increaseClickCounter();
+    console.log(clickCounter);
+  }
+
   render() {
     const { openMenu, changeView } = this.props;
     return (
-      <Switch>
-        <Route exact path="/" render={() => (
-          <>
-            <Header />
-            <Mainbloc />
-          </>)}
-        />
-        <Route path="/menu" render={() => {
-          openMenu();
-          return (
+      <div id="app" onClick={this.increaseClickCounter}>
+        <Switch>
+          <Route exact path="/" render={() => (
             <>
               <Header />
               <Mainbloc />
-            </>
-          )
-        }}
-        />
-        <Route path="/whatcanyoudo" render={() => {
-          openMenu();
-          changeView("What can you do?");
-          return (
-            <>
-              <Header />
-              <Mainbloc />
-            </>
-          )
-        }}
-        />
-        <Route path="/technologies" render={() => {
-          openMenu();
-          changeView("Technologies");
-          return (
-            <>
-              <Header />
-              <Mainbloc />
-            </>
-          )
-        }}
-        />
-        <Route path="/portfolio" render={() => {
-          openMenu();
-          changeView("Portfolio");
-          return (
-            <>
-              <Header />
-              <Mainbloc />
-            </>
-          )
-        }}
-        />
-        <Route path="/contact" render={() => {
-          openMenu();
-          changeView("Contact");
-          return (
-            <>
-              <Header />
-              <Mainbloc />
-            </>
-          )
-        }}
-        />
-        <Route component={Err404} />
-      </Switch>
+            </>)}
+          />
+          <Route path="/menu" render={() => {
+            openMenu();
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+          <Route path="/whatcanyoudo" render={() => {
+            openMenu();
+            changeView("What can you do?");
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+          <Route path="/technologies" render={() => {
+            openMenu();
+            changeView("Technologies");
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+          <Route path="/portfolio" render={() => {
+            openMenu();
+            changeView("Portfolio");
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+          <Route path="/contact" render={() => {
+            openMenu();
+            changeView("Contact");
+            return (
+              <>
+                <Header />
+                <Mainbloc />
+              </>
+            )
+          }}
+          />
+          <Route component={Err404} />
+        </Switch>
+      </div>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Welcome from '../../../containers/Welcome';
 import Technologies from './Technologies';
-import Whatcanyoudo from './Whatcanyoudo';
+import Whatcanyoudo from '../../../containers/Whatcanyoudo';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import './menu.scss';

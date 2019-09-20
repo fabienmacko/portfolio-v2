@@ -4,6 +4,7 @@
 const initialState = {
   isMenuOpen: false,
   view: "Welcome",
+  clickCounter: 0,
 };
 
 /**
@@ -12,6 +13,7 @@ const initialState = {
 export const OPEN_MENU = 'OPEN_MENU';
 export const CLOSE_MENU = 'CLOSE_MENU';
 export const CHANGE_VIEW = 'CHANGE_VIEW';
+export const INCREASE_CLICK_COUNTER = 'INCREASE_CLICK_COUNTER';
 
 /**
  * Traitements
@@ -37,6 +39,11 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         view: action.view,
       }
+    case INCREASE_CLICK_COUNTER:
+      return {
+        ...state,
+        clickCounter: state.clickCounter + 1,
+      }
     default:
       return state;
   }
@@ -55,6 +62,10 @@ export const changeView = (view) => ({
   type: CHANGE_VIEW,
   view
 });
+
+export const increaseClickCounter = () => ({
+  type: INCREASE_CLICK_COUNTER
+})
 
 
 
