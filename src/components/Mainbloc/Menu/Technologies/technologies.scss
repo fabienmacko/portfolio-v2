@@ -1,5 +1,9 @@
 #technologies {
-  .technologies, .tools {
+  .technologies-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .technologies, .tools, .main-tools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -11,9 +15,9 @@
       align-items: center;
       flex-direction: column;
 
-      width: 150px;
+      width: 110px;
       p {
-        font-size: 17px
+        font-size: 15px
       }
     }
     .technologies, .main-tools {
@@ -28,10 +32,11 @@
     display: flex;
     justify-content: space-around;
     align-self: center;
+    flex-direction: column;
 
     img {
       filter: brightness(0) invert(1);
-      max-width: 80px;
+      max-width: 60px;
     }
   }
 }

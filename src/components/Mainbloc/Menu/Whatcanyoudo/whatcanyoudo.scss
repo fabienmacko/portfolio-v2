@@ -12,13 +12,11 @@
       text-align: left;
     }
   }
-  .text{
-    font-size: 1.1rem;
-  }
   .content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-direction: column;
   }
   // #skills border style
 
@@ -32,99 +30,8 @@
     justify-content: space-around;
     text-align: center;
   }
-  .skills:before{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: 2px solid transparent;
-  }
-  .skills:before{
-    animation: animate 1s linear forwards;
-  }
-  @keyframes animate{
-    0%{
-      width: 0;
-      height: 0;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
-    }
-    50%{
-      width: 100%;
-      height: 0;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: white;
-    }
-    100%{
-      width: 100%;
-      height: 100%;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: white;
-    }
-  }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .skills:after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: 2px solid transparent;
-  }
-  .skills:after{
-    animation: animate2 1s linear forwards;
-    animation-delay: 1s;
-  }
-  @keyframes animate2{
-    0%{
-      width: 0;
-      height: 0;
-      border-top-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-    50%{
-      width: 0;
-      height: 100%;
-      border-top-color: transparent;
-      border-bottom-color: white;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-    100%{
-      width: 100%;
-      height: 100%;
-      border-top-color: transparent;
-      border-bottom-color: white;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-  }
+
   // BUTTON STYLING
 
   .btn {

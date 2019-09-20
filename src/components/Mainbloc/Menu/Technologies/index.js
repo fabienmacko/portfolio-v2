@@ -45,15 +45,19 @@ const Technologies = () => {
       </div>
 
       {/* Content */}
-
       <div className="content">
-        <section className="technologies">
+        <div className="text">
+          Using modern, fast and efficents technologies and tools is something essential for me. <br />
+          Here you can find some of the stuff that I use.
+        </div>
+        <div className="technologies-container animated-border">
+        <section className="technologies" data-aos="fade-left" data-aos-delay="500">
           <h2>Technologies</h2>
           <div className="technologies">
             {
               mainTechnologies.map((tech, index) => (
                 <div className="technology" key={"main-tech" + index}>
-                  <i className={tech.icon + " fa-4x"}></i>
+                  <i className={tech.icon + " fa-3x"}></i>
                   <p>{tech.name}</p>
                 </div>
               ))
@@ -68,25 +72,26 @@ const Technologies = () => {
             }
           </div>
         </section>
-        <section className="tools">
+        <section className="tools" data-aos="fade-left" data-aos-delay="1000">
           <h2>Tools</h2>
           <div className="main-tools">
             {
               mainTools.map((tool, index) => (
                 <div className="tool" key={"main-tools" + index}>
-                  <i className={tool.icon + " fa-4x"} alt="Icon"></i>
+                  <i className={tool.icon + " fa-3x"} alt="Icon"></i>
                   <p>{tool.name}</p>
                 </div>
               ))
             }
             <div className="tool">
-              <img src={Postman} alt="Icon"/>
+              <img src={Postman} alt="Icon" />
               <p>Postman</p>
             </div>
           </div>
         </section>
+        </div>
       </div>
-    </div>
+    </div >
   )
 };
 
