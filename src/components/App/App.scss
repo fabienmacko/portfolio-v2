@@ -14,6 +14,9 @@ body {
   .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
     background: $orange !important;
   }
+  .swal2-content {
+    font-weight: bold !important;
+  }
 
   .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {
     background: $orange-opaque;

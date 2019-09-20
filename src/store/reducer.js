@@ -25,11 +25,14 @@ export const INCREASE_CLICK_COUNTER = 'INCREASE_CLICK_COUNTER';
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case OPEN_MENU:
+      console.log("OpenMenu");
+      
       return {
         ...state,
         isMenuOpen: true,
       };
     case CLOSE_MENU:
+        console.log("CloseMenu");
       return {
         ...state,
         isMenuOpen: false,
@@ -38,12 +41,12 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         view: action.view,
-      }
+      };
     case INCREASE_CLICK_COUNTER:
       return {
         ...state,
         clickCounter: state.clickCounter + 1,
-      }
+      };
     default:
       return state;
   }

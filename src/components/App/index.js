@@ -13,7 +13,6 @@ class App extends React.Component {
     AOS.init();
     console.log("Hello! \nI can see that code is important for you. \nYes, as you can see, this website was fully developed in React.js/Redux like a one-page application. \nIf you loved it and want to get in touch, be sure to send me a message on LinkedIn or whatever! ☕")
   }
-
   increaseClickCounter = () => {
     const { increaseClickCounter, clickCounter } = this.props;
     increaseClickCounter();

@@ -10,10 +10,25 @@ class Whatcanyoudo extends React.Component {
     this.state = { showSkills: false };
   }
 
+  escapeHtml = (text) => {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  timeout;
+
   componentDidMount() {
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
       this.setState({ showSkills: true });
-    }, 0);
+    }, 13000);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeout);
   }
 
   Swal = withReactContent(MySwal);
@@ -25,8 +40,7 @@ class Whatcanyoudo extends React.Component {
       title: 'Your public IP',
       confirmButtonText: 'Show my public IP',
       text:
-        'Your public IP will be received ' +
-        'via AJAX request',
+        'Your public IP will be received via AJAX request',
       showLoaderOnConfirm: true,
       preConfirm: () => {
         return fetch(this.ipAPI)
@@ -44,13 +58,13 @@ class Whatcanyoudo extends React.Component {
 
   showClickAlert = () => {
     const { clickCounter } = this.props;
-    const before = clickCounter > 1 ? " times" : " time"
-    const now = (clickCounter + 1) > 1 ? " times" : " time"
+    const before = clickCounter > 1 ? " times" : " time";
+    const now = (clickCounter + 1) > 1 ? " times" : " time";
 
     this.Swal.fire(
       'How many time you clicked?',
-      'Before clicking this button you clicked ' + clickCounter + before + "... But now you clicked " + (clickCounter + 1) + now + "! &#128561",
-      'question'
+      '<p>Before clicking this button you clicked <span style="color: #c57b39">' + clickCounter + before + "</span>... But now you clicked <span style='color: #c57b39'>" + (clickCounter + 1) + now + "</span>! &#128561</p>",
+      'info'
     )
   }
 
@@ -73,8 +87,8 @@ class Whatcanyoudo extends React.Component {
           title: 'Thanks! Your appreciation has been successfully added.',
           html:
             '<div style="display:flex;flex-direction:column;align-items:center;width:60%;margin:0 auto;color: black;border: 2px solid #464646;border-radius:4px;padding: 20px;">' +
-            '<p style="font-weight: bold;width: 100%;">'+ result.value[1] +'</p>' +
-            '<p style="align-self: flex-end;font-size: 1rem;opacity: .7;font-weight: bold;">- '+ result.value[0] +'</p>'+
+            '<p style="width: 100%;">' + this.escapeHtml(result.value[1]) + '</p>' +
+            '<p style="align-self: flex-end;font-size: 1rem;opacity: .7;">- ' + this.escapeHtml(result.value[0]) + '</p>' +
             '</div>',
           confirmButtonText: 'Lovely!'
         })
@@ -107,13 +121,13 @@ class Whatcanyoudo extends React.Component {
                   </div>
                 </div>
                 <div className="skill" data-aos="fade-left" data-aos-delay="600">
-                  <h3>Show you how many times you "clicked" since you are on this website using Redux global data storing</h3>
+                  <h3>Show you how many times you "clicked" since you are on this website using Redux to store globally the state of the application</h3>
                   <div className="btn btn-one" onClick={this.showClickAlert}>
                     <span>No way! How many times?</span>
                   </div>
                 </div>
                 <div className="skill" data-aos="fade-left" data-aos-delay="1000">
-                  <h3>Storing your appreciation of this website using Node.js and Mongodb</h3>
+                  <h3>Storing your appreciation of this website in database using Node.js and MongoDB</h3>
                   <div className="btn btn-one" onClick={this.showAppreciationAlert}>
                     <span>Let me add a comment!</span>
                   </div>

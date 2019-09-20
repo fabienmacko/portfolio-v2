@@ -6,8 +6,11 @@
     min-width: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    h3 {
+      text-align: left;
+    }
   }
   .text{
     font-size: 1.1rem;

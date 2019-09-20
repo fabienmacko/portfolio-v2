@@ -8,8 +8,6 @@ import './header.scss';
 
 class Header extends React.Component {
 
-
-
   componentDidMount() {
     var backgroundElt = document.querySelector(".background");
     var divElt = backgroundElt.querySelector("div");
