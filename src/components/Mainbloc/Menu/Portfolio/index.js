@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
-import Typed from 'react-typed';
+import Polis from '../../../../style/images/polis.png';
+import PortfolioV1 from '../../../../style/images/portfolio-v1.png';
 import './portfolio.scss';
 
 const Portfolio = () => (
@@ -10,14 +12,30 @@ const Portfolio = () => (
     </div>
     <div className="content">
       <div className="text">
-        <Typed
-          strings={['Here you can find my latest creations.']}
-          typeSpeed={25}
-          backSpeed={10} >
-        </Typed>
+        Here you can find my latest creations.
+      </div>
+      <div className="sites-container animated-border">
+        <div className="site" data-aos="fade-left" data-aos-delay="500">
+          <figure class="figure red">
+            <img src={Polis} alt="Polis" />
+            <figcaption>
+              <h2>Polis <span> App</span></h2>
+            </figcaption>
+            <a href="https://www.polis-app.fr/login" />
+          </figure>
+        </div>
+        <div className="site" data-aos="fade-left" data-aos-delay="1000">
+          <figure class="figure green">
+            <img src={PortfolioV1} alt="Portfolio" />
+            <figcaption>
+              <h2>Portoflio <span> V1</span></h2>
+            </figcaption>
+            <a href="#" />
+          </figure>
+        </div>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 

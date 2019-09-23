@@ -19,7 +19,7 @@ class Mainbloc extends React.Component {
 
       if (event.deltaY < 0) {
         closeMenu();
-      } 
+      }
     }, false);
   }
 

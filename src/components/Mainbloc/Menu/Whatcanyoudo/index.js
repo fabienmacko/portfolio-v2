@@ -86,7 +86,7 @@ const Whatcanyoudo = ({ clickCounter }) => {
       </div>
       <div className="content">
         <div className="text">
-          I can work on pretty much everything regarding the differents stacks of Web Development.<br />Front, back, general knowledges and concepts about the web development operation, finnaly, everything is needed to create valuables applications.<br />But I prefer talk less and do more.<br />Let me show you what kind of things I can do.
+          I can work on pretty much everything regarding the differents stacks of Web Development.<br />Front, back, general knowledges and concepts about the web development operation, finnaly, everything is needed to create valuables applications.<br />But I prefer to talk less and do more.<br />Let me show you what kind of things I can do.
         </div>
 
         <div className="skills animated-border" data-aos="zoom-in">
