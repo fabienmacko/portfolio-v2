@@ -86,13 +86,14 @@ figure.figure:before {
   transform: rotate(110deg) translateY(-50%);
 }
 
-figure.figure a {
+figure.figure div {
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: absolute;
   z-index: 1;
+  cursor: pointer;
 }
 
 figure.figure.green {

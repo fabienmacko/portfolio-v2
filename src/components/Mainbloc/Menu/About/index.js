@@ -1,10 +1,10 @@
 import React from 'react';
-import './contact.scss';
+import './about.scss';
 
-const Contact = () => (
-  <div id="contact">
+const About = () => (
+  <div id="about">
     <div className="section-title">
-      <div data-aos="fade-right">Contact</div>
+      <div data-aos="fade-right">About</div>
       <div className="underline" data-aos="flip-right" data-aos-delay="400"></div>
     </div>
     <div className="content">
@@ -13,10 +13,10 @@ const Contact = () => (
       </div>
       <div className="social-medias animated-border"> 
       <a href="https://www.linkedin.com/in/fabienmacko/" className="social-media" data-aos="fade-left" data-aos-delay="500">
-        <i class="fab fa-linkedin fa-6x"></i>
+        <i className="fab fa-linkedin fa-6x"></i>
       </a>
       <a href="https://www.linkedin.com/in/fabienmacko/" className="social-media" data-aos="fade-left" data-aos-delay="1000">
-        <i class="fab fa-github-square fa-6x"></i>
+        <i className="fab fa-github-square fa-6x"></i>
       </a>
       </div>
     </div>
@@ -24,4 +24,4 @@ const Contact = () => (
 );
 
 
-export default Contact;
+export default About;

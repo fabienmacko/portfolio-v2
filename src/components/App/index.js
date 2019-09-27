@@ -72,9 +72,9 @@ class App extends React.Component {
             )
           }}
           />
-          <Route path="/contact" render={() => {
+          <Route path="/about" render={() => {
             openMenu();
-            changeView("Contact");
+            changeView("About");
             return (
               <>
                 <Header />

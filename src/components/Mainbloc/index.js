@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
 import Menu from "../../containers/Menu";
 import Navbar from '../../containers/Navbar';
+import Contact from '../../containers/Contact';
 import './mainbloc.scss';
 
 class Mainbloc extends React.Component {
@@ -39,6 +40,7 @@ class Mainbloc extends React.Component {
         <div className="content-container">
           <Menu />
         </div>
+        <Contact />
       </div>
     );
   }

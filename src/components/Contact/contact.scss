@@ -1,0 +1,37 @@
+@import '../../style/vars.scss';
+#contact {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  .social-medias {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    border-radius: 50%;
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      pointer-events: none;
+      transform: rotate(90deg);
+    }
+  }
+  .contact-element {
+    margin-bottom: 20px;
+    z-index: 20;
+    .social-media {
+      color: $orange;
+    }
+  }
+}

@@ -5,6 +5,7 @@ const initialState = {
   isMenuOpen: false,
   view: "Welcome",
   clickCounter: 0,
+  isContactOpen: false,
 };
 
 /**
@@ -14,6 +15,9 @@ export const OPEN_MENU = 'OPEN_MENU';
 export const CLOSE_MENU = 'CLOSE_MENU';
 export const CHANGE_VIEW = 'CHANGE_VIEW';
 export const INCREASE_CLICK_COUNTER = 'INCREASE_CLICK_COUNTER';
+export const OPEN_CONTACT = 'OPEN_CONTACT';
+export const CLOSE_CONTACT = 'CLOSE_CONTACT';
+
 
 /**
  * Traitements
@@ -44,6 +48,16 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         clickCounter: state.clickCounter + 1,
       };
+    case OPEN_CONTACT:
+      return {
+        ...state,
+        isContactOpen: true,
+      };
+    case CLOSE_CONTACT:
+      return {
+        ...state,
+        isContactOpen: false,
+      };
     default:
       return state;
   }
@@ -62,7 +76,12 @@ export const changeView = (view) => ({
   type: CHANGE_VIEW,
   view
 });
-
+export const openContact = () => ({
+  type: OPEN_CONTACT
+})
+export const closeContact = () => ({
+  type: CLOSE_CONTACT
+})
 export const increaseClickCounter = () => ({
   type: INCREASE_CLICK_COUNTER
 })
