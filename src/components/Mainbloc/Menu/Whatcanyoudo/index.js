@@ -1,5 +1,6 @@
 import React from 'react';
 import MySwal from 'sweetalert2';
+import axios from 'axios';
 import withReactContent from 'sweetalert2-react-content';
 import './whatcanyoudo.scss';
 
@@ -65,6 +66,21 @@ const Whatcanyoudo = ({ clickCounter }) => {
       },
     ]).then((result) => {
       if (result.value) {
+        console.log("fetch");
+        let pseudo = result.value[0];
+        let description = result.value[1];
+        axios.post('http://localhost:3000/posts/insert', {
+          pseudo,
+          description
+        })
+        .then(function (response) {
+          // handle success
+          console.log(response);
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        })
         Swal.fire({
           title: 'Thanks! Your appreciation has been successfully added.',
           html:
