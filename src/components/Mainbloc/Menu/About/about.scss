@@ -1,8 +1,18 @@
 #about {
-  .social-medias {
-    padding: 20px;
-    .social-media {
-      z-index: 2;
+  .content-container {
+    display: flex !important;
+    justify-content: space-around;
+    div:nth-child(1) {
+      width: 45%;
+    }
+    div:nth-child(2) {
+      width: 45%;
+      text-align: center;
+      overflow-y: auto;
+      max-height: 100%;
+      div {
+        width: 100%;
+      }
     }
   }
 }

@@ -8,24 +8,23 @@ const Container = ({ pseudo, description, id }) => {
   return (
     <div key={id} id={id}>
       <div style={{
-        color: "white",
         display: 'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        width:'60%',
-        margin:'0 auto',
-        color: 'black',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '60%',
+        margin: '0 auto',
         border: '2px solid #464646',
-        borderRadius:'4px',
+        borderRadius: '4px',
         padding: '20px',
-        marginTop: '20px',}}>
+        marginTop: '20px',
+      }}>
         <p style={{
           width: "100%",
           color: "white",
         }}>{description}</p>
         <p style={{
           alignSelf: "flex-end",
-          fontSize:"1rem",
+          fontSize: "1rem",
           opacity: ".7",
           color: "white",
         }}>- {pseudo}</p>
@@ -40,18 +39,18 @@ class About extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/posts')
+    axios.get('http://localhost:3001/posts')
       .then((response) => {
-      // handle success
-      console.log(response);
-      this.setState({ posts: response.data });
+        // handle success
+        console.log(response);
+        this.setState({ posts: response.data });
 
-      // document.querySelector("#posts").appendChild("<div>"response"</div>")
-    })
-        .catch((error) => {
-          // handle error
-          console.log(error);
-        })
+        // document.querySelector("#posts").appendChild("<div>"response"</div>")
+      })
+      .catch((error) => {
+        // handle error
+        console.log(error);
+      })
   }
   render() {
     const { posts } = this.state;
@@ -66,10 +65,23 @@ class About extends React.Component {
           <div className="text">
             Know everything about my proffessionnal career, and personnal passions.
           </div>
-          <div>
-            {
-              posts.map(post => <Container pseudo={post.pseudo} description={post.description} id={post._id} />)
-            }
+          <div className="content-container">
+            <div>
+              <h2>Passions</h2>
+              <h3>Ski</h3>
+              <p>I was on skis for the first time at two years old. <br />
+                This passion never lost me, and today I practice alot, especially Freeski.<br />
+                Skiing is my way to empty my mind, make some sport and enjoy the moment, to be more focused and improve my efficency during work time.</p>
+              <h2>Technology</h2>
+              <p>Impossible to escape there being born at this time! Technology is now totaly essential for all of us, and contributing to this new area by developing application is for me a huge priviledge and satisfaction. I also love videogame, especially online PC like LoL, WoW..</p>
+            </div>
+
+            <div>
+              <h2>Testimonials</h2>
+              {
+                posts.map(post => <Container pseudo={post.pseudo} description={post.description} id={post._id} />)
+              }
+            </div>
           </div>
         </div>
       </div>

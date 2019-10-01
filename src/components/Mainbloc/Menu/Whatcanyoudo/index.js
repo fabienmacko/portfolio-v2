@@ -69,18 +69,18 @@ const Whatcanyoudo = ({ clickCounter }) => {
         console.log("fetch");
         let pseudo = result.value[0];
         let description = result.value[1];
-        axios.post('http://localhost:3000/posts/insert', {
+        axios.post('http://localhost:3001/posts/insert', {
           pseudo,
           description
         })
-        .then(function (response) {
-          // handle success
-          console.log(response);
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
+          .then(function (response) {
+            // handle success
+            console.log(response);
+          })
+          .catch(function (error) {
+            // handle error
+            console.log(error);
+          })
         Swal.fire({
           title: 'Thanks! Your appreciation has been successfully added.',
           html:

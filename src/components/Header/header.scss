@@ -25,10 +25,10 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: fit-content;
+    width: max-content;
     color: white;
     text-align: center;
-    height: fit-content;
+    height: max-content;
     hr {
       opacity: 0;
       &.open {

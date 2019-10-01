@@ -24,7 +24,7 @@ class Welcome extends React.Component {
           <div id="animation-relative">
             <p className="speechbubble" data-depth="1.1" style={{
               fontSize: "26px",
-              width: "fit-content",
+              width: "max-content",
               textAlign: "center",
             }}>
               {

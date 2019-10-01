@@ -13,7 +13,10 @@
   transition: 0.7s ease-in-out;
   .content-container {
     height: 80%;
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     display: block;
     color: white;
   }
