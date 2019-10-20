@@ -69,7 +69,7 @@ const Whatcanyoudo = ({ clickCounter }) => {
         console.log("fetch");
         let pseudo = result.value[0];
         let description = result.value[1];
-        axios.post('http://localhost:3001/posts/insert', {
+        axios.post('http://localhost:3001/comments/insert', {
           pseudo,
           description
         })
@@ -119,7 +119,7 @@ const Whatcanyoudo = ({ clickCounter }) => {
             </div>
           </div>
           <div className="skill" data-aos="fade-left" data-aos-delay="1500">
-            <h3>Storing your appreciation of this website in database using Node.js and MongoDB</h3>
+            <h3>Storing your appreciation of this website in database using Node.js and Cloud MongoDB Atlas</h3>
             <div className="btn btn-one" onClick={showAppreciationAlert}>
               <span>Let me add a comment!</span>
             </div>

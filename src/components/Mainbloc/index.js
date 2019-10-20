@@ -29,19 +29,21 @@ class Mainbloc extends React.Component {
     var { pathname } = this.props.location;
 
     return (
-      <div id="mainbloc" className={isMenuOpen ? 'open' : ''}>
-        {
-          !isMenuOpen && pathname !== "/" && <Redirect to="/" />
-        }
-        {
-          isMenuOpen && pathname !== "/menu" && pathname === "/" && <Redirect to="/menu" />
-        }
+      <>
         <Navbar />
-        <div className="content-container">
-          <Menu />
+        <div id="mainbloc" className={isMenuOpen ? 'open' : ''}>
+          {
+            !isMenuOpen && pathname !== "/" && <Redirect to="/" />
+          }
+          {
+            isMenuOpen && pathname !== "/menu" && pathname === "/" && <Redirect to="/menu" />
+          }
+          <div className="content-container">
+            <Menu />
+          </div>
+          <Contact />
         </div>
-        <Contact />
-      </div>
+      </>
     );
   }
 }

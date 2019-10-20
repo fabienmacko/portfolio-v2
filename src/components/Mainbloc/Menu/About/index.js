@@ -39,7 +39,7 @@ class About extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3001/posts')
+    axios.get('http://localhost:3001/comments')
       .then((response) => {
         // handle success
         console.log(response);
@@ -77,7 +77,7 @@ class About extends React.Component {
             </div>
 
             <div>
-              <h2>Testimonials</h2>
+              <h2>Your reviews</h2>
               {
                 posts.map(post => <Container pseudo={post.pseudo} description={post.description} id={post._id} />)
               }
