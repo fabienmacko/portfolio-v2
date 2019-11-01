@@ -52,6 +52,11 @@
   font-size: 2rem;
   width: 100%;
 }
+@media screen and (max-width: 1440px) {
+  .menu-container a {
+    font-size: 1.4rem;
+  }
+}
 .menu-container a:before,
 .menu-container a:after {
   height: 3px;

@@ -3,6 +3,7 @@ import Welcome from '../../../containers/Welcome';
 import Technologies from './Technologies';
 import Whatcanyoudo from '../../../containers/Whatcanyoudo';
 import About from './About';
+import Testimonials from './Testimonials';
 import Portfolio from './Portfolio';
 import './menu.scss';
 
@@ -13,8 +14,8 @@ const Menu = ({ view }) => (
     {view === "About" && <About />}
     {view === "Portfolio" && <Portfolio />}
     {view === "What can you do?" && <Whatcanyoudo />}
+    {view === "Testimonials" && <Testimonials />}
   </div>
 );
-
 
 export default Menu;

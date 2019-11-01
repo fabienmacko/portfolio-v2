@@ -4,7 +4,6 @@ import './contact.scss';
 const Contact = ({ openContact, closeContact, isContactOpen }) => {
 
   const handleContactClick = (e) => {
-    console.log(e.target.classList.contains("open"));
 
     if (e.target.classList.contains("open")) {
       closeContact();

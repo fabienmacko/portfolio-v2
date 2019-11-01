@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './about.scss';
+import './testimonials.scss';
 
 const Container = ({ pseudo, description, id }) => {
 
@@ -31,7 +31,7 @@ const Container = ({ pseudo, description, id }) => {
     </div>
   )
 }
-class About extends React.Component {
+class Testimonials extends React.Component {
   constructor(props) {
     super(props);
     this.state = { posts: [] };
@@ -55,16 +55,16 @@ class About extends React.Component {
     const { posts } = this.state;
 
     return (
-      <div id="about">
+      <div id="testimonials">
         <div className="section-title">
-          <div data-aos="fade-right">About</div>
+          <div data-aos="fade-right">Testimonials</div>
           <div className="underline" data-aos="flip-right" data-aos-delay="400"></div>
         </div>
         <div className="content">
           <div className="text">
-            Know everything about my proffessionnal career, and personnal passions.
+            Comments about websites, linkedin recommendations, everything is here. If you also want to see your comment down below, go on "What you can do" section. <span role="img" aria-label="Clin d'oeil">😉</span>
           </div>
-          <div className="about-container animated-border">
+          <div className="testimonials-container animated-border">
             <div>
               <h2>Passions</h2>
               <h3>Ski</h3>
@@ -89,4 +89,4 @@ class About extends React.Component {
 }
 
 
-export default About;
+export default Testimonials;

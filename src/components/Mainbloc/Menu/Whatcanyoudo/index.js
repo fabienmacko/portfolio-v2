@@ -66,7 +66,6 @@ const Whatcanyoudo = ({ clickCounter }) => {
       },
     ]).then((result) => {
       if (result.value) {
-        console.log("fetch");
         let pseudo = result.value[0];
         let description = result.value[1];
         axios.post('http://localhost:3001/comments/insert', {
