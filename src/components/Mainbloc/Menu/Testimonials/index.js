@@ -19,8 +19,10 @@ const Container = ({ pseudo, description, id }) => {
         marginTop: '20px',
       }}>
         <p style={{
-          width: "100%",
+          maxWidth: "100%",
           color: "white",
+          overflow: "auto",
+          textAlign: "left",
         }}>{description}</p>
         <p style={{
           alignSelf: "flex-end",
@@ -54,7 +56,7 @@ class Testimonials extends React.Component {
         },
         {
           pseudo: "Fabien",
-          description: "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+          description: "loremloremloremloremloremlorem loremloremloreml oremloremloremloremlorem loremloremloremloremloremloremlo remloremloremloremloremlorem lorem loremloremloremloremloreml oremloremloremloremloremlor emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem",
           id: "2130912398123"
         }]
     };
@@ -89,7 +91,6 @@ class Testimonials extends React.Component {
   }
   render() {
     const { posts } = this.state;
-
     return (
       <div id="testimonials">
         <div className="section-title">
