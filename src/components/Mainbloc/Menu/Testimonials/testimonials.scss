@@ -1,20 +1,18 @@
-#about {
-  .about-container {
-    p, h3 {
-      text-align: left;
-    }
-    display: flex !important;
-    justify-content: space-around;
-    div:nth-child(1) {
-      width: 45%;
-    }
-    div:nth-child(2) {
-      width: 45%;
-      text-align: center;
-      overflow-y: auto;
-      max-height: 100%;
-      div {
+#testimonials {
+  .testimonials-container {
+    .carousel {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      .comment {
+        transition: .6s;
+        position: absolute;
+        opacity: 0;
+        height: 100%;
         width: 100%;
+        &.open {
+          opacity: 1;
+        }
       }
     }
   }

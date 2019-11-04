@@ -1,11 +1,12 @@
 import React from 'react';
 import axios from 'axios';
 import './testimonials.scss';
+import { setInterval } from 'core-js';
 
 const Container = ({ pseudo, description, id }) => {
 
   return (
-    <div key={id} id={id}>
+    <div className="comment" key={id} id={id}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -34,7 +35,29 @@ const Container = ({ pseudo, description, id }) => {
 class Testimonials extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { posts: [] };
+    this.state = {
+      posts: [
+        {
+          pseudo: "Fabien",
+          description: "Coucou test comment",
+          id: "2130912398123"
+        },
+        {
+          pseudo: "Fabien",
+          description: "Coucou test comment 2",
+          id: "2130912398123"
+        },
+        {
+          pseudo: "Fabien",
+          description: "Coucou test comment 3",
+          id: "2130912398123"
+        },
+        {
+          pseudo: "Fabien",
+          description: "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+          id: "2130912398123"
+        }]
+    };
   }
 
   componentDidMount() {
@@ -42,14 +65,27 @@ class Testimonials extends React.Component {
       .then((response) => {
         // handle success
         console.log(response);
-        this.setState({ posts: response.data });
+        // this.setState({ posts: response.data });
 
-        // document.querySelector("#posts").appendChild("<div>"response"</div>")
       })
       .catch((error) => {
         // handle error
         console.log(error);
       })
+    let currentComment = 1;
+    document.querySelectorAll(".comment")[0].classList.add("open");
+      setInterval(() => {
+        document.querySelectorAll(".comment").forEach((comment) => {
+          comment.classList.remove("open");
+        });
+        console.log(document.querySelectorAll(".comment")[currentComment]);
+
+        document.querySelectorAll(".comment")[currentComment].classList.add("open");
+        currentComment++;
+        if (currentComment === this.state.posts.length) {
+          currentComment = 0;
+        }
+      }, 3000);
   }
   render() {
     const { posts } = this.state;
@@ -65,13 +101,11 @@ class Testimonials extends React.Component {
             Comments about websites, linkedin recommendations, everything is here. If you also want to see your comment down below, go on "What you can do" section. <span role="img" aria-label="Clin d'oeil">😉</span>
           </div>
           <div className="testimonials-container animated-border">
-            <div>
-              <h2>Testimonials</h2>
-              <div className="carousel">
+            <h2>Testimonials</h2>
+            <div className="carousel">
               {
                 posts.map(post => <Container pseudo={post.pseudo} description={post.description} id={post._id} />)
               }
-              </div>
             </div>
           </div>
         </div>
