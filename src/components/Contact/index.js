@@ -41,7 +41,8 @@ const Contact = ({ openContact, closeContact, isContactOpen }) => {
         )
       }
 
-      <div className={isContactOpen ? "button open" : "button"} onClick={handleContactClick}>
+      <div id="contact-button" className={isContactOpen ? "button open" : "button"} onClick={handleContactClick}>
+        <i className="fas fa-times fa-2x"></i>
         <i className="fas fa-ellipsis-v fa-2x"></i>
       </div>
     </div>
