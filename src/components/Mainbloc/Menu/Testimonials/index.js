@@ -1,12 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import './testimonials.scss';
-import { setInterval } from 'core-js';
 
-const Container = ({ pseudo, description, id }) => {
+const Container = ({ pseudo, description, id, index }) => {
 
   return (
-    <div className="comment" key={id} id={id}>
+    <div className={index === 0 ? "comment open" : "comment"} key={id} id={id}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -38,56 +37,40 @@ class Testimonials extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [
-        {
-          pseudo: "Fabien",
-          description: "Coucou test comment",
-          id: "2130912398123"
-        },
-        {
-          pseudo: "Fabien",
-          description: "Coucou test comment 2",
-          id: "2130912398123"
-        },
-        {
-          pseudo: "Fabien",
-          description: "Coucou test comment 3",
-          id: "2130912398123"
-        },
-        {
-          pseudo: "Fabien",
-          description: "loremloremloremloremloremlorem loremloremloreml oremloremloremloremlorem loremloremloremloremloremloremlo remloremloremloremloremlorem lorem loremloremloremloremloreml oremloremloremloremloremlor emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem emloremloremloremlorem",
-          id: "2130912398123"
-        }]
+      posts: [],
     };
   }
 
   componentDidMount() {
+    var i2 = 1;
+    this.setState({carousel: setInterval(() => {
+      var comments = document.querySelectorAll(".comment");
+      for (let i = 0; i < comments.length; i++) {
+        const comment = comments[i];
+        comment.classList.remove("open");
+      }
+      comments[i2].classList.add("open");
+      if (i2 === comments.length - 1) {
+        i2=0;
+      } else {
+        i2++;
+      }
+      }, 3000)});
     axios.get('http://localhost:3001/comments')
       .then((response) => {
         // handle success
         console.log(response);
-        // this.setState({ posts: response.data });
+        this.setState({ posts: response.data });
 
       })
       .catch((error) => {
         // handle error
         console.log(error);
       })
-    let currentComment = 1;
-    document.querySelectorAll(".comment")[0].classList.add("open");
-      setInterval(() => {
-        document.querySelectorAll(".comment").forEach((comment) => {
-          comment.classList.remove("open");
-        });
-        console.log(document.querySelectorAll(".comment")[currentComment]);
-
-        document.querySelectorAll(".comment")[currentComment].classList.add("open");
-        currentComment++;
-        if (currentComment === this.state.posts.length) {
-          currentComment = 0;
-        }
-      }, 3000);
+      
+  }
+  componentWillUnmount(){
+    clearInterval(this.state.carousel);
   }
   render() {
     const { posts } = this.state;
@@ -105,7 +88,7 @@ class Testimonials extends React.Component {
             <h2>Testimonials</h2>
             <div className="carousel">
               {
-                posts.map(post => <Container pseudo={post.pseudo} description={post.description} id={post._id} />)
+                posts.map((post, index) => <Container index={index} pseudo={post.pseudo} description={post.description} id={post._id} />)
               }
             </div>
           </div>
