@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  #contact-button {
+    transition: .4s;
+    position: relative;
+  }
   .social-medias {
     display: flex;
     flex-direction: column;
@@ -22,9 +26,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &.open > svg:nth-child(1) {
+      opacity: 1;
+    }
+    &.open > svg:nth-child(2) {
+      opacity: 0;
+    }
+    & > svg:nth-child(2) {
+      opacity: 1;
+    }
     svg {
       pointer-events: none;
       transform: rotate(90deg);
+      transition: .4s;
+      opacity: 0;
+      position: absolute;
     }
   }
   .contact-element {
