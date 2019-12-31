@@ -37,20 +37,6 @@ class About extends React.Component {
     this.state = { posts: [] };
   }
 
-  componentDidMount() {
-    axios.get('http://localhost:3001/comments')
-      .then((response) => {
-        // handle success
-        console.log(response);
-        this.setState({ posts: response.data });
-
-        // document.querySelector("#posts").appendChild("<div>"response"</div>")
-      })
-      .catch((error) => {
-        // handle error
-        console.log(error);
-      })
-  }
   render() {
     const { posts } = this.state;
 
