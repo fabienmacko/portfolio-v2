@@ -68,7 +68,7 @@ const Whatcanyoudo = ({ clickCounter }) => {
       if (result.value) {
         let pseudo = result.value[0];
         let description = result.value[1];
-        axios.post('http://localhost:3001/comments/insert', {
+        axios.post('https://fabienmackowiak.com:3000/comments/insert', {
           pseudo,
           description
         })
