@@ -18,12 +18,14 @@ const Container = ({ pseudo, description, id }) => {
         padding: '20px',
         marginTop: '20px',
       }}>
+        
         <p style={{
           maxWidth: "100%",
           color: "white",
           overflow: "auto",
           textAlign: "left",
         }}>{description}</p>
+
         <p style={{
           alignSelf: "flex-end",
           fontSize: "1rem",
