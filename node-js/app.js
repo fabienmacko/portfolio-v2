@@ -1,5 +1,5 @@
 const express = require("express");
-
+const http = require("http");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -31,7 +31,7 @@ app.use(function (req, res, next) {
 
 app.use(bodyParser.json());
 app.use("/comments", commentsRoute);
-
+const server = http.createServer(app);
 
 // ROUTES
 
@@ -54,5 +54,8 @@ db.once('open', function () {
 db.on('error', err => {
   throw 'failed connect to MongoDB';
 });
+
 // How to listen on the server
-app.listen(3001);
+server.listen(3001, () => {
+  console.log('Listen PORT', 3001);
+});
