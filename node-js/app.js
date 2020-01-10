@@ -35,7 +35,7 @@ app.use("/comments", commentsRoute);
 
 // ROUTES
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("We are on home");
 })
 
