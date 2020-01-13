@@ -56,6 +56,6 @@ db.on('error', err => {
 });
 
 // How to listen on the server
-server.listen(3001, () => {
-  console.log('Listen PORT', 3001);
+server.listen(80, () => {
+  console.log('Listen PORT', 80);
 });
