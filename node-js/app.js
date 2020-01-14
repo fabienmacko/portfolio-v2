@@ -35,7 +35,7 @@ const server = http.createServer(app);
 
 // ROUTES
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.send("We are on home");
 })
 
@@ -56,6 +56,6 @@ db.on('error', err => {
 });
 
 // How to listen on the server
-server.listen(80, () => {
-  console.log('Listen PORT', 80);
+server.listen(8080, () => {
+  console.log('Listen PORT', 8080);
 });
