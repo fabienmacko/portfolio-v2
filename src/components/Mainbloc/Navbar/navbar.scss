@@ -1,5 +1,16 @@
 @import'../../../style/vars.scss';
 
+.hamburger {
+  position: fixed;
+  outline: none;
+  top: 10px;
+  left: 10px;
+  z-index: 4 !important;
+  .hamburger.is-active,.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: $orange !important;
+  }
+}
+
 #navbar {
   background-color: #ffffff;
   height: 100vh;
