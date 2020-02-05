@@ -4,6 +4,39 @@
 
 @media screen and (max-width: 1000px) {
   #app {
+    .animated-border:before, .animated-border:after {
+      border: 1px solid transparent;
+    }
+
+    .section-title {
+      align-items: center;
+      margin: 0 auto;
+    }
+    .btn {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      span {
+        font-size: .7rem;
+      }
+    }
+
+    .skills {
+      padding: 10px;
+      margin-top: 30px;
+      .skill {
+        font-size: .6rem;
+        display: flex;
+        min-width: 250px;
+      }
+    }
+
+    .content {
+      width: 90%;
+      .text {
+        font-size: .7rem;
+      }
+    }
 
     .mousey {
       display: none;
@@ -73,7 +106,7 @@
       left: 0;
       top: -110%;
       z-index: 3;
-      transition: 0.5s ease-out;
+      transition: 0.4s ease-out;
 
       &.open {
         top: 0;
