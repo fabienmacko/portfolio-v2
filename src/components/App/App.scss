@@ -3,7 +3,9 @@
 // Media Queries
 
 @media screen and (max-width: 1000px) {
+
   #app {
+    overflow-y: hidden;
     .animated-border:before, .animated-border:after {
       border: 1px solid transparent;
     }
