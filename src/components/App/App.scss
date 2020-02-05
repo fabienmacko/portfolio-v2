@@ -9,6 +9,10 @@
       border: 1px solid transparent;
     }
 
+    .about-container:after, .about-container:before {
+      border: none;
+    }
+
     .section-title {
       align-items: center;
       margin: 0 auto;
@@ -20,6 +24,11 @@
       span {
         font-size: .7rem;
       }
+    }
+
+    #technologies .technologies-container {
+      justify-content: center;
+      align-items: center;
     }
 
     #technologies .content img {
@@ -55,11 +64,13 @@
         min-width: 250px;
 
         figure {
+          min-width: 150px;
           max-height: none;
           max-width: none;
-          width: auto;
+          width: 150px;
+          margin: 10px auto;
           &:before {
-            top: -15px;
+            top: -11px;
           }
         }
       }
@@ -149,6 +160,11 @@
       }
     }
   }
+  
+}
+
+.swal2-styled.swal2-confirm:focus {
+  outline:0 !important;
 }
 
 body {
@@ -220,6 +236,7 @@ body {
     animation: animate2 1s linear forwards;
     animation-delay: 1s;
   }
+
   @keyframes animate2 {
     0% {
       width: 0;
