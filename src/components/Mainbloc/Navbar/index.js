@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../../style/images/fm-logo.jpg';
 import './navbar.scss';
 
-const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
+const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu, openMobileMenu, isMobileMenuOpen }) => {
 
   const changeActiveView = e => {
     var elements = document.querySelectorAll(".menu-item");

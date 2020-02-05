@@ -5,6 +5,10 @@
 @media screen and (max-width: 1000px) {
   #app {
 
+    .hamburger {
+      display: block;
+    }
+
     .speechbubble {
       // New CSS 
 
@@ -62,7 +66,7 @@
       width: 100%;
       position: absolute;
       left: 0;
-      top: -100%;
+      top: -110%;
       z-index: 3;
       transition: 1.3s ease-in-out;
 
