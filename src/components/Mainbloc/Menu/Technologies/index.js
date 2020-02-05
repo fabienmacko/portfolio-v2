@@ -50,8 +50,8 @@ const Technologies = () => {
           Using modern, fast and efficents technologies and tools is something essential for me. <br />
           Here you can find some of the stuff that I use.
         </div>
-        <div className="technologies-container animated-border">
-        <section className="technologies" data-aos="fade-left" data-aos-delay="500">
+        <div className="container technologies-container animated-border">
+        <section className="item technologies" data-aos="fade-left" data-aos-delay="500">
           <h2>Technologies</h2>
           <div className="technologies">
             {
@@ -72,7 +72,7 @@ const Technologies = () => {
             }
           </div>
         </section>
-        <section className="tools" data-aos="fade-left" data-aos-delay="1000">
+        <section className="item tools" data-aos="fade-left" data-aos-delay="1000">
           <h2>Tools</h2>
           <div className="main-tools">
             {

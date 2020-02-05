@@ -13,8 +13,8 @@ const About = () => {
         <div className="text">
           Know everything about my proffessionnal career, and personnal passions.
           </div>
-        <div className="about-container animated-border">
-          <div data-aos="fade-left" data-aos-delay="500">
+        <div className="container about-container animated-border">
+          <div className="item" data-aos="fade-left" data-aos-delay="500">
             <h2>Professionnal career</h2>
             <h3>Training</h3>
             <p>Let's talk about O'clock.
@@ -24,7 +24,7 @@ const About = () => {
             <p>I am currently working at MSC (Mediteranean Shipping Company), a world leader in global container shipping industry, at Geneva, Switzerland. I am working on Servicenow, a software solution for huge business, allowing Ticket management, development of custom applications, and my main job is to use my Javascript skills to provide technological solutions by creating on-demand algorithms and web applications for the collaborators and customers.</p>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="1000">
+          <div className="item" data-aos="fade-left" data-aos-delay="1000">
             <h2>Passions</h2>
             <h3>Ski</h3>
             <p>I was on skis for the first time at two years old. <br />

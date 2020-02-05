@@ -87,9 +87,9 @@ class Testimonials extends React.Component {
           <div className="text">
             Comments about websites, linkedin recommendations, everything is here. If you also want to see your comment down below, go on "What you can do" section. <span role="img" aria-label="Clin d'oeil">😉</span>
           </div>
-          <div className="testimonials-container animated-border">
+          <div className="container testimonials-container animated-border">
             <h2>Testimonials</h2>
-            <div className="carousel">
+            <div className="item carousel">
               {
                 posts.map((post, index) => <Container index={index} pseudo={post.pseudo} description={post.description} id={post._id} />)
               }

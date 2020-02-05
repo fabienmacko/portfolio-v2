@@ -5,7 +5,6 @@
 @media screen and (max-width: 1000px) {
   html, body {margin: 0; height: 100%; overflow: hidden}
   #app {
-    overflow-y: hidden;
     .animated-border:before, .animated-border:after {
       border: 1px solid transparent;
     }
@@ -23,18 +22,53 @@
       }
     }
 
-    .skills {
-      padding: 10px;
-      margin-top: 30px;
-      .skill {
-        font-size: .6rem;
-        display: flex;
-        min-width: 250px;
+    #technologies .content img {
+      max-width: 40px;
+    }
+
+    .about-container {
+      width: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 400px;
+      .item {
+        font-size: .8rem;
+      }
+      h2, h3 {
+        margin:0;
       }
     }
 
+    .container {
+      padding: 10px;
+      margin-top: 30px;
+      .technology, .tool {
+        width: 40px;
+        padding: 2px;
+        font-size: .6rem;
+        p {
+          font-size: .6rem;
+        }
+      }
+      .item {
+        font-size: .6rem;
+        min-width: 250px;
+
+        figure {
+          max-height: none;
+          max-width: none;
+          width: auto;
+          &:before {
+            top: -15px;
+          }
+        }
+      }
+    }
+
+
     .content {
       width: 90%;
+      margin-top: 20px;
       .text {
         font-size: .7rem;
       }

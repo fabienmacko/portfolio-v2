@@ -45,8 +45,8 @@ const Portfolio = () => {
         <div className="text">
           Here you can find my latest creations.
         </div>
-        <div className="sites-container animated-border">
-          <div className="site" data-aos="fade-left" data-aos-delay="500" onClick={handlePolisClick}>
+        <div className="container sites-container animated-border">
+          <div className="item site" data-aos="fade-left" data-aos-delay="500" onClick={handlePolisClick}>
             <figure className="figure red">
               <img src={Polis} alt="Polis" />
               <figcaption>
@@ -55,7 +55,7 @@ const Portfolio = () => {
               <div></div>
             </figure>
           </div>
-          <div className="site" data-aos="fade-left" data-aos-delay="1000" onClick={handlePortfolioClick}>
+          <div className="item site" data-aos="fade-left" data-aos-delay="1000" onClick={handlePortfolioClick}>
             <figure className="figure green">
               <img src={PortfolioV1} alt="Portfolio" />
               <figcaption>

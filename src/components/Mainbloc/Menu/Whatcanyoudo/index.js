@@ -104,20 +104,20 @@ const Whatcanyoudo = ({ clickCounter }) => {
           I can work on pretty much everything regarding the differents stacks of Web Development.<br />Front, back, general knowledges and concepts about the web development operation, finnaly, everything is needed to create valuables applications.<br />But I prefer to talk less and do more.<br />Let me show you what kind of things I can do.
         </div>
 
-        <div className="skills animated-border" data-aos="zoom-in">
-          <div className="skill" data-aos="fade-left" data-aos-delay="500">
+        <div className="container skills animated-border" data-aos="zoom-in">
+          <div className="item skill" data-aos="fade-left" data-aos-delay="500">
             <h3>Get your IP Address with an API call using AJAX technology</h3>
             <div className="btn btn-one" onClick={showApiAlert}>
               <span>Oh really? Show me!</span>
             </div>
           </div>
-          <div className="skill" data-aos="fade-left" data-aos-delay="1000">
+          <div className="item skill" data-aos="fade-left" data-aos-delay="1000">
             <h3>Show you how many times you "clicked" since you are on this website using Redux to store globally the state of the application</h3>
             <div className="btn btn-one" onClick={showClickAlert}>
               <span>No way! How many times?</span>
             </div>
           </div>
-          <div className="skill" data-aos="fade-left" data-aos-delay="1500">
+          <div className="item skill" data-aos="fade-left" data-aos-delay="1500">
             <h3>Storing your appreciation of this website in database using Node.js and Cloud MongoDB Atlas</h3>
             <div className="btn btn-one" onClick={showAppreciationAlert}>
               <span>Let me add a comment!</span>
