@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
 import Menu from "../../containers/Menu";
 import Navbar from '../../containers/Navbar';
+import NavbarMobile from '../../containers/NavbarMobile';
 import Contact from '../../containers/Contact';
 import './mainbloc.scss';
 
@@ -32,7 +33,12 @@ class Mainbloc extends React.Component {
 
     return (
       <>
-        <Navbar />
+      {
+        window.innerWidth <= 1000 && <NavbarMobile />
+      }
+      {
+        window.innerWidth > 1000 && <Navbar />
+      }
         <div id="mainbloc" className={isMenuOpen ? 'open' : ''}>
           {
             !isMenuOpen && pathname !== "/" && <Redirect to="/" />

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../style/images/fm-logo.jpg';
-import './navbar.scss';
+import './navbarmobile.scss';
 
-const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
+const NavbarMobile = ({ isMenuOpen, closeMenu, changeView, view, openMenu, isMobileMenuOpen, openMobileMenu, closeMobileMenu }) => {
 
   const changeActiveView = e => {
+
+    closeMobileMenu()
+
     var elements = document.querySelectorAll(".menu-item");
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
@@ -15,27 +18,36 @@ const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
     e.target.closest(".menu-item").classList.add("current");
   }
 
+  const setDefaultView = () => {
+    console.log("Close menu");
+    
+    setTimeout(() => {
+      closeMenu();
+      closeMobileMenu();
+    }, 0);
+  }
+
   const toggleMenu = function(e) {
     
-    if (isMenuOpen) {
-      setTimeout(() => {
-        closeMenu();
-      }, 0);
+    if (isMobileMenuOpen) {
+        closeMobileMenu();
+
     } else {
+      openMobileMenu();
       openMenu();
     }
   }
 
   return (
     <>
-      <button onClick={toggleMenu} class={isMenuOpen ? "hamburger hamburger--slider is-active" : "hamburger hamburger--slider"} type="button">
+      <button onClick={toggleMenu} class={isMobileMenuOpen ? "hamburger hamburger--slider is-active" : "hamburger hamburger--slider"} type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <div id="navbar" className={isMenuOpen ? 'open' : ''}>
+      <div id="navbar-mobile" className={isMobileMenuOpen ? 'open' : ''}>
         <ul className="menu-container">
-          <li className="menu-item" onClick={closeMenu}><img id="nav-logo" src={Logo} alt="Fabien Mackowiak logo" /></li>
+          <li className="menu-item" onClick={setDefaultView}><img id="nav-logo" src={Logo} alt="Fabien Mackowiak logo" /></li>
           <li className={view === "Welcome" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/menu`}>Welcome</Link></li>
           <li className={view === "What can you do?" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/whatcanyoudo`}>What can you do?</Link></li>
           <li className={view === "Technologies" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/technologies`}>Technologies</Link></li>
@@ -48,4 +60,4 @@ const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
   );
 }
 
-export default Navbar;
+export default NavbarMobile;

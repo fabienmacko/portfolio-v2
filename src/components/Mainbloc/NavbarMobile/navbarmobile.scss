@@ -1,0 +1,104 @@
+@import'../../../style/vars.scss';
+
+.hamburger {
+  position: fixed;
+  display: none;
+  outline: none;
+  top: 10px;
+  left: 10px;
+  z-index: 4 !important;
+  .hamburger.is-active,.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: $orange !important;
+  }
+}
+
+#navbar-mobile {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 20%;
+  position: absolute;
+  left: -20%;
+  top: 0;
+  z-index: 3;
+  transition: left 1.3s ease-in-out;
+
+  &.open {
+    left: 0;
+  }
+
+  // Menu style 
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.menu-container {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0;
+}
+.menu-container * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-container li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.menu-container a {
+  padding: 0.3em 0;
+  color: #a8a8a8;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 1440px) {
+  .menu-container a {
+    font-size: 1.4rem;
+  }
+}
+.menu-container a:before,
+.menu-container a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: $orange;
+  width: 0;
+}
+.menu-container a:before {
+  top: 0;
+  left: 0;
+}
+.menu-container a:after {
+  bottom: 0;
+  right: 0;
+}
+#nav-logo:hover {
+  cursor: pointer;
+}
+.menu-container a:hover,
+.menu-container .current a {
+  color: rgb(70, 70, 70);
+}
+.menu-container a:hover:before,
+.menu-container .current a:before,
+.menu-container a:hover:after,
+.menu-container .current a:after {
+  width: 100%;
+}
+
+}

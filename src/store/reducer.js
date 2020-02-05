@@ -19,6 +19,7 @@ export const INCREASE_CLICK_COUNTER = 'INCREASE_CLICK_COUNTER';
 export const OPEN_CONTACT = 'OPEN_CONTACT';
 export const CLOSE_CONTACT = 'CLOSE_CONTACT';
 export const OPEN_MOBILE_MENU = 'OPEN_MOBILE_MENU';
+export const CLOSE_MOBILE_MENU = 'CLOSE_MOBILE_MENU';
 
 
 /**
@@ -44,6 +45,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         isMobileMenuOpen: true,
+      };
+    case CLOSE_MOBILE_MENU:
+      return {
+        ...state,
+        isMobileMenuOpen: false,
       };
     case CHANGE_VIEW:
       return {
@@ -76,6 +82,9 @@ const reducer = (state = initialState, action = {}) => {
 
 export const openMobileMenu = () => ({
   type: OPEN_MOBILE_MENU,
+});
+export const closeMobileMenu = () => ({
+  type: CLOSE_MOBILE_MENU,
 });
 export const openMenu = () => ({
   type: OPEN_MENU,
