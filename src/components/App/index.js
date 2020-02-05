@@ -10,6 +10,12 @@ import './App.scss';
 class App extends React.Component {
 
   componentDidMount() {
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
     AOS.init();
     console.log("Hello! \nI can see that code is important for you. \nYes, as you can see, this website was fully developed in React.js/Redux like a one-page application. \nIf you loved it and want to get in touch, be sure to send me a message on LinkedIn or whatever! ☕");
   }
