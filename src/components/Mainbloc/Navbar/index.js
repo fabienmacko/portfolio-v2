@@ -14,7 +14,13 @@ const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
     changeView(e.target.textContent)
     e.target.closest(".menu-item").classList.add("current");
   }
+  const setDefaultView = () => {
+    console.log("Close menu");
 
+    setTimeout(() => {
+      closeMenu();
+    }, 0);
+  }
   const toggleMenu = function(e) {
     
     if (isMenuOpen) {
@@ -35,7 +41,7 @@ const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
       </button>
       <div id="navbar" className={isMenuOpen ? 'open' : ''}>
         <ul className="menu-container">
-          <li className="menu-item" onClick={closeMenu}><img id="nav-logo" src={Logo} alt="Fabien Mackowiak logo" /></li>
+          <li className="menu-item" onClick={setDefaultView}><img id="nav-logo" src={Logo} alt="Fabien Mackowiak logo" /></li>
           <li className={view === "Welcome" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/menu`}>Welcome</Link></li>
           <li className={view === "What can you do?" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/whatcanyoudo`}>What can you do?</Link></li>
           <li className={view === "Technologies" ? "menu-item current" : "menu-item"} onClick={changeActiveView}><Link to={`/technologies`}>Technologies</Link></li>

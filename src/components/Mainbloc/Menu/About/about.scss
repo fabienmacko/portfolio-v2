@@ -1,14 +1,18 @@
 #about {
   .about-container {
+    &:after {
+      content: none;
+    }
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 550px;
     p, h3 {
       text-align: left;
     }
     display: flex !important;
     justify-content: space-around;
-    div:nth-child(1) {
-      width: 45%;
-    }
-    div:nth-child(2) {
+
+    div {
       width: 45%;
       text-align: center;
       overflow-y: auto;

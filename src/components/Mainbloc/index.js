@@ -9,7 +9,7 @@ import './mainbloc.scss';
 class Mainbloc extends React.Component {
 
   componentDidMount() {
-    var { openMenu, closeMenu, changeView } = this.props;
+    var { openMenu, changeView } = this.props;
 
     document.addEventListener('wheel', function (event) {
       if (!document.querySelector("#mainbloc").classList.contains("open")) {
@@ -17,12 +17,6 @@ class Mainbloc extends React.Component {
           changeView("Welcome");
           openMenu();
         }
-      }
-
-      if (event.deltaY < 0) {
-        console.log("I close the menu from scroll");
-        
-        closeMenu();
       }
     }, false);
   }

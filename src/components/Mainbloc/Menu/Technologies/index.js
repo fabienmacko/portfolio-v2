@@ -51,7 +51,7 @@ const Technologies = () => {
           Here you can find some of the stuff that I use.
         </div>
         <div className="container technologies-container animated-border">
-        <section className="item technologies" data-aos="fade-left" data-aos-delay="500">
+        <section className="item technologies" data-aos="fade-left" data-aos-delay="200">
           <h2>Technologies</h2>
           <div className="technologies">
             {
@@ -72,7 +72,7 @@ const Technologies = () => {
             }
           </div>
         </section>
-        <section className="item tools" data-aos="fade-left" data-aos-delay="1000">
+        <section className="item tools" data-aos="fade-left" data-aos-delay="400">
           <h2>Tools</h2>
           <div className="main-tools">
             {

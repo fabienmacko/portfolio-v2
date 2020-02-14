@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../../style/images/fm-logo.jpg';
 import './navbarmobile.scss';
 
-const NavbarMobile = ({ isMenuOpen, closeMenu, changeView, view, openMenu, isMobileMenuOpen, openMobileMenu, closeMobileMenu }) => {
+const NavbarMobile = ({ closeMenu, changeView, view, openMenu, isMobileMenuOpen, openMobileMenu, closeMobileMenu }) => {
 
   const changeActiveView = e => {
 
@@ -20,17 +20,17 @@ const NavbarMobile = ({ isMenuOpen, closeMenu, changeView, view, openMenu, isMob
 
   const setDefaultView = () => {
     console.log("Close menu");
-    
+
     setTimeout(() => {
       closeMenu();
       closeMobileMenu();
     }, 0);
   }
 
-  const toggleMenu = function(e) {
-    
+  const toggleMenu = function (e) {
+
     if (isMobileMenuOpen) {
-        closeMobileMenu();
+      closeMobileMenu();
 
     } else {
       openMobileMenu();

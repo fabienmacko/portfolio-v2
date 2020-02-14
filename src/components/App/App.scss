@@ -29,6 +29,8 @@
     #technologies .technologies-container {
       justify-content: center;
       align-items: center;
+      padding: 0;
+      margin-top: 20px;
     }
 
     #technologies .content img {
@@ -39,7 +41,7 @@
       width: auto;
       overflow-y: auto;
       overflow-x: hidden;
-      height: 400px;
+      height: 320px;
       .item {
         font-size: .8rem;
       }
@@ -264,7 +266,7 @@ body {
     }
   }
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   .swal2-styled {
     background-color: $orange !important;
