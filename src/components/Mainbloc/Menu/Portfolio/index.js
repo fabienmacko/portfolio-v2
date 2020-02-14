@@ -16,7 +16,7 @@ const Portfolio = () => {
       '<div><img style="width: 100%;" src="'+Polis+'"></div>' +
       '<div><i>APPLICATION OF PARTICIPATORY MAPPING OF ARCHITECTURAL DATA<i><br><br>The version 1.0 of Polis you are currently browsing was developed in 3 weeks.<br>This project validates a 6-month training course followed by 4 aspiring developers in the virtual classrooms of Oclock. Besides the intense pleasure of creating "from scratch" a web project, this web app also serves to support the passage of the Professional title of web developer.</div>' +
       '</div>' +
-      '<a className="swal2-confirm swal2-styled" style="text-decoration: none;" href="https://www.polis-app.fr">View this app</a>',
+      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;" href="https://www.polis-app.fr">View this app</a>',
       animation: true,
       showConfirmButton: false,
     })
@@ -30,7 +30,7 @@ const Portfolio = () => {
       '<div><img style="width: 100%;" src="'+PortfolioV1+'"></div>' +
       '<div>This is the first portfolio that I created with basic HTML/CSS/JS stack. Simple, but efficent.</div>' +
       '</div>' +
-      '<a className="swal2-confirm swal2-styled" style="text-decoration: none;" href="#">View this website</a>',
+      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;" href="#">View this website</a>',
       animation: true,
       showConfirmButton: false,
     })
