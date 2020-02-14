@@ -10,7 +10,7 @@ import './App.scss';
 class App extends React.Component {
 
 
-  componentDidMount() {
+  componentDidMount() {    
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     // We listen to the resize event

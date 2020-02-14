@@ -59,7 +59,7 @@ class Testimonials extends React.Component {
       }
       }, 3000)});
       
-    axios.get('https://fabienmackowiak.com:3000/comments')
+    axios.get(process.env.REACT_APP_API_URL+'/comments')
       .then((response) => {
         // handle success
         console.log(response);

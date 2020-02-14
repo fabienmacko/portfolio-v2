@@ -30,7 +30,7 @@ class Whatcanyoudo extends React.Component {
 
   Swal = withReactContent(MySwal);
 
-  ipAPI = 'https://api.ipify.org?format=json';
+  ipAPI = process.env.REACT_APP_API_URL;
 
   showApiAlert = () => {
     this.Swal.queue([{
@@ -82,7 +82,7 @@ class Whatcanyoudo extends React.Component {
       if (result.value) {
         let pseudo = result.value[0];
         let description = result.value[1];
-        axios.post('https://fabienmackowiak.com:3000/comments/insert', {
+        axios.post(this.ipAPI+'/comments/insert', {
           pseudo,
           description
         })

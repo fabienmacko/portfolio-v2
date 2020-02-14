@@ -5,6 +5,18 @@
 @media screen and (max-width: 1000px) {
   html, body {margin: 0; height: 100%; overflow: hidden}
   #app {
+
+    #testimonials .testimonials-container {
+      height: 300px;
+      .comment div p {
+        &:nth-child(1) {
+          font-size: 1.5em;
+        }
+        &:nth-child(2) {
+          font-size: 1.2em !important;
+        }
+      }
+  }
     .animated-border:before, .animated-border:after {
       border: 1px solid transparent;
     }
