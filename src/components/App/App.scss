@@ -165,10 +165,6 @@
   
 }
 
-.swal2-styled.swal2-confirm:focus {
-  outline:0 !important;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -270,6 +266,7 @@ body {
   }
   .swal2-styled {
     background-color: $orange !important;
+    box-shadow: none !important;
   }
 
   .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
