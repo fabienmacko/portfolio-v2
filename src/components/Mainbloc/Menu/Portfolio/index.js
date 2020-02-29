@@ -31,7 +31,7 @@ const Portfolio = () => {
       '<div><img style="width: 100%;" src="'+PortfolioV1+'"></div>' +
       '<div>This is the first portfolio that I created with basic HTML/CSS/JS stack. Simple, but efficent.</div>' +
       '</div>' +
-      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;font-weight:bold;" href="#">View this website</a>',
+      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;font-weight:bold;" href="http://fabmacko.herokuapp.com/portfolioV1">View this website</a>',
       animation: true,
       showConfirmButton: false,
       showCloseButton: true,
