@@ -3,7 +3,6 @@ import React from 'react';
 class SocialMedias extends React.Component {
 
   componentDidMount() {
-    console.log(this.linkedin);
     // Manually active AOS to see the animation
     setTimeout(() => {
       this.github.classList.add("aos-animate")

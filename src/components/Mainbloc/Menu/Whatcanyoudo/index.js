@@ -88,7 +88,6 @@ class Whatcanyoudo extends React.Component {
         })
           .then(function (response) {
             // handle success
-            console.log(response);
           })
           .catch(function (error) {
             // handle error

@@ -19,7 +19,6 @@ const NavbarMobile = ({ closeMenu, changeView, view, openMenu, isMobileMenuOpen,
   }
 
   const setDefaultView = () => {
-    console.log("Close menu");
 
     setTimeout(() => {
       closeMenu();

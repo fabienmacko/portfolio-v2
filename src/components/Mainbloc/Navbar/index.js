@@ -15,7 +15,6 @@ const Navbar = ({ isMenuOpen, closeMenu, changeView, view, openMenu }) => {
     e.target.closest(".menu-item").classList.add("current");
   }
   const setDefaultView = () => {
-    console.log("Close menu");
 
     setTimeout(() => {
       closeMenu();

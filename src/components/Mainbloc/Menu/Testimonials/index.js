@@ -5,7 +5,7 @@ import './testimonials.scss';
 const Container = ({ pseudo, description, id, index }) => {
 
   return (
-    <div className={index === 0 ? "comment open" : "comment"} key={id} id={id}>
+    <div className={index === 0 ? "comment open" : "comment"} id={id}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -57,12 +57,11 @@ class Testimonials extends React.Component {
       } else {
         i2++;
       }
-      }, 3000)});
+      }, 2500)});
       
     axios.get(process.env.REACT_APP_API_URL+'/comments')
       .then((response) => {
         // handle success
-        console.log(response);
         this.setState({ posts: response.data });
 
       })
@@ -91,7 +90,7 @@ class Testimonials extends React.Component {
             <h2>Testimonials</h2>
             <div className="item carousel">
               {
-                posts.map((post, index) => <Container index={index} pseudo={post.pseudo} description={post.description} id={post._id} />)
+                posts.map((post, index) => <Container key={post._id} index={index} pseudo={post.pseudo} description={post.description} id={post._id} />)
               }
             </div>
           </div>
