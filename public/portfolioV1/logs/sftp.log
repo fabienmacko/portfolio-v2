@@ -1,0 +1,700 @@
+Sep 25 14:16:30 10.71.51.0 u94989008 Connection from 10.71.51.0 port 51148 on 82.165.80.98 port 22
+Sep 25 14:16:36 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 51148 ssh2
+Sep 25 14:16:36 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 51148
+Sep 25 14:16:36 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 14:18:15 10.71.51.0 u94989008 Connection from 10.71.51.0 port 27654 on 82.165.80.98 port 22
+Sep 25 14:18:15 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 27654 ssh2
+Sep 25 14:18:15 10.71.51.0 u94989008 Connection from 10.71.51.0 port 27656 on 82.165.80.98 port 22
+Sep 25 14:18:15 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 27656 ssh2
+Sep 25 14:18:15 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 27654
+Sep 25 14:18:15 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 14:18:15 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 27656
+Sep 25 14:18:15 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 14:18:15 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:16 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:16 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:16 10.71.51.0 u94989008 mkdir name "/css" mode 0777
+Sep 25 14:18:16 10.71.51.0 u94989008 [10.71.51.0|mkdir|0|0|511|0|0|2f637373|]
+Sep 25 14:18:16 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:16 10.71.51.0 u94989008 open "/css/Chalifor Dalsatic DEMO.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:18 10.71.51.0 u94989008 close "/css/Chalifor Dalsatic DEMO.ttf" bytes read 0 written 350788
+Sep 25 14:18:18 10.71.51.0 u94989008 [10.71.51.0|put|2|350788|0|0|0|2f6373732f4368616c69666f722044616c73617469632044454d4f2e747466|]
+Sep 25 14:18:18 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:18 10.71.51.0 u94989008 open "/css/index.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:18 10.71.51.0 u94989008 close "/css/index.css" bytes read 0 written 8587
+Sep 25 14:18:18 10.71.51.0 u94989008 [10.71.51.0|put|0|8587|0|0|0|2f6373732f696e6465782e637373|]
+Sep 25 14:18:18 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:19 10.71.51.0 u94989008 open "/css/Raleway-Black.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:19 10.71.51.0 u94989008 open "/index.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:19 10.71.51.0 u94989008 close "/css/Raleway-Black.ttf" bytes read 0 written 180592
+Sep 25 14:18:19 10.71.51.0 u94989008 [10.71.51.0|put|0|180592|0|0|0|2f6373732f52616c657761792d426c61636b2e747466|]
+Sep 25 14:18:19 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:19 10.71.51.0 u94989008 close "/index.html" bytes read 0 written 11538
+Sep 25 14:18:19 10.71.51.0 u94989008 [10.71.51.0|put|0|11538|0|0|0|2f696e6465782e68746d6c|]
+Sep 25 14:18:19 10.71.51.0 u94989008 open "/css/Raleway-BlackItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:20 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:20 10.71.51.0 u94989008 close "/css/Raleway-BlackItalic.ttf" bytes read 0 written 148368
+Sep 25 14:18:20 10.71.51.0 u94989008 [10.71.51.0|put|1|148368|0|0|0|2f6373732f52616c657761792d426c61636b4974616c69632e747466|]
+Sep 25 14:18:20 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:20 10.71.51.0 u94989008 open "/css/Raleway-Bold.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:20 10.71.51.0 u94989008 open "/css/Raleway-BoldItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:21 10.71.51.0 u94989008 close "/css/Raleway-BoldItalic.ttf" bytes read 0 written 148184
+Sep 25 14:18:21 10.71.51.0 u94989008 [10.71.51.0|put|1|148184|0|0|0|2f6373732f52616c657761792d426f6c644974616c69632e747466|]
+Sep 25 14:18:21 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:21 10.71.51.0 u94989008 open "/css/Raleway-ExtraBold.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:22 10.71.51.0 u94989008 close "/css/Raleway-ExtraBold.ttf" bytes read 0 written 178128
+Sep 25 14:18:22 10.71.51.0 u94989008 [10.71.51.0|put|1|178128|0|0|0|2f6373732f52616c657761792d4578747261426f6c642e747466|]
+Sep 25 14:18:22 10.71.51.0 u94989008 close "/css/Raleway-Bold.ttf" bytes read 0 written 179244
+Sep 25 14:18:22 10.71.51.0 u94989008 [10.71.51.0|put|2|179244|0|0|0|2f6373732f52616c657761792d426f6c642e747466|]
+Sep 25 14:18:22 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:22 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:22 10.71.51.0 u94989008 open "/css/Raleway-ExtraBoldItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:22 10.71.51.0 u94989008 open "/css/Raleway-ExtraLight.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:22 10.71.51.0 u94989008 close "/css/Raleway-ExtraBoldItalic.ttf" bytes read 0 written 148100
+Sep 25 14:18:22 10.71.51.0 u94989008 [10.71.51.0|put|0|148100|0|0|0|2f6373732f52616c657761792d4578747261426f6c644974616c69632e747466|]
+Sep 25 14:18:22 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:22 10.71.51.0 u94989008 open "/css/Raleway-ExtraLightItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:23 10.71.51.0 u94989008 close "/css/Raleway-ExtraLightItalic.ttf" bytes read 0 written 142192
+Sep 25 14:18:23 10.71.51.0 u94989008 [10.71.51.0|put|1|142192|0|0|0|2f6373732f52616c657761792d45787472614c696768744974616c69632e747466|]
+Sep 25 14:18:23 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:23 10.71.51.0 u94989008 open "/css/Raleway-Italic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:24 10.71.51.0 u94989008 close "/css/Raleway-Italic.ttf" bytes read 0 written 145920
+Sep 25 14:18:24 10.71.51.0 u94989008 [10.71.51.0|put|1|145920|0|0|0|2f6373732f52616c657761792d4974616c69632e747466|]
+Sep 25 14:18:24 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:24 10.71.51.0 u94989008 open "/css/Raleway-Light.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:24 10.71.51.0 u94989008 close "/css/Raleway-ExtraLight.ttf" bytes read 0 written 176344
+Sep 25 14:18:24 10.71.51.0 u94989008 [10.71.51.0|put|2|176344|0|0|0|2f6373732f52616c657761792d45787472614c696768742e747466|]
+Sep 25 14:18:24 10.71.51.0 u94989008 close "/css/Raleway-Light.ttf" bytes read 0 written 182376
+Sep 25 14:18:24 10.71.51.0 u94989008 [10.71.51.0|put|0|182376|0|0|0|2f6373732f52616c657761792d4c696768742e747466|]
+Sep 25 14:18:24 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:24 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:25 10.71.51.0 u94989008 open "/css/Raleway-LightItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:25 10.71.51.0 u94989008 open "/css/Raleway-Medium.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:25 10.71.51.0 u94989008 close "/css/Raleway-Medium.ttf" bytes read 0 written 179444
+Sep 25 14:18:25 10.71.51.0 u94989008 [10.71.51.0|put|0|179444|0|0|0|2f6373732f52616c657761792d4d656469756d2e747466|]
+Sep 25 14:18:25 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:25 10.71.51.0 u94989008 open "/css/Raleway-MediumItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:26 10.71.51.0 u94989008 close "/css/Raleway-MediumItalic.ttf" bytes read 0 written 147568
+Sep 25 14:18:26 10.71.51.0 u94989008 [10.71.51.0|put|1|147568|0|0|0|2f6373732f52616c657761792d4d656469756d4974616c69632e747466|]
+Sep 25 14:18:26 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:26 10.71.51.0 u94989008 open "/css/Raleway-Regular.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:26 10.71.51.0 u94989008 close "/css/Raleway-LightItalic.ttf" bytes read 0 written 148368
+Sep 25 14:18:26 10.71.51.0 u94989008 [10.71.51.0|put|1|148368|0|0|0|2f6373732f52616c657761792d4c696768744974616c69632e747466|]
+Sep 25 14:18:27 10.71.51.0 u94989008 close "/css/Raleway-Regular.ttf" bytes read 0 written 178520
+Sep 25 14:18:27 10.71.51.0 u94989008 [10.71.51.0|put|1|178520|0|0|0|2f6373732f52616c657761792d526567756c61722e747466|]
+Sep 25 14:18:29 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:29 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:29 10.71.51.0 u94989008 open "/css/Raleway-SemiBold.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:29 10.71.51.0 u94989008 open "/css/Raleway-SemiBoldItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:30 10.71.51.0 u94989008 close "/css/Raleway-SemiBoldItalic.ttf" bytes read 0 written 146584
+Sep 25 14:18:30 10.71.51.0 u94989008 [10.71.51.0|put|1|146584|0|0|0|2f6373732f52616c657761792d53656d69426f6c644974616c69632e747466|]
+Sep 25 14:18:30 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:30 10.71.51.0 u94989008 open "/css/Raleway-Thin.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:31 10.71.51.0 u94989008 close "/css/Raleway-Thin.ttf" bytes read 0 written 177572
+Sep 25 14:18:31 10.71.51.0 u94989008 [10.71.51.0|put|1|177572|0|0|0|2f6373732f52616c657761792d5468696e2e747466|]
+Sep 25 14:18:31 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:31 10.71.51.0 u94989008 close "/css/Raleway-SemiBold.ttf" bytes read 0 written 180492
+Sep 25 14:18:31 10.71.51.0 u94989008 [10.71.51.0|put|2|180492|0|0|0|2f6373732f52616c657761792d53656d69426f6c642e747466|]
+Sep 25 14:18:31 10.71.51.0 u94989008 open "/css/Raleway-ThinItalic.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:31 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:32 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:32 10.71.51.0 u94989008 close "/css/Raleway-ThinItalic.ttf" bytes read 0 written 141884
+Sep 25 14:18:32 10.71.51.0 u94989008 [10.71.51.0|put|1|141884|0|0|0|2f6373732f52616c657761792d5468696e4974616c69632e747466|]
+Sep 25 14:18:32 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff" bytes read 0 written 24756
+Sep 25 14:18:32 10.71.51.0 u94989008 [10.71.51.0|put|0|24756|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f6666|]
+Sep 25 14:18:32 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:32 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:32 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:32 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:32 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff2" bytes read 0 written 18684
+Sep 25 14:18:32 10.71.51.0 u94989008 [10.71.51.0|put|0|18684|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f666632|]
+Sep 25 14:18:32 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:33 10.71.51.0 u94989008 mkdir name "/images" mode 0777
+Sep 25 14:18:33 10.71.51.0 u94989008 [10.71.51.0|mkdir|0|0|511|0|0|2f696d61676573|]
+Sep 25 14:18:33 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:33 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:33 10.71.51.0 u94989008 open "/images/328 (2).jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:33 10.71.51.0 u94989008 open "/images/1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:34 10.71.51.0 u94989008 close "/images/1.jpg" bytes read 0 written 24926
+Sep 25 14:18:34 10.71.51.0 u94989008 [10.71.51.0|put|1|24926|0|0|0|2f696d616765732f312e6a7067|]
+Sep 25 14:18:34 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:35 10.71.51.0 u94989008 open "/images/328.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:35 10.71.51.0 u94989008 close "/images/328 (2).jpg" bytes read 0 written 520056
+Sep 25 14:18:35 10.71.51.0 u94989008 [10.71.51.0|put|2|520056|0|0|0|2f696d616765732f333238202832292e6a7067|]
+Sep 25 14:18:35 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:35 10.71.51.0 u94989008 open "/images/463.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:39 10.71.51.0 u94989008 close "/images/463.jpg" bytes read 0 written 981651
+Sep 25 14:18:39 10.71.51.0 u94989008 [10.71.51.0|put|4|981651|0|0|0|2f696d616765732f3436332e6a7067|]
+Sep 25 14:18:39 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:39 10.71.51.0 u94989008 open "/images/ampoule.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:39 10.71.51.0 u94989008 close "/images/ampoule.jpg" bytes read 0 written 58300
+Sep 25 14:18:39 10.71.51.0 u94989008 [10.71.51.0|put|0|58300|0|0|0|2f696d616765732f616d706f756c652e6a7067|]
+Sep 25 14:18:39 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:40 10.71.51.0 u94989008 open "/images/anothai.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:40 10.71.51.0 u94989008 close "/images/328.jpg" bytes read 0 written 520056
+Sep 25 14:18:40 10.71.51.0 u94989008 [10.71.51.0|put|5|520056|0|0|0|2f696d616765732f3332382e6a7067|]
+Sep 25 14:18:40 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:40 10.71.51.0 u94989008 open "/images/bleu.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:40 10.71.51.0 u94989008 close "/images/bleu.png" bytes read 0 written 34282
+Sep 25 14:18:40 10.71.51.0 u94989008 [10.71.51.0|put|0|34282|0|0|0|2f696d616765732f626c65752e706e67|]
+Sep 25 14:18:40 10.71.51.0 u94989008 close "/images/anothai.png" bytes read 0 written 10061
+Sep 25 14:18:40 10.71.51.0 u94989008 [10.71.51.0|put|0|10061|0|0|0|2f696d616765732f616e6f746861692e706e67|]
+Sep 25 14:18:40 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:41 10.71.51.0 u94989008 open "/images/code.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:42 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:42 10.71.51.0 u94989008 close "/images/code.jpg" bytes read 0 written 264895
+Sep 25 14:18:42 10.71.51.0 u94989008 [10.71.51.0|put|1|264895|0|0|0|2f696d616765732f636f64652e6a7067|]
+Sep 25 14:18:42 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:42 10.71.51.0 u94989008 open "/images/code.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:42 10.71.51.0 u94989008 open "/images/code2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:42 10.71.51.0 u94989008 close "/images/code.png" bytes read 0 written 1038
+Sep 25 14:18:42 10.71.51.0 u94989008 [10.71.51.0|put|0|1038|0|0|0|2f696d616765732f636f64652e706e67|]
+Sep 25 14:18:42 10.71.51.0 u94989008 close "/images/code2.jpg" bytes read 0 written 128260
+Sep 25 14:18:42 10.71.51.0 u94989008 [10.71.51.0|put|0|128260|0|0|0|2f696d616765732f636f6465322e6a7067|]
+Sep 25 14:18:42 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:42 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:42 10.71.51.0 u94989008 open "/images/code2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:42 10.71.51.0 u94989008 open "/images/css.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/code2.png" bytes read 0 written 1200
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|1|1200|0|0|0|2f696d616765732f636f6465322e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/css.png" bytes read 0 written 17766
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|1|17766|0|0|0|2f696d616765732f6373732e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/document.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/document2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/document.png" bytes read 0 written 1109
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|1109|0|0|0|2f696d616765732f646f63756d656e742e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/document2.png" bytes read 0 written 1162
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|1162|0|0|0|2f696d616765732f646f63756d656e74322e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/encreation.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/facebookicon.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/encreation.png" bytes read 0 written 79745
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|79745|0|0|0|2f696d616765732f656e6372656174696f6e2e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/facebookicon.png" bytes read 0 written 21594
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|21594|0|0|0|2f696d616765732f66616365626f6f6b69636f6e2e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/favicon.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/flechebas.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/favicon.png" bytes read 0 written 8156
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|8156|0|0|0|2f696d616765732f66617669636f6e2e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 close "/images/flechebas.png" bytes read 0 written 756
+Sep 25 14:18:43 10.71.51.0 u94989008 [10.71.51.0|put|0|756|0|0|0|2f696d616765732f666c656368656261732e706e67|]
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/flechebas2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:43 10.71.51.0 u94989008 open "/images/flecheblanche.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/flechebas2.png" bytes read 0 written 637
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|1|637|0|0|0|2f696d616765732f666c65636865626173322e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/flecheblanche.png" bytes read 0 written 6904
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|1|6904|0|0|0|2f696d616765732f666c65636865626c616e6368652e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/guillemet.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/html.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/guillemet.png" bytes read 0 written 1843
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|0|1843|0|0|0|2f696d616765732f6775696c6c656d65742e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/html.png" bytes read 0 written 30561
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|0|30561|0|0|0|2f696d616765732f68746d6c2e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/Icone discord.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/instaicon.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/Icone discord.png" bytes read 0 written 37632
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|0|37632|0|0|0|2f696d616765732f49636f6e6520646973636f72642e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 close "/images/instaicon.png" bytes read 0 written 24425
+Sep 25 14:18:44 10.71.51.0 u94989008 [10.71.51.0|put|0|24425|0|0|0|2f696d616765732f696e73746169636f6e2e706e67|]
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/jquery.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:44 10.71.51.0 u94989008 open "/images/js.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/jquery.png" bytes read 0 written 12578
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|1|12578|0|0|0|2f696d616765732f6a71756572792e706e67|]
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/js.png" bytes read 0 written 9637
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|1|9637|0|0|0|2f696d616765732f6a732e706e67|]
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 open "/images/laptop.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:45 10.71.51.0 u94989008 open "/images/laptop2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/laptop.png" bytes read 0 written 946
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|0|946|0|0|0|2f696d616765732f6c6170746f702e706e67|]
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/laptop2.png" bytes read 0 written 1893
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|0|1893|0|0|0|2f696d616765732f6c6170746f70322e706e67|]
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 open "/images/linkedicon.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:45 10.71.51.0 u94989008 open "/images/logoalpes.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/linkedicon.png" bytes read 0 written 14237
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|0|14237|0|0|0|2f696d616765732f6c696e6b656469636f6e2e706e67|]
+Sep 25 14:18:45 10.71.51.0 u94989008 close "/images/logoalpes.jpg" bytes read 0 written 17493
+Sep 25 14:18:45 10.71.51.0 u94989008 [10.71.51.0|put|0|17493|0|0|0|2f696d616765732f6c6f676f616c7065732e6a7067|]
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:45 10.71.51.0 u94989008 open "/images/logoalpes.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:46 10.71.51.0 u94989008 open "/images/maps.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:46 10.71.51.0 u94989008 close "/images/logoalpes.png" bytes read 0 written 14895
+Sep 25 14:18:46 10.71.51.0 u94989008 [10.71.51.0|put|1|14895|0|0|0|2f696d616765732f6c6f676f616c7065732e706e67|]
+Sep 25 14:18:46 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:46 10.71.51.0 u94989008 close "/images/maps.png" bytes read 0 written 20226
+Sep 25 14:18:46 10.71.51.0 u94989008 [10.71.51.0|put|0|20226|0|0|0|2f696d616765732f6d6170732e706e67|]
+Sep 25 14:18:46 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:46 10.71.51.0 u94989008 open "/images/portable.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:46 10.71.51.0 u94989008 open "/images/Sans titre 2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:46 10.71.51.0 u94989008 close "/images/portable.jpg" bytes read 0 written 166961
+Sep 25 14:18:46 10.71.51.0 u94989008 [10.71.51.0|put|0|166961|0|0|0|2f696d616765732f706f727461626c652e6a7067|]
+Sep 25 14:18:47 10.71.51.0 u94989008 close "/images/Sans titre 2.png" bytes read 0 written 22166
+Sep 25 14:18:47 10.71.51.0 u94989008 [10.71.51.0|put|1|22166|0|0|0|2f696d616765732f53616e7320746974726520322e706e67|]
+Sep 25 14:18:47 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:47 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:47 10.71.51.0 u94989008 open "/images/ski.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:47 10.71.51.0 u94989008 open "/images/vert.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:47 10.71.51.0 u94989008 close "/images/ski.jpg" bytes read 0 written 68682
+Sep 25 14:18:47 10.71.51.0 u94989008 [10.71.51.0|put|0|68682|0|0|0|2f696d616765732f736b692e6a7067|]
+Sep 25 14:18:47 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:47 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:48 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:48 10.71.51.0 u94989008 mkdir name "/js" mode 0777
+Sep 25 14:18:48 10.71.51.0 u94989008 [10.71.51.0|mkdir|0|0|511|0|0|2f6a73|]
+Sep 25 14:18:48 10.71.51.0 u94989008 close "/images/vert.jpg" bytes read 0 written 119118
+Sep 25 14:18:48 10.71.51.0 u94989008 [10.71.51.0|put|1|119118|0|0|0|2f696d616765732f766572742e6a7067|]
+Sep 25 14:18:49 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:49 10.71.51.0 u94989008 sent status No such file
+Sep 25 14:18:49 10.71.51.0 u94989008 open "/js/index.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:49 10.71.51.0 u94989008 open "/js/jquery-ui.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Sep 25 14:18:49 10.71.51.0 u94989008 close "/js/index.js" bytes read 0 written 5165
+Sep 25 14:18:49 10.71.51.0 u94989008 [10.71.51.0|put|0|5165|0|0|0|2f6a732f696e6465782e6a73|]
+Sep 25 14:18:53 10.71.51.0 u94989008 close "/js/jquery-ui.js" bytes read 0 written 520714
+Sep 25 14:18:53 10.71.51.0 u94989008 [10.71.51.0|put|4|520714|0|0|0|2f6a732f6a71756572792d75692e6a73|]
+Sep 25 14:19:49 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 14:19:50 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 14:19:53 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 14:19:53 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 14:20:03 10.71.51.0 u94989008 Connection from 10.71.51.0 port 58510 on 82.165.80.98 port 22
+Sep 25 14:20:03 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 58510 ssh2
+Sep 25 14:20:03 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 58510
+Sep 25 14:20:03 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 14:20:04 10.71.51.0 u94989008 open "/logs/sftp.log" flags READ mode 0666
+Sep 25 14:20:04 10.71.51.0 u94989008 close "/logs/sftp.log" bytes read 25719 written 0
+Sep 25 14:20:04 10.71.51.0 u94989008 [10.71.51.0|get|0|25719|0|0|0|2f6c6f67732f736674702e6c6f67|]
+Sep 25 14:21:04 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 14:21:04 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 14:36:21 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 14:36:21 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 18:22:58 10.71.51.0 u94989008 Connection from 10.71.51.0 port 21132 on 82.165.80.98 port 22
+Sep 25 18:23:03 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 21132 ssh2
+Sep 25 18:23:03 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 21132
+Sep 25 18:23:03 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 18:25:02 10.71.51.0 u94989008 Connection from 10.71.51.0 port 28238 on 82.165.80.98 port 22
+Sep 25 18:25:03 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 28238 ssh2
+Sep 25 18:25:03 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 28238
+Sep 25 18:25:03 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 18:25:03 10.71.51.0 u94989008 Connection from 10.71.51.0 port 28770 on 82.165.80.98 port 22
+Sep 25 18:25:03 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 28770 ssh2
+Sep 25 18:25:03 10.71.51.0 u94989008 open "/index.html" flags READ mode 0666
+Sep 25 18:25:03 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 28770
+Sep 25 18:25:03 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 18:25:03 10.71.51.0 u94989008 sent status No such file
+Sep 25 18:25:03 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff2" flags READ mode 0666
+Sep 25 18:25:04 10.71.51.0 u94989008 close "/index.html" bytes read 11538 written 0
+Sep 25 18:25:04 10.71.51.0 u94989008 [10.71.51.0|get|1|11538|0|0|0|2f696e6465782e68746d6c|]
+Sep 25 18:25:04 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff2" bytes read 18684 written 0
+Sep 25 18:25:04 10.71.51.0 u94989008 [10.71.51.0|get|1|18684|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f666632|]
+Sep 25 18:25:04 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff" flags READ mode 0666
+Sep 25 18:25:04 10.71.51.0 u94989008 open "/css/Raleway-ThinItalic.ttf" flags READ mode 0666
+Sep 25 18:25:05 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff" bytes read 24756 written 0
+Sep 25 18:25:05 10.71.51.0 u94989008 [10.71.51.0|get|1|24756|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f6666|]
+Sep 25 18:25:05 10.71.51.0 u94989008 close "/css/Raleway-ThinItalic.ttf" bytes read 141884 written 0
+Sep 25 18:25:05 10.71.51.0 u94989008 [10.71.51.0|get|1|141884|0|0|0|2f6373732f52616c657761792d5468696e4974616c69632e747466|]
+Sep 25 18:25:05 10.71.51.0 u94989008 open "/css/Raleway-Thin.ttf" flags READ mode 0666
+Sep 25 18:25:05 10.71.51.0 u94989008 open "/css/Raleway-SemiBoldItalic.ttf" flags READ mode 0666
+Sep 25 18:25:05 10.71.51.0 u94989008 close "/css/Raleway-Thin.ttf" bytes read 177572 written 0
+Sep 25 18:25:05 10.71.51.0 u94989008 [10.71.51.0|get|0|177572|0|0|0|2f6373732f52616c657761792d5468696e2e747466|]
+Sep 25 18:25:05 10.71.51.0 u94989008 close "/css/Raleway-SemiBoldItalic.ttf" bytes read 146584 written 0
+Sep 25 18:25:05 10.71.51.0 u94989008 [10.71.51.0|get|0|146584|0|0|0|2f6373732f52616c657761792d53656d69426f6c644974616c69632e747466|]
+Sep 25 18:25:06 10.71.51.0 u94989008 open "/css/Raleway-SemiBold.ttf" flags READ mode 0666
+Sep 25 18:25:06 10.71.51.0 u94989008 open "/css/Raleway-Regular.ttf" flags READ mode 0666
+Sep 25 18:25:06 10.71.51.0 u94989008 close "/css/Raleway-SemiBold.ttf" bytes read 180492 written 0
+Sep 25 18:25:06 10.71.51.0 u94989008 [10.71.51.0|get|0|180492|0|0|0|2f6373732f52616c657761792d53656d69426f6c642e747466|]
+Sep 25 18:25:06 10.71.51.0 u94989008 close "/css/Raleway-Regular.ttf" bytes read 178520 written 0
+Sep 25 18:25:06 10.71.51.0 u94989008 [10.71.51.0|get|0|178520|0|0|0|2f6373732f52616c657761792d526567756c61722e747466|]
+Sep 25 18:25:06 10.71.51.0 u94989008 open "/css/Raleway-MediumItalic.ttf" flags READ mode 0666
+Sep 25 18:25:06 10.71.51.0 u94989008 open "/css/Raleway-Medium.ttf" flags READ mode 0666
+Sep 25 18:25:07 10.71.51.0 u94989008 close "/css/Raleway-Medium.ttf" bytes read 179444 written 0
+Sep 25 18:25:07 10.71.51.0 u94989008 [10.71.51.0|get|1|179444|0|0|0|2f6373732f52616c657761792d4d656469756d2e747466|]
+Sep 25 18:25:07 10.71.51.0 u94989008 close "/css/Raleway-MediumItalic.ttf" bytes read 147568 written 0
+Sep 25 18:25:07 10.71.51.0 u94989008 [10.71.51.0|get|1|147568|0|0|0|2f6373732f52616c657761792d4d656469756d4974616c69632e747466|]
+Sep 25 18:25:07 10.71.51.0 u94989008 open "/css/Raleway-LightItalic.ttf" flags READ mode 0666
+Sep 25 18:25:07 10.71.51.0 u94989008 open "/css/Raleway-Light.ttf" flags READ mode 0666
+Sep 25 18:25:07 10.71.51.0 u94989008 close "/css/Raleway-LightItalic.ttf" bytes read 148368 written 0
+Sep 25 18:25:07 10.71.51.0 u94989008 [10.71.51.0|get|0|148368|0|0|0|2f6373732f52616c657761792d4c696768744974616c69632e747466|]
+Sep 25 18:25:08 10.71.51.0 u94989008 open "/css/Raleway-Italic.ttf" flags READ mode 0666
+Sep 25 18:25:08 10.71.51.0 u94989008 close "/css/Raleway-Italic.ttf" bytes read 145920 written 0
+Sep 25 18:25:08 10.71.51.0 u94989008 [10.71.51.0|get|0|145920|0|0|0|2f6373732f52616c657761792d4974616c69632e747466|]
+Sep 25 18:25:08 10.71.51.0 u94989008 close "/css/Raleway-Light.ttf" bytes read 182376 written 0
+Sep 25 18:25:08 10.71.51.0 u94989008 [10.71.51.0|get|1|182376|0|0|0|2f6373732f52616c657761792d4c696768742e747466|]
+Sep 25 18:25:08 10.71.51.0 u94989008 open "/css/Raleway-ExtraLightItalic.ttf" flags READ mode 0666
+Sep 25 18:25:08 10.71.51.0 u94989008 open "/css/Raleway-ExtraLight.ttf" flags READ mode 0666
+Sep 25 18:25:09 10.71.51.0 u94989008 close "/css/Raleway-ExtraLightItalic.ttf" bytes read 142192 written 0
+Sep 25 18:25:09 10.71.51.0 u94989008 [10.71.51.0|get|1|142192|0|0|0|2f6373732f52616c657761792d45787472614c696768744974616c69632e747466|]
+Sep 25 18:25:09 10.71.51.0 u94989008 close "/css/Raleway-ExtraLight.ttf" bytes read 176344 written 0
+Sep 25 18:25:09 10.71.51.0 u94989008 [10.71.51.0|get|1|176344|0|0|0|2f6373732f52616c657761792d45787472614c696768742e747466|]
+Sep 25 18:25:09 10.71.51.0 u94989008 open "/css/Raleway-ExtraBoldItalic.ttf" flags READ mode 0666
+Sep 25 18:25:09 10.71.51.0 u94989008 open "/css/Raleway-ExtraBold.ttf" flags READ mode 0666
+Sep 25 18:25:09 10.71.51.0 u94989008 close "/css/Raleway-ExtraBoldItalic.ttf" bytes read 148100 written 0
+Sep 25 18:25:09 10.71.51.0 u94989008 [10.71.51.0|get|0|148100|0|0|0|2f6373732f52616c657761792d4578747261426f6c644974616c69632e747466|]
+Sep 25 18:25:09 10.71.51.0 u94989008 open "/css/Raleway-BoldItalic.ttf" flags READ mode 0666
+Sep 25 18:25:09 10.71.51.0 u94989008 close "/css/Raleway-ExtraBold.ttf" bytes read 178128 written 0
+Sep 25 18:25:09 10.71.51.0 u94989008 [10.71.51.0|get|0|178128|0|0|0|2f6373732f52616c657761792d4578747261426f6c642e747466|]
+Sep 25 18:25:10 10.71.51.0 u94989008 open "/css/Raleway-Bold.ttf" flags READ mode 0666
+Sep 25 18:25:10 10.71.51.0 u94989008 close "/css/Raleway-BoldItalic.ttf" bytes read 148184 written 0
+Sep 25 18:25:10 10.71.51.0 u94989008 [10.71.51.0|get|1|148184|0|0|0|2f6373732f52616c657761792d426f6c644974616c69632e747466|]
+Sep 25 18:25:10 10.71.51.0 u94989008 close "/css/Raleway-Bold.ttf" bytes read 179244 written 0
+Sep 25 18:25:10 10.71.51.0 u94989008 [10.71.51.0|get|0|179244|0|0|0|2f6373732f52616c657761792d426f6c642e747466|]
+Sep 25 18:25:10 10.71.51.0 u94989008 open "/css/Raleway-BlackItalic.ttf" flags READ mode 0666
+Sep 25 18:25:10 10.71.51.0 u94989008 open "/css/Raleway-Black.ttf" flags READ mode 0666
+Sep 25 18:25:11 10.71.51.0 u94989008 close "/css/Raleway-Black.ttf" bytes read 180592 written 0
+Sep 25 18:25:11 10.71.51.0 u94989008 [10.71.51.0|get|1|180592|0|0|0|2f6373732f52616c657761792d426c61636b2e747466|]
+Sep 25 18:25:11 10.71.51.0 u94989008 close "/css/Raleway-BlackItalic.ttf" bytes read 148368 written 0
+Sep 25 18:25:11 10.71.51.0 u94989008 [10.71.51.0|get|1|148368|0|0|0|2f6373732f52616c657761792d426c61636b4974616c69632e747466|]
+Sep 25 18:25:11 10.71.51.0 u94989008 open "/css/index.css" flags READ mode 0666
+Sep 25 18:25:11 10.71.51.0 u94989008 open "/css/Chalifor Dalsatic DEMO.ttf" flags READ mode 0666
+Sep 25 18:25:12 10.71.51.0 u94989008 close "/css/index.css" bytes read 8587 written 0
+Sep 25 18:25:12 10.71.51.0 u94989008 [10.71.51.0|get|1|8587|0|0|0|2f6373732f696e6465782e637373|]
+Sep 25 18:25:12 10.71.51.0 u94989008 open "/images/vert.jpg" flags READ mode 0666
+Sep 25 18:25:12 10.71.51.0 u94989008 close "/images/vert.jpg" bytes read 119118 written 0
+Sep 25 18:25:12 10.71.51.0 u94989008 [10.71.51.0|get|0|119118|0|0|0|2f696d616765732f766572742e6a7067|]
+Sep 25 18:25:12 10.71.51.0 u94989008 close "/css/Chalifor Dalsatic DEMO.ttf" bytes read 350788 written 0
+Sep 25 18:25:12 10.71.51.0 u94989008 [10.71.51.0|get|1|350788|0|0|0|2f6373732f4368616c69666f722044616c73617469632044454d4f2e747466|]
+Sep 25 18:25:12 10.71.51.0 u94989008 open "/images/ski.jpg" flags READ mode 0666
+Sep 25 18:25:13 10.71.51.0 u94989008 open "/images/Sans titre 2.png" flags READ mode 0666
+Sep 25 18:25:13 10.71.51.0 u94989008 close "/images/ski.jpg" bytes read 68682 written 0
+Sep 25 18:25:13 10.71.51.0 u94989008 [10.71.51.0|get|1|68682|0|0|0|2f696d616765732f736b692e6a7067|]
+Sep 25 18:25:13 10.71.51.0 u94989008 open "/images/portable.jpg" flags READ mode 0666
+Sep 25 18:25:13 10.71.51.0 u94989008 close "/images/Sans titre 2.png" bytes read 22166 written 0
+Sep 25 18:25:13 10.71.51.0 u94989008 [10.71.51.0|get|0|22166|0|0|0|2f696d616765732f53616e7320746974726520322e706e67|]
+Sep 25 18:25:13 10.71.51.0 u94989008 open "/images/maps.png" flags READ mode 0666
+Sep 25 18:25:14 10.71.51.0 u94989008 close "/images/portable.jpg" bytes read 166961 written 0
+Sep 25 18:25:14 10.71.51.0 u94989008 [10.71.51.0|get|1|166961|0|0|0|2f696d616765732f706f727461626c652e6a7067|]
+Sep 25 18:25:14 10.71.51.0 u94989008 close "/images/maps.png" bytes read 20226 written 0
+Sep 25 18:25:14 10.71.51.0 u94989008 [10.71.51.0|get|1|20226|0|0|0|2f696d616765732f6d6170732e706e67|]
+Sep 25 18:25:14 10.71.51.0 u94989008 open "/images/logoalpes.png" flags READ mode 0666
+Sep 25 18:25:14 10.71.51.0 u94989008 open "/images/logoalpes.jpg" flags READ mode 0666
+Sep 25 18:25:14 10.71.51.0 u94989008 close "/images/logoalpes.png" bytes read 14895 written 0
+Sep 25 18:25:14 10.71.51.0 u94989008 [10.71.51.0|get|0|14895|0|0|0|2f696d616765732f6c6f676f616c7065732e706e67|]
+Sep 25 18:25:15 10.71.51.0 u94989008 open "/images/linkedicon.png" flags READ mode 0666
+Sep 25 18:25:15 10.71.51.0 u94989008 close "/images/linkedicon.png" bytes read 14237 written 0
+Sep 25 18:25:15 10.71.51.0 u94989008 [10.71.51.0|get|0|14237|0|0|0|2f696d616765732f6c696e6b656469636f6e2e706e67|]
+Sep 25 18:25:15 10.71.51.0 u94989008 close "/images/logoalpes.jpg" bytes read 17493 written 0
+Sep 25 18:25:15 10.71.51.0 u94989008 [10.71.51.0|get|1|17493|0|0|0|2f696d616765732f6c6f676f616c7065732e6a7067|]
+Sep 25 18:25:15 10.71.51.0 u94989008 open "/images/laptop2.png" flags READ mode 0666
+Sep 25 18:25:15 10.71.51.0 u94989008 open "/images/laptop.png" flags READ mode 0666
+Sep 25 18:25:15 10.71.51.0 u94989008 close "/images/laptop.png" bytes read 946 written 0
+Sep 25 18:25:15 10.71.51.0 u94989008 [10.71.51.0|get|0|946|0|0|0|2f696d616765732f6c6170746f702e706e67|]
+Sep 25 18:25:15 10.71.51.0 u94989008 open "/images/js.png" flags READ mode 0666
+Sep 25 18:25:16 10.71.51.0 u94989008 close "/images/laptop2.png" bytes read 1893 written 0
+Sep 25 18:25:16 10.71.51.0 u94989008 [10.71.51.0|get|1|1893|0|0|0|2f696d616765732f6c6170746f70322e706e67|]
+Sep 25 18:25:16 10.71.51.0 u94989008 close "/images/js.png" bytes read 9637 written 0
+Sep 25 18:25:16 10.71.51.0 u94989008 [10.71.51.0|get|1|9637|0|0|0|2f696d616765732f6a732e706e67|]
+Sep 25 18:25:16 10.71.51.0 u94989008 open "/images/jquery.png" flags READ mode 0666
+Sep 25 18:25:16 10.71.51.0 u94989008 open "/images/instaicon.png" flags READ mode 0666
+Sep 25 18:25:16 10.71.51.0 u94989008 close "/images/jquery.png" bytes read 12578 written 0
+Sep 25 18:25:16 10.71.51.0 u94989008 [10.71.51.0|get|0|12578|0|0|0|2f696d616765732f6a71756572792e706e67|]
+Sep 25 18:25:16 10.71.51.0 u94989008 close "/images/instaicon.png" bytes read 24425 written 0
+Sep 25 18:25:16 10.71.51.0 u94989008 [10.71.51.0|get|0|24425|0|0|0|2f696d616765732f696e73746169636f6e2e706e67|]
+Sep 25 18:25:17 10.71.51.0 u94989008 open "/images/Icone discord.png" flags READ mode 0666
+Sep 25 18:25:17 10.71.51.0 u94989008 open "/images/html.png" flags READ mode 0666
+Sep 25 18:25:17 10.71.51.0 u94989008 close "/images/Icone discord.png" bytes read 37632 written 0
+Sep 25 18:25:17 10.71.51.0 u94989008 [10.71.51.0|get|0|37632|0|0|0|2f696d616765732f49636f6e6520646973636f72642e706e67|]
+Sep 25 18:25:17 10.71.51.0 u94989008 open "/images/guillemet.png" flags READ mode 0666
+Sep 25 18:25:17 10.71.51.0 u94989008 close "/images/html.png" bytes read 30561 written 0
+Sep 25 18:25:17 10.71.51.0 u94989008 [10.71.51.0|get|0|30561|0|0|0|2f696d616765732f68746d6c2e706e67|]
+Sep 25 18:25:18 10.71.51.0 u94989008 open "/images/flecheblanche.png" flags READ mode 0666
+Sep 25 18:25:18 10.71.51.0 u94989008 close "/images/guillemet.png" bytes read 1843 written 0
+Sep 25 18:25:18 10.71.51.0 u94989008 [10.71.51.0|get|1|1843|0|0|0|2f696d616765732f6775696c6c656d65742e706e67|]
+Sep 25 18:25:18 10.71.51.0 u94989008 open "/images/flechebas2.png" flags READ mode 0666
+Sep 25 18:25:19 10.71.51.0 u94989008 close "/images/flechebas2.png" bytes read 637 written 0
+Sep 25 18:25:19 10.71.51.0 u94989008 [10.71.51.0|get|1|637|0|0|0|2f696d616765732f666c65636865626173322e706e67|]
+Sep 25 18:25:19 10.71.51.0 u94989008 close "/images/flecheblanche.png" bytes read 6904 written 0
+Sep 25 18:25:19 10.71.51.0 u94989008 [10.71.51.0|get|1|6904|0|0|0|2f696d616765732f666c65636865626c616e6368652e706e67|]
+Sep 25 18:25:19 10.71.51.0 u94989008 open "/images/flechebas.png" flags READ mode 0666
+Sep 25 18:25:19 10.71.51.0 u94989008 open "/images/favicon.png" flags READ mode 0666
+Sep 25 18:25:19 10.71.51.0 u94989008 close "/images/favicon.png" bytes read 8156 written 0
+Sep 25 18:25:19 10.71.51.0 u94989008 [10.71.51.0|get|0|8156|0|0|0|2f696d616765732f66617669636f6e2e706e67|]
+Sep 25 18:25:19 10.71.51.0 u94989008 open "/images/facebookicon.png" flags READ mode 0666
+Sep 25 18:25:19 10.71.51.0 u94989008 close "/images/flechebas.png" bytes read 756 written 0
+Sep 25 18:25:19 10.71.51.0 u94989008 [10.71.51.0|get|0|756|0|0|0|2f696d616765732f666c656368656261732e706e67|]
+Sep 25 18:25:20 10.71.51.0 u94989008 open "/images/encreation.png" flags READ mode 0666
+Sep 25 18:25:20 10.71.51.0 u94989008 close "/images/encreation.png" bytes read 79745 written 0
+Sep 25 18:25:20 10.71.51.0 u94989008 [10.71.51.0|get|0|79745|0|0|0|2f696d616765732f656e6372656174696f6e2e706e67|]
+Sep 25 18:25:20 10.71.51.0 u94989008 open "/images/document2.png" flags READ mode 0666
+Sep 25 18:25:20 10.71.51.0 u94989008 close "/images/facebookicon.png" bytes read 21594 written 0
+Sep 25 18:25:20 10.71.51.0 u94989008 [10.71.51.0|get|1|21594|0|0|0|2f696d616765732f66616365626f6f6b69636f6e2e706e67|]
+Sep 25 18:25:20 10.71.51.0 u94989008 open "/images/document.png" flags READ mode 0666
+Sep 25 18:25:21 10.71.51.0 u94989008 close "/images/document.png" bytes read 1109 written 0
+Sep 25 18:25:21 10.71.51.0 u94989008 [10.71.51.0|get|1|1109|0|0|0|2f696d616765732f646f63756d656e742e706e67|]
+Sep 25 18:25:21 10.71.51.0 u94989008 open "/images/css.png" flags READ mode 0666
+Sep 25 18:25:21 10.71.51.0 u94989008 close "/images/document2.png" bytes read 1162 written 0
+Sep 25 18:25:21 10.71.51.0 u94989008 [10.71.51.0|get|1|1162|0|0|0|2f696d616765732f646f63756d656e74322e706e67|]
+Sep 25 18:25:21 10.71.51.0 u94989008 open "/images/code2.png" flags READ mode 0666
+Sep 25 18:25:21 10.71.51.0 u94989008 close "/images/code2.png" bytes read 1200 written 0
+Sep 25 18:25:21 10.71.51.0 u94989008 [10.71.51.0|get|0|1200|0|0|0|2f696d616765732f636f6465322e706e67|]
+Sep 25 18:25:21 10.71.51.0 u94989008 close "/images/css.png" bytes read 17766 written 0
+Sep 25 18:25:21 10.71.51.0 u94989008 [10.71.51.0|get|0|17766|0|0|0|2f696d616765732f6373732e706e67|]
+Sep 25 18:25:22 10.71.51.0 u94989008 open "/images/code2.jpg" flags READ mode 0666
+Sep 25 18:25:22 10.71.51.0 u94989008 open "/images/code.png" flags READ mode 0666
+Sep 25 18:25:22 10.71.51.0 u94989008 close "/images/code2.jpg" bytes read 128260 written 0
+Sep 25 18:25:22 10.71.51.0 u94989008 [10.71.51.0|get|0|128260|0|0|0|2f696d616765732f636f6465322e6a7067|]
+Sep 25 18:25:22 10.71.51.0 u94989008 open "/images/code.jpg" flags READ mode 0666
+Sep 25 18:25:22 10.71.51.0 u94989008 close "/images/code.png" bytes read 1038 written 0
+Sep 25 18:25:22 10.71.51.0 u94989008 [10.71.51.0|get|0|1038|0|0|0|2f696d616765732f636f64652e706e67|]
+Sep 25 18:25:23 10.71.51.0 u94989008 open "/images/bleu.png" flags READ mode 0666
+Sep 25 18:25:23 10.71.51.0 u94989008 close "/images/bleu.png" bytes read 34282 written 0
+Sep 25 18:25:23 10.71.51.0 u94989008 [10.71.51.0|get|0|34282|0|0|0|2f696d616765732f626c65752e706e67|]
+Sep 25 18:25:23 10.71.51.0 u94989008 close "/images/code.jpg" bytes read 264895 written 0
+Sep 25 18:25:23 10.71.51.0 u94989008 [10.71.51.0|get|1|264895|0|0|0|2f696d616765732f636f64652e6a7067|]
+Sep 25 18:25:23 10.71.51.0 u94989008 open "/images/anothai.png" flags READ mode 0666
+Sep 25 18:25:23 10.71.51.0 u94989008 open "/images/ampoule.jpg" flags READ mode 0666
+Sep 25 18:25:24 10.71.51.0 u94989008 close "/images/anothai.png" bytes read 10061 written 0
+Sep 25 18:25:24 10.71.51.0 u94989008 [10.71.51.0|get|1|10061|0|0|0|2f696d616765732f616e6f746861692e706e67|]
+Sep 25 18:25:24 10.71.51.0 u94989008 open "/images/463.jpg" flags READ mode 0666
+Sep 25 18:25:24 10.71.51.0 u94989008 close "/images/ampoule.jpg" bytes read 58300 written 0
+Sep 25 18:25:24 10.71.51.0 u94989008 [10.71.51.0|get|1|58300|0|0|0|2f696d616765732f616d706f756c652e6a7067|]
+Sep 25 18:25:24 10.71.51.0 u94989008 open "/images/328.jpg" flags READ mode 0666
+Sep 25 18:25:25 10.71.51.0 u94989008 close "/images/328.jpg" bytes read 520056 written 0
+Sep 25 18:25:25 10.71.51.0 u94989008 [10.71.51.0|get|1|520056|0|0|0|2f696d616765732f3332382e6a7067|]
+Sep 25 18:25:25 10.71.51.0 u94989008 open "/images/1.jpg" flags READ mode 0666
+Sep 25 18:25:26 10.71.51.0 u94989008 close "/images/463.jpg" bytes read 981651 written 0
+Sep 25 18:25:26 10.71.51.0 u94989008 [10.71.51.0|get|2|981651|0|0|0|2f696d616765732f3436332e6a7067|]
+Sep 25 18:25:26 10.71.51.0 u94989008 open "/images/328 (2).jpg" flags READ mode 0666
+Sep 25 18:25:26 10.71.51.0 u94989008 close "/images/1.jpg" bytes read 24926 written 0
+Sep 25 18:25:26 10.71.51.0 u94989008 [10.71.51.0|get|1|24926|0|0|0|2f696d616765732f312e6a7067|]
+Sep 25 18:25:27 10.71.51.0 u94989008 open "/js/jquery-ui.js" flags READ mode 0666
+Sep 25 18:25:27 10.71.51.0 u94989008 close "/images/328 (2).jpg" bytes read 520056 written 0
+Sep 25 18:25:27 10.71.51.0 u94989008 [10.71.51.0|get|1|520056|0|0|0|2f696d616765732f333238202832292e6a7067|]
+Sep 25 18:25:27 10.71.51.0 u94989008 open "/js/index.js" flags READ mode 0666
+Sep 25 18:25:28 10.71.51.0 u94989008 close "/js/index.js" bytes read 5165 written 0
+Sep 25 18:25:28 10.71.51.0 u94989008 [10.71.51.0|get|1|5165|0|0|0|2f6a732f696e6465782e6a73|]
+Sep 25 18:25:28 10.71.51.0 u94989008 close "/js/jquery-ui.js" bytes read 520714 written 0
+Sep 25 18:25:28 10.71.51.0 u94989008 [10.71.51.0|get|2|520714|0|0|0|2f6a732f6a71756572792d75692e6a73|]
+Sep 25 18:25:28 10.71.51.0 u94989008 open "/logs/access.log.39.2" flags READ mode 0666
+Sep 25 18:25:28 10.71.51.0 u94989008 open "/logs/sftp.log" flags READ mode 0666
+Sep 25 18:25:28 10.71.51.0 u94989008 close "/logs/access.log.39.2" bytes read 89309 written 0
+Sep 25 18:25:28 10.71.51.0 u94989008 [10.71.51.0|get|0|89309|0|0|0|2f6c6f67732f6163636573732e6c6f672e33392e32|]
+Sep 25 18:25:28 10.71.51.0 u94989008 open "/logs/info.py" flags READ mode 0666
+Sep 25 18:25:29 10.71.51.0 u94989008 close "/logs/sftp.log" bytes read 45614 written 0
+Sep 25 18:25:29 10.71.51.0 u94989008 [10.71.51.0|get|1|45614|0|0|0|2f6c6f67732f736674702e6c6f67|]
+Sep 25 18:25:29 10.71.51.0 u94989008 open "/logs/info.php5" flags READ mode 0666
+Sep 25 18:25:29 10.71.51.0 u94989008 close "/logs/info.py" bytes read 6384 written 0
+Sep 25 18:25:29 10.71.51.0 u94989008 [10.71.51.0|get|1|6384|0|0|0|2f6c6f67732f696e666f2e7079|]
+Sep 25 18:25:29 10.71.51.0 u94989008 open "/logs/info.pl" flags READ mode 0666
+Sep 25 18:25:30 10.71.51.0 u94989008 close "/logs/info.php5" bytes read 21 written 0
+Sep 25 18:25:30 10.71.51.0 u94989008 [10.71.51.0|get|1|21|0|0|0|2f6c6f67732f696e666f2e70687035|]
+Sep 25 18:25:30 10.71.51.0 u94989008 open "/logs/.htaccess" flags READ mode 0666
+Sep 25 18:25:30 10.71.51.0 u94989008 close "/logs/info.pl" bytes read 4176 written 0
+Sep 25 18:25:30 10.71.51.0 u94989008 [10.71.51.0|get|1|4176|0|0|0|2f6c6f67732f696e666f2e706c|]
+Sep 25 18:25:30 10.71.51.0 u94989008 open "/logs/access.log.39.2" flags READ mode 0666
+Sep 25 18:25:31 10.71.51.0 u94989008 close "/logs/access.log.39.2" bytes read 89309 written 0
+Sep 25 18:25:31 10.71.51.0 u94989008 [10.71.51.0|get|1|89309|0|0|0|2f6c6f67732f6163636573732e6c6f672e33392e32|]
+Sep 25 18:25:31 10.71.51.0 u94989008 close "/logs/.htaccess" bytes read 266 written 0
+Sep 25 18:25:31 10.71.51.0 u94989008 [10.71.51.0|get|1|266|0|0|0|2f6c6f67732f2e6874616363657373|]
+Sep 25 18:26:31 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 18:26:31 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 18:26:31 10.71.51.0 u94989008 session closed for local user u94989008 from [10.71.51.0]
+Sep 25 18:26:31 10.71.51.0 u94989008 Connection closed by 10.71.51.0
+Sep 25 18:29:17 10.71.51.0 u94989008 sent status No such file
+Sep 25 18:29:17 10.71.51.0 u94989008 Connection from 10.71.51.0 port 47124 on 82.165.80.98 port 22
+Sep 25 18:29:17 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 47124 ssh2
+Sep 25 18:29:17 10.71.51.0 u94989008 Connection from 10.71.51.0 port 47118 on 82.165.80.98 port 22
+Sep 25 18:29:17 10.71.51.0 u94989008 Accepted password for u94989008 from 10.71.51.0 port 47118 ssh2
+Sep 25 18:29:18 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 47124
+Sep 25 18:29:18 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 18:29:18 10.71.51.0 u94989008 Starting session: subsystem 'sftp' for u94989008 from 10.71.51.0 port 47118
+Sep 25 18:29:18 10.71.51.0 u94989008 session opened for local user u94989008 from [10.71.51.0]
+Sep 25 18:29:18 10.71.51.0 u94989008 open "/index.html" flags READ mode 0666
+Sep 25 18:29:18 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff2" flags READ mode 0666
+Sep 25 18:29:19 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff2" bytes read 18684 written 0
+Sep 25 18:29:19 10.71.51.0 u94989008 [10.71.51.0|get|1|18684|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f666632|]
+Sep 25 18:29:19 10.71.51.0 u94989008 close "/index.html" bytes read 11538 written 0
+Sep 25 18:29:19 10.71.51.0 u94989008 [10.71.51.0|get|1|11538|0|0|0|2f696e6465782e68746d6c|]
+Sep 25 18:29:19 10.71.51.0 u94989008 open "/css/roboto-thin-webfont.woff" flags READ mode 0666
+Sep 25 18:29:19 10.71.51.0 u94989008 open "/css/Raleway-ThinItalic.ttf" flags READ mode 0666
+Sep 25 18:29:19 10.71.51.0 u94989008 close "/css/Raleway-ThinItalic.ttf" bytes read 141884 written 0
+Sep 25 18:29:19 10.71.51.0 u94989008 [10.71.51.0|get|0|141884|0|0|0|2f6373732f52616c657761792d5468696e4974616c69632e747466|]
+Sep 25 18:29:20 10.71.51.0 u94989008 open "/css/Raleway-Thin.ttf" flags READ mode 0666
+Sep 25 18:29:20 10.71.51.0 u94989008 close "/css/roboto-thin-webfont.woff" bytes read 24756 written 0
+Sep 25 18:29:20 10.71.51.0 u94989008 [10.71.51.0|get|1|24756|0|0|0|2f6373732f726f626f746f2d7468696e2d776562666f6e742e776f6666|]
+Sep 25 18:29:20 10.71.51.0 u94989008 open "/css/Raleway-SemiBoldItalic.ttf" flags READ mode 0666
+Sep 25 18:29:20 10.71.51.0 u94989008 close "/css/Raleway-Thin.ttf" bytes read 177572 written 0
+Sep 25 18:29:20 10.71.51.0 u94989008 [10.71.51.0|get|0|177572|0|0|0|2f6373732f52616c657761792d5468696e2e747466|]
+Sep 25 18:29:20 10.71.51.0 u94989008 open "/css/Raleway-SemiBold.ttf" flags READ mode 0666
+Sep 25 18:29:21 10.71.51.0 u94989008 close "/css/Raleway-SemiBoldItalic.ttf" bytes read 146584 written 0
+Sep 25 18:29:21 10.71.51.0 u94989008 [10.71.51.0|get|1|146584|0|0|0|2f6373732f52616c657761792d53656d69426f6c644974616c69632e747466|]
+Sep 25 18:29:21 10.71.51.0 u94989008 open "/css/Raleway-Regular.ttf" flags READ mode 0666
+Sep 25 18:29:21 10.71.51.0 u94989008 close "/css/Raleway-SemiBold.ttf" bytes read 180492 written 0
+Sep 25 18:29:21 10.71.51.0 u94989008 [10.71.51.0|get|1|180492|0|0|0|2f6373732f52616c657761792d53656d69426f6c642e747466|]
+Sep 25 18:29:21 10.71.51.0 u94989008 close "/css/Raleway-Regular.ttf" bytes read 178520 written 0
+Sep 25 18:29:21 10.71.51.0 u94989008 [10.71.51.0|get|0|178520|0|0|0|2f6373732f52616c657761792d526567756c61722e747466|]
+Sep 25 18:29:21 10.71.51.0 u94989008 open "/css/Raleway-MediumItalic.ttf" flags READ mode 0666
+Sep 25 18:29:21 10.71.51.0 u94989008 open "/css/Raleway-Medium.ttf" flags READ mode 0666
+Sep 25 18:29:22 10.71.51.0 u94989008 close "/css/Raleway-MediumItalic.ttf" bytes read 147568 written 0
+Sep 25 18:29:22 10.71.51.0 u94989008 [10.71.51.0|get|1|147568|0|0|0|2f6373732f52616c657761792d4d656469756d4974616c69632e747466|]
+Sep 25 18:29:22 10.71.51.0 u94989008 close "/css/Raleway-Medium.ttf" bytes read 179444 written 0
+Sep 25 18:29:22 10.71.51.0 u94989008 [10.71.51.0|get|1|179444|0|0|0|2f6373732f52616c657761792d4d656469756d2e747466|]
+Sep 25 18:29:22 10.71.51.0 u94989008 open "/css/Raleway-LightItalic.ttf" flags READ mode 0666
+Sep 25 18:29:22 10.71.51.0 u94989008 open "/css/Raleway-Light.ttf" flags READ mode 0666
+Sep 25 18:29:23 10.71.51.0 u94989008 close "/css/Raleway-LightItalic.ttf" bytes read 148368 written 0
+Sep 25 18:29:23 10.71.51.0 u94989008 [10.71.51.0|get|1|148368|0|0|0|2f6373732f52616c657761792d4c696768744974616c69632e747466|]
+Sep 25 18:29:23 10.71.51.0 u94989008 close "/css/Raleway-Light.ttf" bytes read 182376 written 0
+Sep 25 18:29:23 10.71.51.0 u94989008 [10.71.51.0|get|1|182376|0|0|0|2f6373732f52616c657761792d4c696768742e747466|]
+Sep 25 18:29:23 10.71.51.0 u94989008 open "/css/Raleway-Italic.ttf" flags READ mode 0666
+Sep 25 18:29:23 10.71.51.0 u94989008 open "/css/Raleway-ExtraLightItalic.ttf" flags READ mode 0666
+Sep 25 18:29:23 10.71.51.0 u94989008 close "/css/Raleway-ExtraLightItalic.ttf" bytes read 142192 written 0
+Sep 25 18:29:23 10.71.51.0 u94989008 [10.71.51.0|get|0|142192|0|0|0|2f6373732f52616c657761792d45787472614c696768744974616c69632e747466|]
+Sep 25 18:29:23 10.71.51.0 u94989008 close "/css/Raleway-Italic.ttf" bytes read 145920 written 0
+Sep 25 18:29:23 10.71.51.0 u94989008 [10.71.51.0|get|0|145920|0|0|0|2f6373732f52616c657761792d4974616c69632e747466|]
+Sep 25 18:29:23 10.71.51.0 u94989008 open "/css/Raleway-ExtraLight.ttf" flags READ mode 0666
+Sep 25 18:29:23 10.71.51.0 u94989008 open "/css/Raleway-ExtraBoldItalic.ttf" flags READ mode 0666
+Sep 25 18:29:24 10.71.51.0 u94989008 close "/css/Raleway-ExtraLight.ttf" bytes read 176344 written 0
+Sep 25 18:29:24 10.71.51.0 u94989008 [10.71.51.0|get|1|176344|0|0|0|2f6373732f52616c657761792d45787472614c696768742e747466|]
+Sep 25 18:29:24 10.71.51.0 u94989008 close "/css/Raleway-ExtraBoldItalic.ttf" bytes read 148100 written 0
+Sep 25 18:29:24 10.71.51.0 u94989008 [10.71.51.0|get|1|148100|0|0|0|2f6373732f52616c657761792d4578747261426f6c644974616c69632e747466|]
+Sep 25 18:29:24 10.71.51.0 u94989008 open "/css/Raleway-ExtraBold.ttf" flags READ mode 0666
+Sep 25 18:29:24 10.71.51.0 u94989008 open "/css/Raleway-BoldItalic.ttf" flags READ mode 0666
+Sep 25 18:29:25 10.71.51.0 u94989008 close "/css/Raleway-ExtraBold.ttf" bytes read 178128 written 0
+Sep 25 18:29:25 10.71.51.0 u94989008 [10.71.51.0|get|1|178128|0|0|0|2f6373732f52616c657761792d4578747261426f6c642e747466|]
+Sep 25 18:29:25 10.71.51.0 u94989008 close "/css/Raleway-BoldItalic.ttf" bytes read 148184 written 0
+Sep 25 18:29:25 10.71.51.0 u94989008 [10.71.51.0|get|1|148184|0|0|0|2f6373732f52616c657761792d426f6c644974616c69632e747466|]
+Sep 25 18:29:25 10.71.51.0 u94989008 open "/css/Raleway-Bold.ttf" flags READ mode 0666
+Sep 25 18:29:25 10.71.51.0 u94989008 open "/css/Raleway-BlackItalic.ttf" flags READ mode 0666
+Sep 25 18:29:25 10.71.51.0 u94989008 close "/css/Raleway-BlackItalic.ttf" bytes read 148368 written 0
+Sep 25 18:29:25 10.71.51.0 u94989008 [10.71.51.0|get|0|148368|0|0|0|2f6373732f52616c657761792d426c61636b4974616c69632e747466|]
+Sep 25 18:29:26 10.71.51.0 u94989008 open "/css/Raleway-Black.ttf" flags READ mode 0666
+Sep 25 18:29:26 10.71.51.0 u94989008 close "/css/Raleway-Bold.ttf" bytes read 179244 written 0
+Sep 25 18:29:26 10.71.51.0 u94989008 [10.71.51.0|get|1|179244|0|0|0|2f6373732f52616c657761792d426f6c642e747466|]
+Sep 25 18:29:26 10.71.51.0 u94989008 open "/css/index.css" flags READ mode 0666
+Sep 25 18:29:26 10.71.51.0 u94989008 close "/css/Raleway-Black.ttf" bytes read 180592 written 0
+Sep 25 18:29:26 10.71.51.0 u94989008 [10.71.51.0|get|0|180592|0|0|0|2f6373732f52616c657761792d426c61636b2e747466|]
+Sep 25 18:29:26 10.71.51.0 u94989008 close "/css/index.css" bytes read 8587 written 0
+Sep 25 18:29:26 10.71.51.0 u94989008 [10.71.51.0|get|0|8587|0|0|0|2f6373732f696e6465782e637373|]
+Sep 25 18:29:26 10.71.51.0 u94989008 open "/css/Chalifor Dalsatic DEMO.ttf" flags READ mode 0666
+Sep 25 18:29:27 10.71.51.0 u94989008 open "/images/vert.jpg" flags READ mode 0666
+Sep 25 18:29:27 10.71.51.0 u94989008 close "/css/Chalifor Dalsatic DEMO.ttf" bytes read 350788 written 0
+Sep 25 18:29:27 10.71.51.0 u94989008 [10.71.51.0|get|1|350788|0|0|0|2f6373732f4368616c69666f722044616c73617469632044454d4f2e747466|]
+Sep 25 18:29:27 10.71.51.0 u94989008 open "/images/ski.jpg" flags READ mode 0666
+Sep 25 18:29:28 10.71.51.0 u94989008 close "/images/vert.jpg" bytes read 119118 written 0
+Sep 25 18:29:28 10.71.51.0 u94989008 [10.71.51.0|get|1|119118|0|0|0|2f696d616765732f766572742e6a7067|]
+Sep 25 18:29:28 10.71.51.0 u94989008 open "/images/Sans titre 2.png" flags READ mode 0666
+Sep 25 18:29:28 10.71.51.0 u94989008 close "/images/ski.jpg" bytes read 68682 written 0
+Sep 25 18:29:28 10.71.51.0 u94989008 [10.71.51.0|get|1|68682|0|0|0|2f696d616765732f736b692e6a7067|]
+Sep 25 18:29:28 10.71.51.0 u94989008 open "/images/portable.jpg" flags READ mode 0666
+Sep 25 18:29:28 10.71.51.0 u94989008 close "/images/Sans titre 2.png" bytes read 22166 written 0
+Sep 25 18:29:28 10.71.51.0 u94989008 [10.71.51.0|get|0|22166|0|0|0|2f696d616765732f53616e7320746974726520322e706e67|]
+Sep 25 18:29:29 10.71.51.0 u94989008 open "/images/maps.png" flags READ mode 0666
+Sep 25 18:29:29 10.71.51.0 u94989008 close "/images/portable.jpg" bytes read 166961 written 0
+Sep 25 18:29:29 10.71.51.0 u94989008 [10.71.51.0|get|1|166961|0|0|0|2f696d616765732f706f727461626c652e6a7067|]
+Sep 25 18:29:29 10.71.51.0 u94989008 open "/images/logoalpes.png" flags READ mode 0666
+Sep 25 18:29:29 10.71.51.0 u94989008 close "/images/maps.png" bytes read 20226 written 0
+Sep 25 18:29:29 10.71.51.0 u94989008 [10.71.51.0|get|0|20226|0|0|0|2f696d616765732f6d6170732e706e67|]
+Sep 25 18:29:29 10.71.51.0 u94989008 open "/images/logoalpes.jpg" flags READ mode 0666
+Sep 25 18:29:30 10.71.51.0 u94989008 close "/images/logoalpes.png" bytes read 14895 written 0
+Sep 25 18:29:30 10.71.51.0 u94989008 [10.71.51.0|get|1|14895|0|0|0|2f696d616765732f6c6f676f616c7065732e706e67|]
+Sep 25 18:29:30 10.71.51.0 u94989008 close "/images/logoalpes.jpg" bytes read 17493 written 0
+Sep 25 18:29:30 10.71.51.0 u94989008 [10.71.51.0|get|1|17493|0|0|0|2f696d616765732f6c6f676f616c7065732e6a7067|]
+Sep 25 18:29:30 10.71.51.0 u94989008 open "/images/linkedicon.png" flags READ mode 0666
+Sep 25 18:29:30 10.71.51.0 u94989008 open "/images/laptop2.png" flags READ mode 0666
+Sep 25 18:29:30 10.71.51.0 u94989008 close "/images/linkedicon.png" bytes read 14237 written 0
+Sep 25 18:29:30 10.71.51.0 u94989008 [10.71.51.0|get|0|14237|0|0|0|2f696d616765732f6c696e6b656469636f6e2e706e67|]
+Sep 25 18:29:30 10.71.51.0 u94989008 close "/images/laptop2.png" bytes read 1893 written 0
+Sep 25 18:29:30 10.71.51.0 u94989008 [10.71.51.0|get|0|1893|0|0|0|2f696d616765732f6c6170746f70322e706e67|]
+Sep 25 18:29:30 10.71.51.0 u94989008 open "/images/laptop.png" flags READ mode 0666
+Sep 25 18:29:31 10.71.51.0 u94989008 open "/images/js.png" flags READ mode 0666
+Sep 25 18:29:31 10.71.51.0 u94989008 close "/images/laptop.png" bytes read 946 written 0
+Sep 25 18:29:31 10.71.51.0 u94989008 [10.71.51.0|get|1|946|0|0|0|2f696d616765732f6c6170746f702e706e67|]
+Sep 25 18:29:31 10.71.51.0 u94989008 close "/images/js.png" bytes read 9637 written 0
+Sep 25 18:29:31 10.71.51.0 u94989008 [10.71.51.0|get|0|9637|0|0|0|2f696d616765732f6a732e706e67|]
+Sep 25 18:29:31 10.71.51.0 u94989008 open "/images/jquery.png" flags READ mode 0666
+Sep 25 18:29:31 10.71.51.0 u94989008 open "/images/instaicon.png" flags READ mode 0666
+Sep 25 18:29:32 10.71.51.0 u94989008 close "/images/jquery.png" bytes read 12578 written 0
+Sep 25 18:29:32 10.71.51.0 u94989008 [10.71.51.0|get|1|12578|0|0|0|2f696d616765732f6a71756572792e706e67|]
+Sep 25 18:29:32 10.71.51.0 u94989008 close "/images/instaicon.png" bytes read 24425 written 0
+Sep 25 18:29:32 10.71.51.0 u94989008 [10.71.51.0|get|1|24425|0|0|0|2f696d616765732f696e73746169636f6e2e706e67|]
+Sep 25 18:29:32 10.71.51.0 u94989008 open "/images/Icone discord.png" flags READ mode 0666
+Sep 25 18:29:32 10.71.51.0 u94989008 open "/images/html.png" flags READ mode 0666
+Sep 25 18:29:32 10.71.51.0 u94989008 close "/images/Icone discord.png" bytes read 37632 written 0
+Sep 25 18:29:32 10.71.51.0 u94989008 [10.71.51.0|get|0|37632|0|0|0|2f696d616765732f49636f6e6520646973636f72642e706e67|]
+Sep 25 18:29:32 10.71.51.0 u94989008 open "/images/guillemet.png" flags READ mode 0666
+Sep 25 18:29:33 10.71.51.0 u94989008 close "/images/html.png" bytes read 30561 written 0
+Sep 25 18:29:33 10.71.51.0 u94989008 [10.71.51.0|get|0|30561|0|0|0|2f696d616765732f68746d6c2e706e67|]
+Sep 25 18:29:33 10.71.51.0 u94989008 open "/images/flecheblanche.png" flags READ mode 0666
+Sep 25 18:29:33 10.71.51.0 u94989008 close "/images/guillemet.png" bytes read 1843 written 0
+Sep 25 18:29:33 10.71.51.0 u94989008 [10.71.51.0|get|1|1843|0|0|0|2f696d616765732f6775696c6c656d65742e706e67|]
+Sep 25 18:29:33 10.71.51.0 u94989008 open "/images/flechebas2.png" flags READ mode 0666
+Sep 25 18:29:33 10.71.51.0 u94989008 close "/images/flecheblanche.png" bytes read 6904 written 0
+Sep 25 18:29:33 10.71.51.0 u94989008 [10.71.51.0|get|0|6904|0|0|0|2f696d616765732f666c65636865626c616e6368652e706e67|]
+Sep 25 18:29:33 10.71.51.0 u94989008 open "/images/flechebas.png" flags READ mode 0666
+Sep 25 18:29:33 10.71.51.0 u94989008 close "/images/flechebas2.png" bytes read 637 written 0
+Sep 25 18:29:33 10.71.51.0 u94989008 [10.71.51.0|get|0|637|0|0|0|2f696d616765732f666c65636865626173322e706e67|]
+Sep 25 18:29:34 10.71.51.0 u94989008 close "/images/flechebas.png" bytes read 756 written 0
+Sep 25 18:29:34 10.71.51.0 u94989008 [10.71.51.0|get|1|756|0|0|0|2f696d616765732f666c656368656261732e706e67|]
+Sep 25 18:29:34 10.71.51.0 u94989008 open "/images/favicon.png" flags READ mode 0666
+Sep 25 18:29:34 10.71.51.0 u94989008 open "/images/facebookicon.png" flags READ mode 0666
+Sep 25 18:29:34 10.71.51.0 u94989008 close "/images/favicon.png" bytes read 8156 written 0
+Sep 25 18:29:34 10.71.51.0 u94989008 [10.71.51.0|get|0|8156|0|0|0|2f696d616765732f66617669636f6e2e706e67|]
+Sep 25 18:29:34 10.71.51.0 u94989008 open "/images/encreation.png" flags READ mode 0666
+Sep 25 18:29:35 10.71.51.0 u94989008 close "/images/facebookicon.png" bytes read 21594 written 0
+Sep 25 18:29:35 10.71.51.0 u94989008 [10.71.51.0|get|1|21594|0|0|0|2f696d616765732f66616365626f6f6b69636f6e2e706e67|]
+Sep 25 18:29:35 10.71.51.0 u94989008 close "/images/encreation.png" bytes read 79745 written 0
+Sep 25 18:29:35 10.71.51.0 u94989008 [10.71.51.0|get|1|79745|0|0|0|2f696d616765732f656e6372656174696f6e2e706e67|]
+Sep 25 18:29:35 10.71.51.0 u94989008 open "/images/document2.png" flags READ mode 0666
+Sep 25 18:29:35 10.71.51.0 u94989008 open "/images/document.png" flags READ mode 0666
+Sep 25 18:29:35 10.71.51.0 u94989008 close "/images/document.png" bytes read 1109 written 0
+Sep 25 18:29:35 10.71.51.0 u94989008 [10.71.51.0|get|0|1109|0|0|0|2f696d616765732f646f63756d656e742e706e67|]
+Sep 25 18:29:35 10.71.51.0 u94989008 open "/images/css.png" flags READ mode 0666
+Sep 25 18:29:36 10.71.51.0 u94989008 close "/images/document2.png" bytes read 1162 written 0
+Sep 25 18:29:36 10.71.51.0 u94989008 [10.71.51.0|get|1|1162|0|0|0|2f696d616765732f646f63756d656e74322e706e67|]
+Sep 25 18:29:36 10.71.51.0 u94989008 close "/images/css.png" bytes read 17766 written 0
+Sep 25 18:29:36 10.71.51.0 u94989008 [10.71.51.0|get|1|17766|0|0|0|2f696d616765732f6373732e706e67|]
+Sep 25 18:29:36 10.71.51.0 u94989008 open "/images/code2.png" flags READ mode 0666
+Sep 25 18:29:36 10.71.51.0 u94989008 open "/images/code2.jpg" flags READ mode 0666
+Sep 25 18:29:36 10.71.51.0 u94989008 close "/images/code2.png" bytes read 1200 written 0
+Sep 25 18:29:36 10.71.51.0 u94989008 [10.71.51.0|get|0|1200|0|0|0|2f696d616765732f636f6465322e706e67|]
+Sep 25 18:29:36 10.71.51.0 u94989008 open "/images/code.png" flags READ mode 0666
+Sep 25 18:29:37 10.71.51.0 u94989008 close "/images/code.png" bytes read 1038 written 0
+Sep 25 18:29:37 10.71.51.0 u94989008 [10.71.51.0|get|1|1038|0|0|0|2f696d616765732f636f64652e706e67|]
+Sep 25 18:29:37 10.71.51.0 u94989008 close "/images/code2.jpg" bytes read 128260 written 0
+Sep 25 18:29:37 10.71.51.0 u94989008 [10.71.51.0|get|1|128260|0|0|0|2f696d616765732f636f6465322e6a7067|]
+Sep 25 18:29:37 10.71.51.0 u94989008 open "/images/code.jpg" flags READ mode 0666
+Sep 25 18:29:37 10.71.51.0 u94989008 open "/images/bleu.png" flags READ mode 0666
+Sep 25 18:29:37 10.71.51.0 u94989008 close "/images/bleu.png" bytes read 34282 written 0
+Sep 25 18:29:37 10.71.51.0 u94989008 [10.71.51.0|get|0|34282|0|0|0|2f696d616765732f626c65752e706e67|]
+Sep 25 18:29:38 10.71.51.0 u94989008 open "/images/anothai.png" flags READ mode 0666
+Sep 25 18:29:38 10.71.51.0 u94989008 close "/images/anothai.png" bytes read 10061 written 0
+Sep 25 18:29:38 10.71.51.0 u94989008 [10.71.51.0|get|0|10061|0|0|0|2f696d616765732f616e6f746861692e706e67|]
+Sep 25 18:29:38 10.71.51.0 u94989008 open "/images/ampoule.jpg" flags READ mode 0666
+Sep 25 18:29:39 10.71.51.0 u94989008 close "/images/ampoule.jpg" bytes read 58300 written 0
+Sep 25 18:29:39 10.71.51.0 u94989008 [10.71.51.0|get|1|58300|0|0|0|2f696d616765732f616d706f756c652e6a7067|]
+Sep 25 18:29:39 10.71.51.0 u94989008 open "/images/463.jpg" flags READ mode 0666
+Sep 25 18:29:39 10.71.51.0 u94989008 close "/images/code.jpg" bytes read 264895 written 0
+Sep 25 18:29:39 10.71.51.0 u94989008 [10.71.51.0|get|2|264895|0|0|0|2f696d616765732f636f64652e6a7067|]
+Sep 25 18:29:39 10.71.51.0 u94989008 open "/images/328.jpg" flags READ mode 0666
+Sep 25 18:29:41 10.71.51.0 u94989008 close "/images/328.jpg" bytes read 520056 written 0
+Sep 25 18:29:41 10.71.51.0 u94989008 [10.71.51.0|get|2|520056|0|0|0|2f696d616765732f3332382e6a7067|]
+Sep 25 18:29:41 10.71.51.0 u94989008 open "/images/1.jpg" flags READ mode 0666
+Sep 25 18:29:41 10.71.51.0 u94989008 close "/images/463.jpg" bytes read 981651 written 0
+Sep 25 18:29:41 10.71.51.0 u94989008 [10.71.51.0|get|2|981651|0|0|0|2f696d616765732f3436332e6a7067|]
+Sep 25 18:29:41 10.71.51.0 u94989008 open "/images/328 (2).jpg" flags READ mode 0666
+Sep 25 18:29:41 10.71.51.0 u94989008 close "/images/1.jpg" bytes read 24926 written 0
+Sep 25 18:29:41 10.71.51.0 u94989008 [10.71.51.0|get|0|24926|0|0|0|2f696d616765732f312e6a7067|]
+Sep 25 18:29:42 10.71.51.0 u94989008 open "/js/jquery-ui.js" flags READ mode 0666
+Sep 25 18:29:42 10.71.51.0 u94989008 close "/images/328 (2).jpg" bytes read 520056 written 0
+Sep 25 18:29:42 10.71.51.0 u94989008 [10.71.51.0|get|1|520056|0|0|0|2f696d616765732f333238202832292e6a7067|]
+Sep 25 18:29:42 10.71.51.0 u94989008 open "/js/index.js" flags READ mode 0666
+Sep 25 18:29:43 10.71.51.0 u94989008 close "/js/jquery-ui.js" bytes read 520714 written 0
+Sep 25 18:29:43 10.71.51.0 u94989008 [10.71.51.0|get|1|520714|0|0|0|2f6a732f6a71756572792d75692e6a73|]
+Sep 25 18:29:43 10.71.51.0 u94989008 close "/js/index.js" bytes read 5165 written 0
+Sep 25 18:29:43 10.71.51.0 u94989008 [10.71.51.0|get|1|5165|0|0|0|2f6a732f696e6465782e6a73|]
+Sep 25 18:29:43 10.71.51.0 u94989008 open "/logs/access.log.39.2" flags READ mode 0666
+Sep 25 18:29:43 10.71.51.0 u94989008 open "/logs/sftp.log" flags READ mode 0666
