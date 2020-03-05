@@ -5,11 +5,12 @@
     max-width: 300px;
     min-width: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     h3 {
       text-align: left;
+      padding: 5px;
     }
   }
   .content {

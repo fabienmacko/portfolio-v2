@@ -1,11 +1,12 @@
 #about {
   .about-container {
-    &:after {
+    &:after, &:before {
       content: none;
     }
+    margin-top: 30px;
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 550px;
+    max-height: 490px;
     p, h3 {
       text-align: left;
     }

@@ -1,8 +1,9 @@
 #testimonials {
   .testimonials-container {
+    height: 320px;
     .carousel {
       position: relative;
-      height: 400px;
+      height: 350px;
       width: 100%;
       .comment {
         transition: .6s;

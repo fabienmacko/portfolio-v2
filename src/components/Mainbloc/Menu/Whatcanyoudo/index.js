@@ -110,13 +110,13 @@ class Whatcanyoudo extends React.Component {
     return (
       <div id="whatcanyoudo">
         <div className="section-title">
-          <div data-aos="fade-right">What can you do?</div>
+          <div data-aos="fade-right">What can I do?</div>
           <div className="underline" data-aos="flip-right" data-aos-delay="400"></div>
         </div>
         <div className="content">
           <div className="text">
             I can work on pretty much everything regarding the differents stacks of Web Development.<br />Front, back, general knowledges and concepts about the web development operation, finnaly, everything is needed to create valuables applications.<br />But I prefer to talk less and do more.<br />Let me show you what kind of things I can do.
-        </div>
+          </div>
 
           <div className="container skills animated-border" data-aos="zoom-in">
             <div className="item skill" data-aos="fade-left" data-aos-delay="200" ref={(e) => this.first = e}>
