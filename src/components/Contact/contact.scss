@@ -28,21 +28,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &.open > svg:nth-child(1) {
-      opacity: 1;
-    }
-    &.open > svg:nth-child(2) {
-      opacity: 0;
-    }
-    & > svg:nth-child(2) {
-      opacity: 1;
-    }
-    svg {
+    i {
       pointer-events: none;
       transform: rotate(90deg);
       transition: .4s;
-      opacity: 0;
       position: absolute;
+    }
+    .fa-ellipsis {
+      opacity: 1;
+    }
+    .fa-times {
+      opacity: 0;
+    }
+    &.open > .fa-times {
+      opacity: 1;
+    }
+    &.open > .fa-ellipsis-v {
+      opacity: 0;
     }
   }
   .contact-element {
