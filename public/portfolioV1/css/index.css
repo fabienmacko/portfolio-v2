@@ -1,0 +1,624 @@
+@font-face
+{
+	font-family: 'robotothin';
+
+    src: url('roboto-thin-webfont.woff2') format('woff2'),
+    	 url('roboto-thin-webfont.woff') format('woff');
+}
+@font-face
+{
+	font-family: 'raleway';
+
+    src: url('Raleway-Thin.ttf');
+}
+@font-face
+{
+	font-family: 'ralewaymedium';
+
+    src: url('Raleway-Medium.ttf');
+}
+@font-face
+{
+	font-family: 'ralewaybold';
+
+    src: url('Raleway-Black.ttf');
+}
+@font-face
+{
+	font-family: 'chalifor';
+
+    src: url('Chalifor Dalsatic DEMO.ttf');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+body
+{
+	font-family: "robotothin";
+	background-color: white;
+}
+
+}
+#alpesetcanyons img
+{
+	border-radius: 50%;
+}
+#blocportfolio h2
+{
+	font-size: 70px;
+	text-align: center;
+	margin-top: 150px;
+	color: black;
+}
+#laptop
+{
+	width: auto;
+	height: 100px;
+	margin-top: -15px;
+	margin-bottom: -10px;
+}
+.hidden
+{
+	display: none;
+}
+
+#contenuheader
+{
+	width: 980px;
+	height: 400px;
+	margin-top: 100px;
+	font-size: 35px;
+	padding-left: 30px;
+	margin-left: 30px;
+	display: none;
+}
+#textepresentation
+{
+	padding: 0;
+}
+
+#menu
+{
+	background-color: rgba(4, 4, 6, 1);
+	list-style-type: none;
+	color: white;
+	position: fixed;
+	top: 0px;
+	z-index: 3000;
+	height: 120px;
+	width: 100%;
+	display: none;
+}
+#menu ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+}
+#menu a
+{
+	text-decoration: none;
+	color: white;
+}
+#menu li
+{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: -5px;
+	cursor: pointer;
+	text-align: center;
+}
+.barremenu
+{
+	height: 3px;
+	width: 250px;
+	background-color: white;
+	margin-top: 27px;
+	opacity: 0;
+}
+#menu img
+{
+	width: auto;
+	margin-top: 20px;
+	height: 100px;
+	cursor: pointer;
+	margin-top: -40px;
+}
+
+#sitesport
+{
+	display: flex;
+	margin-left: 200px;
+	margin-right: 200px;
+	justify-content: center;
+}
+#codage, #gestion, #doc
+{
+	height: auto;
+	width: 600px;
+	word-wrap : break-word;
+}
+#code, #document
+{
+	width: 90px;
+	height: auto;
+}
+#sitesport h3
+{
+	font-size: 30px;
+	color: black;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#sitesport img
+{
+	height: auto;
+	width: 190px;
+}
+#sitesport div
+{
+	justify-content: center;
+	text-align: center;
+}
+#encours1 img
+{
+	border-radius: 50%;
+	height: auto;
+	width: 190px;
+}
+#h2etapes
+{
+	font-family: 'robotothin';
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.titreetapes
+{
+	font-size: 40px;
+	font-family: "ralewaymedium";
+	color: #999999;
+	padding-right: 100px;
+	padding-left: 100px;
+	text-shadow: 2px 2px black;
+}
+#listeetapes
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin-left: -45px;
+}
+
+#listeetapes p
+{
+	width: 500px;
+	font-size: 25px;
+	margin: 0 auto;
+	color: #999999;
+}
+
+#header
+{
+	justify-content: center;
+	display: flex;
+	height: 100%;
+	background-color: black;
+	font-size: 50px;
+	color: white;
+	z-index: 8;
+	margin: 0;
+	padding: 0;
+	background-color: #040406;
+}
+#contenuabout
+{
+	margin-top: 250px;
+}
+#header span
+{
+	font-size: 50px;
+	margin-left: 5px;
+	margin-top: 250px;
+}
+
+#blocportfolio
+
+{
+	background-color:#e6e6e6;
+	height: 800px;
+	z-index: 10;
+	margin-top: 400px;
+}
+
+#contenupage
+{
+	background-color: white;
+	display: flex;
+    flex-direction: column;
+    background: url("../images/code.jpg") no-repeat fixed;
+    background-size: cover;
+		margin: 0;
+		padding: 0;
+}
+#devantpc
+{
+	height: auto;
+	width: 500px;
+	float: right;
+	margin-top: 150px;
+	margin-left: 200px;
+	z-index: 0;
+	display: none;
+}
+
+
+#guillemet
+{
+	opacity: 0.3;
+	width: auto;
+	height: 50px;
+	position: relative;
+	top: 70px;
+	right: 20px;
+	z-index: 1;
+}
+#barregrise
+{
+	width: 400px;
+	height: 100px;
+	background-color: #333333;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 600px;
+	left: -100px;
+	opacity: 0.6;
+	z-index: 1;
+}
+
+#stats
+{
+	height: 900px;
+	background-image: url("../images/portable.jpg");
+	background-size: cover;
+	text-align: center;
+}
+.flechebas
+{
+	width: auto;
+	height: 45px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	cursor: pointer;
+}
+#rondtest
+{
+	border: solid 10px white;
+	border-radius: 50%;
+	height: 400px;
+	width: 400px;
+	background-color: rgb(153, 214, 255, 0.2);
+	position: absolute;
+	cursor: pointer;
+}
+#bloccalcul
+{
+	background-color: #040406;
+	height: 800px;
+}
+#go
+{
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	margin-top: 140px;
+	z-index: 8;
+
+}
+#h2calcul
+{
+	font-size: 70px;
+	width: 1000px;
+	height: 100px;
+	margin-top: 80px;
+	color: white;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	font-family: "ralewaymedium";
+}
+#h2techno
+{
+	font-size: 50px;
+	width: 500px;
+	height: 100px;
+	margin-top: 80px;
+	color: white;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	opacity: 0;
+}
+.texttechno
+{
+	color: white;
+}
+.logotechno
+{
+	height: auto;
+	width: 100px;
+	text-align:center;
+	opacity: 0.6;
+	display: none;
+}
+#centerjs, #centercss, #centerhtml, #centerjquery
+{
+	text-align: center;
+}
+#divcalcul
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 300px;
+}
+#logojs, #logojquery
+{
+	height: auto;
+	width: 150px;
+}
+footer
+{
+	background-color: rgb(77, 77, 77);
+	color:#000000;
+	text-align: center;
+	height: 200px;
+}
+footer p
+{
+	margin-top: 35px;
+	margin-left: 30px;
+}
+#mapsimg
+{
+	z-index: 7000;
+	position: relative;
+	height: 100px;
+	width: auto;
+	left: 47.5%;
+	top: 700px;
+
+}
+footer ul
+{
+	display: flex;
+	margin-top: 35px;
+	list-style-type: none;
+	justify-content: center;
+}
+footer li
+{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+iframe
+{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	position: absolute;
+	bottom: 0px;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height:480px;
+	overflow:hidden;
+	border: none;
+}
+.divtechno
+{
+	height: 400px;
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 150px;
+	padding: 9px;
+}
+#html
+{
+	margin-left: 200px;
+}
+#css
+{
+	margin-right: 200px;
+}
+#ingenieur
+{
+	width: 400px;
+	height: auto;
+	position: absolute;
+	right: 15%;
+	top: 50px;
+}
+#parallax
+{
+	width: 100%;
+	height: 500px;
+	background-image: url("../images/code.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+.imagesport
+{
+	width: auto;
+}
+.skilltechno
+{
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+.skill
+{
+	border: solid 2px rgb(153, 153, 153);
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.noskill
+{
+	border: solid 2px white;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#skilljquery .skill
+{
+	border: solid 2px #0868AC;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#skillcss .skill
+{
+	border: solid 2px #0170BA;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#skillhtml .skill
+{
+	border: solid 2px #E44D26;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#skilljs .skill
+{
+	border: solid 2px #E5A228;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#générales
+{
+	font-size: 70px;
+	width: 300px;
+	height: 100px;
+	color: white;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.socialicons
+{
+	height: 60px;
+	width: auto;
+}
+#fbicon
+{
+	height: 68px;
+	width: auto;
+	margin-top: -3px;
+}
+#bloccontact
+{
+	height: 1000px;
+	background-color: white;
+	position: relative;
+	display: flex;
+}
+.blocli
+{
+	opacity: 0;
+}
+
+.skilltechno, .texttechno, .barretechno, #générales
+{
+	opacity: 0;
+}
+.skilltechno
+{
+	margin-right: 200px;
+}
+.divport
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 400px;
+	height: 400px;
+}
+#bloccontact ul
+{
+	list-style-type: none;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+#bloccontact li
+{
+	margin-bottom: 120px;
+}
+
+#lientel
+{
+	text-decoration: none;
+	color: black;
+	font-size: 65px;
+	transition: all 300ms;
+	margin-left: 30px;
+	font-family: "robotothin";
+}
+#lientel:hover
+{
+	color: grey;
+}
+#lienmail
+{
+	text-decoration: none;
+	color: black;
+	font-size: 50px;
+	transition: all 300ms;
+	margin-left: 30px;
+	font-family: "robotothin";
+}
+#lienmail:hover
+{
+	color: grey;
+}
+#barrecontact
+{
+	height: 0px;
+	background-color: black;
+	width: 2px;
+	border: none;
+	position: absolute;
+  	top: 70px;
+  	left: 50%;
+}
