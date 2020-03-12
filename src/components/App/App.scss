@@ -3,9 +3,13 @@
 // Media Queries
 
 @media screen and (max-width: 1000px) {
-  html, body {margin: 0; height: 100%; overflow: hidden}
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
   #app {
-
     #testimonials .testimonials-container {
       height: 300px;
       .comment div p {
@@ -16,12 +20,14 @@
           font-size: 1.2em !important;
         }
       }
-  }
-    .animated-border:before, .animated-border:after {
+    }
+    .animated-border:before,
+    .animated-border:after {
       border: 1px solid transparent;
     }
 
-    .about-container:after, .about-container:before {
+    .about-container:after,
+    .about-container:before {
       border: none;
     }
 
@@ -34,7 +40,7 @@
       height: 35px;
       line-height: 35px;
       span {
-        font-size: .7rem;
+        font-size: 0.7rem;
       }
     }
 
@@ -55,26 +61,28 @@
       height: 320px;
       .item {
         width: 100% !important;
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
-      h2, h3 {
-        margin:0;
+      h2,
+      h3 {
+        margin: 0;
       }
     }
 
     .container {
       padding: 10px;
       margin-top: 30px;
-      .technology, .tool {
+      .technology,
+      .tool {
         width: 40px;
         padding: 2px;
-        font-size: .6rem;
+        font-size: 0.6rem;
         p {
-          font-size: .6rem;
+          font-size: 0.6rem;
         }
       }
       .item {
-        font-size: .6rem;
+        font-size: 0.6rem;
         min-width: 250px;
 
         figure {
@@ -90,12 +98,11 @@
       }
     }
 
-
     .content {
       width: 90%;
       margin-top: 20px;
       .text {
-        font-size: .7rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -113,7 +120,7 @@
     }
 
     .speechbubble {
-      // New CSS 
+      // New CSS
 
       font-size: 17px !important;
       left: 0px !important;
@@ -160,7 +167,8 @@
       }
     }
 
-    #navbar, #navbar-mobile {
+    #navbar,
+    #navbar-mobile {
       background-color: #ffffff;
       width: 100%;
       position: absolute;
@@ -174,7 +182,24 @@
       }
     }
   }
-  
+}
+
+@media screen and (max-height: 615px) {
+  .content {
+    margin: 5px auto !important;
+  }
+  .skills {
+    padding: 10px !important;
+    .skill {
+      h3 {
+        margin: 3px 0 !important;
+      }
+    }
+  }
+
+  .container {
+    margin-top: 10px !important;
+  }
 }
 
 body {
