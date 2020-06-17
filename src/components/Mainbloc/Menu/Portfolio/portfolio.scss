@@ -43,6 +43,7 @@ figure.figure img {
   max-width: 100%;
   position: relative;
   opacity: 0.4;
+  
 }
 
 figure.figure figcaption {
@@ -114,6 +115,10 @@ figure.figure.red h2 {
 
 figure.figure.yellow {
   background: #7f5006;
+}
+
+figure.figure.purple {
+  background: rgb(145, 152, 229);
 }
 
 figure.figure.yellow h2 {

@@ -1,11 +1,4 @@
 RewriteEngine on
-RewriteBase /
-
-# Rewrites all URLS without blog in them
-RewriteCond %{REQUEST_URI} !^/blog/
-
-# Rewrites all URLS [Replace "example" with the actual domain, without the TLD (.com, .net, .biz, etc)]
-RewriteCond %{HTTP_HOST} ^(www\.)?fabmacko.herokuapp.com\.
-
-# Rewrite all those to insert /folder
-RewriteRule ^(.*)$ /build/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html?path=$1 [NC,L,QSA]
