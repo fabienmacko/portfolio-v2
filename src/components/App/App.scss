@@ -2,25 +2,229 @@
 
 // Media Queries
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 615px) {
+  .technology,
+  .tool {
+    width: 40px !important;
+    padding: 2px;
+    font-size: 0.6rem !important;
+
+    p {
+      font-size: 0.6rem !important;
+    }
+  }
+
+}
+
+@media screen and (max-height: 615px) {
+  .content {
+    margin: 5px auto !important;
+  }
+
+
+  .skills {
+    padding: 10px !important;
+
+    .skill {
+      h3 {
+        margin: 3px 0 !important;
+      }
+    }
+  }
+
+  .container {
+    margin-top: 10px !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  font-size: 17px;
+
+  /* width */
+  // Animated border style
+  .animated-border {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .animated-border:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+
+  .animated-border:before {
+    animation: animate 1s linear forwards;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0;
+      height: 0;
+      border-top-color: white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+
+    50% {
+      width: 100%;
+      height: 0;
+      border-top-color: white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: white;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+      border-top-color: white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: white;
+    }
+  }
+
+  .animated-border:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+
+  .animated-border:after {
+    animation: animate2 1s linear forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes animate2 {
+    0% {
+      width: 0;
+      height: 0;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: white;
+      border-right-color: transparent;
+    }
+
+    50% {
+      width: 0;
+      height: 100%;
+      border-top-color: transparent;
+      border-bottom-color: white;
+      border-left-color: white;
+      border-right-color: transparent;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+      border-top-color: transparent;
+      border-bottom-color: white;
+      border-left-color: white;
+      border-right-color: transparent;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .swal2-styled {
+    background-color: $orange !important;
+    box-shadow: none !important;
+  }
+
+  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+    background: $orange !important;
+  }
+
+  .swal2-content {
+    font-weight: bold !important;
+  }
+
+  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+    background: $orange-opaque;
+  }
+
+  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+    background: $orange-opaque;
+    color: #fff;
+  }
+
+  .swal2-progress-steps .swal2-progress-step-line {
+    background: $orange;
+  }
+
+  .swal2-progress-steps .swal2-progress-step {
+    border-radius: 2em;
+    background: $orange;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $orange;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 175, 175);
+  }
+}
+
+.app {
+  position: absolute;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1350px) {
+
   html,
   body {
     margin: 0;
     height: 100%;
     overflow: hidden;
   }
+
   #app {
     #testimonials .testimonials-container {
       height: 300px;
+
       .comment div p {
         &:nth-child(1) {
           font-size: 1.5em;
         }
+
         &:nth-child(2) {
           font-size: 1.2em !important;
         }
       }
     }
+
     .animated-border:before,
     .animated-border:after {
       border: 1px solid transparent;
@@ -35,10 +239,12 @@
       align-items: center;
       margin: 0 auto;
     }
+
     .btn {
       width: 100%;
       height: 35px;
       line-height: 35px;
+
       span {
         font-size: 0.7rem;
       }
@@ -59,10 +265,12 @@
       overflow-y: auto;
       overflow-x: hidden;
       height: 320px;
+
       .item {
         width: 100% !important;
         font-size: 0.8rem;
       }
+
       h2,
       h3 {
         margin: 0;
@@ -72,16 +280,19 @@
     .container {
       padding: 10px;
       margin-top: 30px;
+
       .technology,
       .tool {
-        width: 40px;
+        width: 100px;
         padding: 2px;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
+
         p {
-          font-size: 0.6rem;
+          font-size: 0.9rem;
         }
       }
-      .item {
+
+      .item.skill {
         font-size: 0.6rem;
         min-width: 250px;
 
@@ -91,6 +302,7 @@
           max-width: none;
           width: 150px;
           margin: 10px auto;
+
           &:before {
             top: -11px;
           }
@@ -101,6 +313,7 @@
     .content {
       width: 90%;
       margin-top: 20px;
+
       .text {
         font-size: 0.8rem;
       }
@@ -129,6 +342,7 @@
       max-width: 220px !important;
       //  Border and arrow left
       border-left: 5px solid;
+
       &:after {
         bottom: -35px;
       }
@@ -156,6 +370,7 @@
       justify-content: center;
       align-items: center;
       padding: 10px;
+
       .social-media {
         font-size: 11px;
       }
@@ -182,171 +397,4 @@
       }
     }
   }
-}
-
-@media screen and (max-height: 615px) {
-  .content {
-    margin: 5px auto !important;
-  }
-  .skills {
-    padding: 10px !important;
-    .skill {
-      h3 {
-        margin: 3px 0 !important;
-      }
-    }
-  }
-
-  .container {
-    margin-top: 10px !important;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-  font-size: 17px;
-  /* width */
-  // Animated border style
-  .animated-border {
-    position: relative;
-    display: inline-block;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .animated-border:before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: 2px solid transparent;
-  }
-  .animated-border:before {
-    animation: animate 1s linear forwards;
-  }
-  @keyframes animate {
-    0% {
-      width: 0;
-      height: 0;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
-    }
-    50% {
-      width: 100%;
-      height: 0;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: white;
-    }
-    100% {
-      width: 100%;
-      height: 100%;
-      border-top-color: white;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: white;
-    }
-  }
-  .animated-border:after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: 2px solid transparent;
-  }
-  .animated-border:after {
-    animation: animate2 1s linear forwards;
-    animation-delay: 1s;
-  }
-
-  @keyframes animate2 {
-    0% {
-      width: 0;
-      height: 0;
-      border-top-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-    50% {
-      width: 0;
-      height: 100%;
-      border-top-color: transparent;
-      border-bottom-color: white;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-    100% {
-      width: 100%;
-      height: 100%;
-      border-top-color: transparent;
-      border-bottom-color: white;
-      border-left-color: white;
-      border-right-color: transparent;
-    }
-  }
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  .swal2-styled {
-    background-color: $orange !important;
-    box-shadow: none !important;
-  }
-
-  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
-    background: $orange !important;
-  }
-  .swal2-content {
-    font-weight: bold !important;
-  }
-
-  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {
-    background: $orange-opaque;
-  }
-
-  .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
-    background: $orange-opaque;
-    color: #fff;
-  }
-
-  .swal2-progress-steps .swal2-progress-step-line {
-    background: $orange;
-  }
-
-  .swal2-progress-steps .swal2-progress-step {
-    border-radius: 2em;
-    background: $orange;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $orange;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(175, 175, 175);
-  }
-}
-
-.app {
-  position: absolute;
-  width: 100%;
 }

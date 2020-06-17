@@ -67,7 +67,7 @@ const Portfolio = () => {
         </div>
         <div className="container sites-container animated-border">
 
-        <div className="item site" data-aos="fade-left" data-aos-delay="400" onClick={handleMemoryClick}>
+        <div className="item site" data-aos="fade-left" data-aos-delay="200" onClick={handleMemoryClick}>
             <figure className="figure purple">
               <img src={Memory} alt="Memory" />
               <figcaption>
@@ -77,7 +77,7 @@ const Portfolio = () => {
             </figure>
           </div>
           
-          <div className="item site" data-aos="fade-left" data-aos-delay="200" onClick={handlePolisClick}>
+          <div className="item site" data-aos="fade-left" data-aos-delay="400" onClick={handlePolisClick}>
             <figure className="figure red">
               <img src={Polis} alt="Polis" />
               <figcaption>

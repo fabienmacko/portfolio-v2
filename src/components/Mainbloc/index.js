@@ -28,10 +28,10 @@ class Mainbloc extends React.Component {
     return (
       <>
       {
-        window.innerWidth <= 1000 && <NavbarMobile />
+        window.innerWidth <= 1350 && <NavbarMobile />
       }
       {
-        window.innerWidth > 1000 && <Navbar />
+        window.innerWidth > 1350 && <Navbar />
       }
         <div id="mainbloc" className={isMenuOpen ? 'open' : ''}>
           {
