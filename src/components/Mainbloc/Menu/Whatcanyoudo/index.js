@@ -1,8 +1,12 @@
 import React from 'react';
 import MySwal from 'sweetalert2';
 import axios from 'axios';
+import {Link, BrowserRouter as Router} from 'react-router-dom';
 import withReactContent from 'sweetalert2-react-content';
+
 import './whatcanyoudo.scss';
+
+import Comment from '../../../Comment';
 
 class Whatcanyoudo extends React.Component {
 
@@ -70,37 +74,44 @@ class Whatcanyoudo extends React.Component {
       input: 'text',
       confirmButtonText: 'Next &rarr;',
       showCancelButton: true,
-      progressSteps: ['1', '2']
+      progressSteps: ['1', '2', '3', '4']
     }).queue([
       {
-        title: 'Your firstname?',
+        title: 'Your name?',
+      },
+      {
+        title: 'Your job title?',
+      },
+      {
+        title: 'Your company?',
       },
       {
         title: 'Your comment?',
       },
     ]).then((result) => {
       if (result.value) {
-        let pseudo = result.value[0];
-        let description = result.value[1];
-        axios.post('https://fabienmackowiak.com:3000/comments/insert', {
-          pseudo,
-          description
+        const [name, jobTitle, company, comment] = [result.value[0], result.value[1], result.value[2], result.value[3]];
+
+        axios.post(process.env.REACT_APP_API_URL+'/comments/insert', {
+          name,
+          jobTitle,
+          company,
+          comment
         })
           .then(function (response) {
             // handle success
+            console.log('Comment successfully inserted');
           })
           .catch(function (error) {
             // handle error
             console.log(error);
           })
         this.Swal.fire({
-          title: 'Thanks! Your appreciation has been successfully added.',
-          html:
-            '<div style="display:flex;flex-direction:column;align-items:center;width:60%;margin:0 auto;color: black;border: 2px solid #464646;border-radius:4px;padding: 20px;margin-top: 20px;">' +
-            '<p style="width: 100%;">' + this.escapeHtml(result.value[1]) + '</p>' +
-            '<p style="align-self: flex-end;font-size: 1rem;opacity: .7;">- ' + this.escapeHtml(result.value[0]) + '</p>' +
-            '</div>',
-          confirmButtonText: 'Lovely!'
+          title: 'Thanks! Your appreciation has been successfully added. You will find it in the "Testimonials" section.',
+          html: <Comment name={name} jobTitle={jobTitle} company={company} comment={comment} />,
+          showCancelButton: true,
+          confirmButtonText: '<a style="text-decoration: none !important;color: white !important;" href="/testimonials">View my comment!</a>',
+          cancelButtonText: 'Stay here'
         })
       }
     })
@@ -115,7 +126,7 @@ class Whatcanyoudo extends React.Component {
         </div>
         <div className="content">
           <div className="text">
-            I can work on pretty much everything regarding the differents stacks of Web Development.<br />Front, back, general knowledges and concepts about the web development operation, finnaly, everything is needed to create valuables applications.<br />But I prefer to talk less and do more.<br />Let me show you what kind of things I can do.
+            I can work on pretty much everything regarding the differents stacks of Web Development. Front, back, finnaly, everything is needed to create valuables applications.<br />But I prefer to talk less and do more.<br />Let me show you what kind of things I can do.
           </div>
 
           <div className="container skills animated-border" data-aos="zoom-in">

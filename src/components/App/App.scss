@@ -2,46 +2,12 @@
 
 // Media Queries
 
-@media screen and (max-width: 615px) {
-  .technology,
-  .tool {
-    width: 40px !important;
-    padding: 2px;
-    font-size: 0.6rem !important;
-
-    p {
-      font-size: 0.6rem !important;
-    }
-  }
-
-}
-
-@media screen and (max-height: 615px) {
-  .content {
-    margin: 5px auto !important;
-  }
-
-
-  .skills {
-    padding: 10px !important;
-
-    .skill {
-      h3 {
-        margin: 3px 0 !important;
-      }
-    }
-  }
-
-  .container {
-    margin-top: 10px !important;
-  }
-}
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
-  font-size: 17px;
+  font-size: 18px;
 
   /* width */
   // Animated border style
@@ -157,8 +123,8 @@ body {
     background: $orange !important;
   }
 
-  .swal2-content {
-    font-weight: bold !important;
+  .swal2-popup {
+      width: 60em;
   }
 
   .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
@@ -213,16 +179,6 @@ body {
   #app {
     #testimonials .testimonials-container {
       height: 300px;
-
-      .comment div p {
-        &:nth-child(1) {
-          font-size: 1.5em;
-        }
-
-        &:nth-child(2) {
-          font-size: 1.2em !important;
-        }
-      }
     }
 
     .animated-border:before,
@@ -238,6 +194,7 @@ body {
     .section-title {
       align-items: center;
       margin: 0 auto;
+      margin-bottom: 30px;
     }
 
     .btn {
@@ -245,9 +202,6 @@ body {
       height: 35px;
       line-height: 35px;
 
-      span {
-        font-size: 0.7rem;
-      }
     }
 
     #technologies .technologies-container {
@@ -264,16 +218,17 @@ body {
     .about-container {
       overflow-y: auto;
       overflow-x: hidden;
-      height: 320px;
 
       .item {
         width: 100% !important;
-        font-size: 0.8rem;
       }
 
-      h2,
       h3 {
-        margin: 0;
+        margin: 5px 0;
+      }
+
+      h2 {
+        margin: 15px 0;
       }
     }
 
@@ -285,22 +240,15 @@ body {
       .tool {
         width: 100px;
         padding: 2px;
-        font-size: 0.9rem;
-
-        p {
-          font-size: 0.9rem;
-        }
       }
 
-      .item.skill {
-        font-size: 0.6rem;
+      .item {
         min-width: 250px;
 
         figure {
-          min-width: 150px;
           max-height: none;
           max-width: none;
-          width: 150px;
+          width: 300px;
           margin: 10px auto;
 
           &:before {
@@ -308,15 +256,14 @@ body {
           }
         }
       }
+      
+
     }
 
     .content {
       width: 90%;
       margin-top: 20px;
 
-      .text {
-        font-size: 0.8rem;
-      }
     }
 
     .mousey {
@@ -333,19 +280,7 @@ body {
     }
 
     .speechbubble {
-      // New CSS
-
       font-size: 17px !important;
-      left: 0px !important;
-      top: 60px !important;
-      padding: 5px 10px;
-      max-width: 220px !important;
-      //  Border and arrow left
-      border-left: 5px solid;
-
-      &:after {
-        bottom: -35px;
-      }
     }
 
     #header .title h1 {
@@ -358,7 +293,7 @@ body {
     }
 
     #welcome #animation-container {
-      right: 50px;
+      
     }
 
     #contact {
@@ -396,5 +331,23 @@ body {
         top: 0;
       }
     }
+
   }
+}
+
+@media screen and (max-width: 615px) {
+  #app {
+    .technology,
+    .tool {
+      width: 40px !important;
+      padding: 2px;
+    }
+
+    .speechbubble {
+      max-width: 210px !important;
+      top: 6% !important
+    }
+  
+  }
+
 }

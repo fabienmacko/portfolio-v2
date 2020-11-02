@@ -10,7 +10,11 @@ class Welcome extends React.Component {
   componentDidMount() {
     var scene = document.querySelector('#animation-relative');
 
-    new Parallax(scene);
+    new Parallax(scene, {
+      relativeInput: true,
+      invertY: false,
+      invertX: false
+    });
   }
 
   render() {
@@ -22,7 +26,7 @@ class Welcome extends React.Component {
         }} params={Config} />
         <div id="animation-container">
           <div id="animation-relative">
-            <p className="speechbubble" data-depth="1.1" style={{
+            <p className="speechbubble" data-depth="1.3" style={{
               fontSize: "26px",
               width: "max-content",
               textAlign: "center",

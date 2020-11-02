@@ -20,6 +20,8 @@
     bottom: 0;
     display: block;
     color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   &.open {
     margin-top: 0;

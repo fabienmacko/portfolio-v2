@@ -1,7 +1,7 @@
 import React from 'react';
 import Mongodb from '../../../../style/images/mongodb.png';
 import Express from '../../../../style/images/express.png';
-import Axios from '../../../../style/images/axios.png';
+import Apollo from '../../../../style/images/apollo.png';
 import ReactRouter from '../../../../style/images/react-router.svg';
 import Jquery from '../../../../style/images/jquery.png';
 import Postman from '../../../../style/images/postman.png';
@@ -21,7 +21,7 @@ const Technologies = () => {
     { name: "jQuery", icon: Jquery },
     { name: "MongoDB", icon: Mongodb },
     { name: "Express.js", icon: Express },
-    { name: "Axios", icon: Axios },
+    { name: "Apollo, Graphql", icon: Apollo },
     { name: "React Router", icon: ReactRouter },
   ];
 

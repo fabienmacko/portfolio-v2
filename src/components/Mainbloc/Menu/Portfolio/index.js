@@ -3,23 +3,21 @@ import React from 'react';
 import MySwal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import Polis from '../../../../style/images/polis.png';
-import PortfolioV1 from '../../../../style/images/portfolio-v1.png';
 import Elephant from '../../../../style/images/elephant.jpg';
 import Memory from '../../../../style/images/memory.png';
+import PolisDevices from '../../../../style/images/polis-devices.png';
+import ElephantDevices from '../../../../style/images/elephant-devices.png';
+import MemoryDevices from '../../../../style/images/memory-devices.png';
 
 import './portfolio.scss';
+import SitePreview from '../../../SitePreview';
 const Portfolio = () => {
   const Swal = withReactContent(MySwal);
 
   const handlePolisClick = () => {
     Swal.fire({
       title: 'Polis',
-      html:
-      '<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px;margin-bottom: 20px;">' +
-      '<div><img style="width: 100%;" src="'+Polis+'"></div>' +
-      '<div>APPLICATION OF PARTICIPATORY MAPPING OF ARCHITECTURAL DATA<br><br>The version 1.0 of Polis you are currently browsing was developed in 3 weeks.<br>This project validates a 6-month training course followed by 4 aspiring developers in the virtual classrooms of Oclock. Besides the intense pleasure of creating "from scratch" a web project, this web app also serves to support the passage of the Professional title of web developer.</div>' +
-      '</div>' +
-      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;font-weight:bold;" href="https://www.polis-app.fr">View this app</a>',
+      html:<SitePreview imageSource={PolisDevices} href={"https://www.polis-app.fr"} buttonText={'View this app'} description={'APPLICATION OF PARTICIPATORY MAPPING OF ARCHITECTURAL DATA\n\nThe version 1.0 of Polis you are currently browsing was developed in 3 weeks.\nThis project validates a 6-month training course followed by 4 aspiring developers in the virtual classrooms of Oclock. Besides the intense pleasure of creating "from scratch" a web project, this web app also serves to support the passage of the Professional title of web developer.'} />,
       animation: true,
       showConfirmButton: false,
       showCloseButton: true,
@@ -29,12 +27,7 @@ const Portfolio = () => {
   const handleMemoryClick = () => {
     Swal.fire({
       title: 'Memory',
-      html:
-      '<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px;margin-bottom: 20px;">' +
-      '<div><img style="width: 100%;" src="'+Memory+'"></div>' +
-      '<div>Memory is a realtime online game that I created with React.js for the front-end, and Node.js/Express for the back-end.<br/>Socket-io has been used to create the realtime communication between the front and the back.</div>' +
-      '</div>' +
-      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;font-weight:bold;" href="https://fabienmackowiak.com/memory">Play!</a>',
+      html:<SitePreview imageSource={MemoryDevices} href={"https://fabienmackowiak.com/memory"} buttonText={'Play!'} description={'Memory is a realtime multiplayer online game that I created with React.js for the front-end, and Node.js/Express for the back-end.\nSocket-io has been used to create the realtime communication between the front and the back.'} />,
       animation: true,
       showConfirmButton: false,
       showCloseButton: true,
@@ -44,12 +37,7 @@ const Portfolio = () => {
   const handleElephantClick = () => {
     Swal.fire({
       title: 'Elephant Website',
-      html:
-      '<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px;margin-bottom: 20px;">' +
-      '<div><img style="width: 100%;" src="'+Elephant+'"></div>' +
-      '<div>Elephant is a basic website design with interactive content.</div>' +
-      '</div>' +
-      '<a class="swal2-confirm swal2-styled" style="text-decoration: none;font-weight:bold;" href="https://fabienmackowiak.com/elephant">View this website</a>',
+      html: <SitePreview imageSource={ElephantDevices} href={"https://fabienmackowiak.com/elephant"} buttonText={'View this website'} description={'Elephant is a basic website design with interactive content.'} />,
       animation: true,
       showConfirmButton: false,
       showCloseButton: true,

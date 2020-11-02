@@ -4,7 +4,7 @@ import './astronaut.scss';
 
 
 const Astronaut = () => (
-  <svg className="astronaut" data-depth="0.8" viewBox="0 0 1167 807" xmlns="http://www.w3.org/2000/svg">
+  <svg className="astronaut" data-depth="1.5" viewBox="0 0 1167 807" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient x1="99.997%" y1="50%" x2=".002%" y2="50%" id="a">
         <stop stopColor="#DC818F" stopOpacity="0" offset="22.69%" />

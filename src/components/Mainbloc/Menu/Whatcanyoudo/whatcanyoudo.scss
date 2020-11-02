@@ -1,6 +1,11 @@
 @import '../../../../style/vars.scss';
 
 #whatcanyoudo {
+    a {
+        text-decoration: none !important;
+        color: white !important;
+    }
+
   .skill {
     max-width: 250px;
     min-width: 100px;

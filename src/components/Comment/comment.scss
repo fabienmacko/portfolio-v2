@@ -1,0 +1,27 @@
+.testi {
+  box-shadow: 0px 5px 20px 0px #00000017;
+  border-radius: 5px;
+  min-height: 210px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px 40px 30px;
+}
+
+.testi .comment {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80%;
+}
+
+.testi span {
+ font-weight: bold !important;
+ font-style: italic;
+}
+
+.carousel .slide {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
