@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SitePreview = ({imageSource, href, buttonText, description}) => {
+const SitePreview = ({imageSource, href, buttonText, description, video}) => {
 
   return (
     <div id="sitepreview">
@@ -11,7 +11,10 @@ const SitePreview = ({imageSource, href, buttonText, description}) => {
         alignTtems: 'center',
         padding:'10px',
         marginBottom: '20px',
-      }}> 
+      }}>
+        {
+          video && video
+        }
         <div><img style={{
           width: '100%'
         }} src={imageSource} /></div> 

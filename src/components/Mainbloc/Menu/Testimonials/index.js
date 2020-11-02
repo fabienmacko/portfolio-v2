@@ -19,7 +19,6 @@ class Testimonials extends React.Component {
       .then((response) => {
         // handle success
         this.setState({ posts: response.data });
-        console.log(this.state.posts);
       })
       .catch((error) => {
         // handle error

@@ -17,7 +17,7 @@ const Portfolio = () => {
   const handlePolisClick = () => {
     Swal.fire({
       title: 'Polis',
-      html:<SitePreview imageSource={PolisDevices} href={"https://www.polis-app.fr"} buttonText={'View this app'} description={'APPLICATION OF PARTICIPATORY MAPPING OF ARCHITECTURAL DATA\n\nThe version 1.0 of Polis you are currently browsing was developed in 3 weeks.\nThis project validates a 6-month training course followed by 4 aspiring developers in the virtual classrooms of Oclock. Besides the intense pleasure of creating "from scratch" a web project, this web app also serves to support the passage of the Professional title of web developer.'} />,
+      html:<SitePreview imageSource={PolisDevices} video={<iframe style={{margin: '0 auto'}} width="560" height="315" src="https://www.youtube.com/embed/6Yii0jxB6Lw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>} href={"https://www.polis-app.fr"} buttonText={'View this app'} description={'APPLICATION OF PARTICIPATORY MAPPING OF ARCHITECTURAL DATA\n\nThe version 1.0 of Polis you are currently browsing was developed in 3 weeks.\nThis project validates a 6-month training course followed by 4 aspiring developers in the virtual classrooms of Oclock. Besides the intense pleasure of creating "from scratch" a web project, this web app also serves to support the passage of the Professional title of web developer.'} />,
       animation: true,
       showConfirmButton: false,
       showCloseButton: true,

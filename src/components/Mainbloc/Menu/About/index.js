@@ -40,14 +40,13 @@ class About extends React.Component {
 
               <h3>Professionnal experience</h3>
               <p>I am currently working at MSC (Mediteranean Shipping Company), a world leader in global container shipping industry, at Geneva, Switzerland. I am working on Servicenow, a software solution for huge business, allowing Ticket management, development of custom applications, and my main job is to use my Javascript skills to provide technological solutions by creating on-demand algorithms and web applications for the collaborators and customers.</p>
-
             </div>
 
             <div className="item" data-aos="fade-left" data-aos-delay="400" ref={(e) => this.second = e}>
               <h2>Objectives</h2>
 
               <h3>Improve</h3>
-              <p>At the top of my 22 years old, taking experience and always continue to learn is something essential for me. Passionate by the JavaScript environment, I always needs to push my limits, create new applications, learn new librairies/framkeworks, best practices, and over all produce quality code.</p>
+              <p>At the top of my 22 years old, taking experience and always continue to learn is something essential for me. Passionate about the JavaScript environment, I always needs to push my limits, create new applications, learn new librairies/frameworks, best practices, and over all produce quality code.</p>
 
               <h3>FullStack</h3>
               <p>One of the most interesting part with JavaScript is that you can use this language to build pretty much everything today. Front-end, Back-end, Native Mobile App, PWA, Desktop application.. JavaScript can be executed on so many various environment, and for me that's his main power, that's also why I love it. Currently I use it mostly to build Web Applications on the web browser, but learning all the stacks of JS such as React Native for mobile, Electron for desktop is something that I want to learn, when the time will allow.</p>
@@ -57,7 +56,7 @@ class About extends React.Component {
 
               <h3>Ski</h3>
               <p>I was on skis for the first time at two years old. <br />
-                This passion never lost me, and today I practice alot, especially Freeski.<br />
+                This passion never lost me, and today I practice a lot, especially Freeski.<br />
                 Skiing is my way to empty my mind, make some sport and enjoy the moment, to be more focused and improve my efficency during work time.</p>
 
               <h3>Technology</h3>
